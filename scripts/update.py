@@ -10,6 +10,7 @@ import os
 import re
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
@@ -28,6 +29,21 @@ TEST_WORDS = re.compile(
     r'(screenshot|screen ?shot|video|clip|tested|test run|on my (pc|machine|rig)|it boots|boots (to|into)|reached|'
     r'got (to|into|past)|works on|runs on|rtx|radeon|rx ?\d{4}|arc a\d|fps|in-?game|title card|main menu)', re.I)
 IMAGE = re.compile(r'(!\[[^\]]*\]\(|<img\s|user-attachments/assets|\.(png|jpe?g|gif|webp|mp4|webm)\b)', re.I)
+
+# Screenshots and videos. Only these hosts are kept: GitHub's own attachment and raw-file hosts, imgur and YouTube.
+# Expiring links (private-user-images, signed S3) and badges are left out.
+MEDIA_KEEP = 30          # per project, newest first; older items roll off
+MD_IMG = re.compile(r'!\[([^\]]*)\]\(\s*<?([^)\s>]+)')
+HTML_MEDIA = re.compile(r'<(img|video|source)\b[^>]*?\bsrc\s*=\s*["\']([^"\']+)', re.I)
+BARE_URL = re.compile(r'https://[^\s)"\'<>\]]+')
+ATTACH = re.compile(r'^https://github\.com/user-attachments/assets/[0-9a-f-]{36}$')
+YOUTUBE = re.compile(r'^https://(?:www\.|m\.)?(?:youtube\.com/(?:watch\?(?:[^#\s]*&)?v=|shorts/|embed/|live/)|youtu\.be/)'
+                     r'([\w-]{11})')
+IMG_EXT = re.compile(r'\.(png|jpe?g|gif|webp)$', re.I)
+VID_EXT = re.compile(r'\.(mp4|webm|mov)$', re.I)
+MEDIA_HOSTS = re.compile(r'^https://(raw\.githubusercontent\.com|user-images\.githubusercontent\.com|i\.imgur\.com)/')
+NOISE = re.compile(r'badge|shields|logo|icon|banner|mascot|avatar|header', re.I)
+_kind_cache = {}
 
 
 def get(path, with_headers=False):
@@ -115,6 +131,66 @@ def snippet(body, n=240):
     return body[:n] + ('…' if len(body) > n else '')
 
 
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k):
+        return None
+
+
+def attachment_kind(url):
+    """'image' or 'video' for a github.com/user-attachments/assets link, read from where it redirects (not an API call)."""
+    if url in _kind_cache:
+        return _kind_cache[url]
+    kind = None
+    try:
+        urllib.request.build_opener(_NoRedirect).open(urllib.request.Request(url, method='HEAD',
+                                                       headers={'User-Agent': 'gta6-pc-tracker'}), timeout=15)
+    except urllib.error.HTTPError as e:
+        loc = urllib.parse.unquote(e.headers.get('Location') or '')
+        m = re.search(r'response-content-type=(image|video)/', loc) or re.search(r'\.(png|jpe?g|gif|webp|mp4|webm|mov)\?', loc, re.I)
+        if m:
+            kind = 'image' if m.group(1).lower() in ('image', 'png', 'jpg', 'jpeg', 'gif', 'webp') else 'video'
+    except (urllib.error.URLError, OSError):
+        pass
+    _kind_cache[url] = kind
+    return kind
+
+
+def media_in(body, raw_base=None):
+    """Screenshots, videos and YouTube links in a piece of markdown, in order. raw_base resolves relative paths (READMEs)."""
+    body = re.sub(r'<!--.*?-->|```.*?```', '', body or '', flags=re.S)
+    found, out, seen = [], [], set()
+    for alt, src in MD_IMG.findall(body):
+        found.append(('image', src, alt))
+    for tag, src in HTML_MEDIA.findall(body):
+        found.append(('image' if tag.lower() == 'img' else 'video', src, ''))
+    for src in BARE_URL.findall(body):
+        found.append((None, src.rstrip('.,;:!?'), ''))
+    for kind, src, alt in found:
+        src = src.strip()
+        if raw_base and not re.match(r'^[a-z]+:', src, re.I):
+            src = raw_base + src.lstrip('./')
+        src = src.replace('/blob/', '/raw/') if src.startswith('https://github.com/') and '/blob/' in src else src
+        if src in seen:
+            continue
+        yt = YOUTUBE.match(src)
+        if yt:
+            item = {'kind': 'youtube', 'src': 'https://www.youtube.com/watch?v=' + yt.group(1), 'id': yt.group(1)}
+        elif ATTACH.match(src):
+            item = {'kind': kind or attachment_kind(src), 'src': src}
+        elif MEDIA_HOSTS.match(src) or re.match(r'^https://github\.com/[\w.-]+/[\w.-]+/raw/', src):
+            path = src.split('?')[0]
+            item = {'kind': 'video' if VID_EXT.search(path) else 'image' if IMG_EXT.search(path) else None, 'src': src}
+        else:
+            continue
+        if item['kind'] not in ('image', 'video', 'youtube') or NOISE.search(src):
+            continue
+        seen.add(src)
+        if alt and item['kind'] != 'youtube':
+            item['alt'] = alt[:120]
+        out.append(item)
+    return out
+
+
 def boot_prs(repo):
     prs = get('/repos/%s/pulls?state=open&sort=created&direction=desc&per_page=60' % repo)
     out = []
@@ -126,31 +202,74 @@ def boot_prs(repo):
 
 
 def test_reports(repo):
-    """Issues and comments from the last 24 hours that report a run, or carry an image."""
+    """Issues and comments from the last 24 hours that report a run, or carry an image; and every screenshot or video
+    posted in the repo's issues, PRs and comments in that time."""
     since = DAY_AGO.strftime('%Y-%m-%dT%H:%M:%SZ')
-    out = []
-    for it in get('/repos/%s/issues?state=all&sort=created&direction=desc&since=%s&per_page=60' % (repo, since)):
-        if 'pull_request' in it or when(it['created_at']) < DAY_AGO:
+    out, media = [], []
+
+    def grab(body, where, title, url, who, assoc, created):
+        for m in media_in(body):
+            m.update(origin=where, title=title[:160], url=url, user=who, assoc=assoc, created=created)
+            media.append(m)
+
+    def pages(path, n=3):
+        """Up to n pages of 100; busy repos get ~100 issues an hour, so one page can miss part of a 15-minute gap."""
+        for page in range(1, n + 1):
+            batch = get(path + '&per_page=100&page=%d' % page)
+            yield from batch
+            if len(batch) < 100:
+                break
+
+    for it in pages('/repos/%s/issues?state=all&sort=created&direction=desc&since=%s' % (repo, since)):
+        if when(it['created_at']) < DAY_AGO:
+            continue
+        pr = 'pull_request' in it
+        grab(it.get('body'), 'pr' if pr else 'issue', ('PR #%d: ' if pr else '#%d: ') % it['number'] + it['title'],
+             it['html_url'], it['user']['login'], it.get('author_association', ''), it['created_at'])
+        if pr:
             continue
         text = it['title'] + '\n' + (it.get('body') or '')
         img = bool(IMAGE.search(text))
         if img or TEST_WORDS.search(text):
             out.append({'kind': 'issue', 'title': it['title'][:160], 'url': it['html_url'], 'user': it['user']['login'],
                         'created': it['created_at'], 'image': img, 'text': snippet(it.get('body'))})
-    for cm in get('/repos/%s/issues/comments?sort=created&direction=desc&since=%s&per_page=80' % (repo, since)):
+    for cm in pages('/repos/%s/issues/comments?sort=created&direction=desc&since=%s' % (repo, since)):
         body = cm.get('body') or ''
+        num = cm['issue_url'].rsplit('/', 1)[-1]
+        grab(body, 'comment', 'Comment on #' + num, cm['html_url'], cm['user']['login'],
+             cm.get('author_association', ''), cm['created_at'])
         img = bool(IMAGE.search(body))
         if img or TEST_WORDS.search(body):
-            num = cm['issue_url'].rsplit('/', 1)[-1]
             out.append({'kind': 'comment', 'title': 'Comment on #' + num, 'url': cm['html_url'],
                         'user': cm['user']['login'], 'created': cm['created_at'], 'image': img, 'text': snippet(body)})
     out.sort(key=lambda x: x['created'], reverse=True)
-    return out[:10]
+    return out[:10], media
 
 
-def project(p):
+def merge_media(p, found, previous, hidden):
+    """Pinned media from stages.json first, then everything found now or on earlier runs, newest first, deduplicated."""
+    pinned = [dict(m, origin='pinned', pinned=True) for m in p.get('pinned_media', [])]
+    for m in pinned:
+        yt = YOUTUBE.match(m.get('src', ''))
+        if yt:
+            m.update(kind='youtube', id=yt.group(1))
+    rest = sorted(found + [m for m in previous if not m.get('pinned')], key=lambda m: m.get('created', ''), reverse=True)
+    out, seen = [], set()
+    for m in pinned + rest:
+        if m['src'] in seen or any(h in m['src'] or h == m.get('url') for h in hidden) or (
+                not m.get('pinned') and NOISE.search(m['src'])):
+            continue
+        seen.add(m['src'])
+        out.append(m)
+    return out[:len(pinned) + MEDIA_KEEP]
+
+
+def project(p, previous=None, hidden=()):
     repo = p['repo']
     out = dict(p)
+    out.pop('pinned_media', None)
+    prev_media = (previous or {}).get('media', [])
+    out['media'] = merge_media(p, [], prev_media, hidden)   # kept if the repo cannot be reached this run
     try:
         meta = get('/repos/' + repo)
     except urllib.error.HTTPError as e:
@@ -158,6 +277,7 @@ def project(p):
         return out
     out.update(reachable=True, stars=meta['stargazers_count'], forks=meta['forks_count'], pushed_at=meta['pushed_at'],
                created_at=meta['created_at'], url=meta['html_url'], description=meta.get('description') or '')
+    found_media = []
     parts = {
         'activity': lambda: hourly(repo, when(meta['created_at'])),
         'open_prs': lambda: count('/repos/%s/pulls?state=open' % repo),
@@ -165,7 +285,7 @@ def project(p):
         'commits': lambda: [{'sha': c['sha'][:7], 'url': c['html_url'], 'date': c['commit']['committer']['date'],
                              'message': c['commit']['message'].split('\n')[0][:140]}
                             for c in get('/repos/%s/commits?per_page=15' % repo)],
-        'status': lambda: readme_status(p, text_file(repo, 'README.md')),
+        'readme': lambda: text_file(repo, 'README.md'),
         'boot_prs': lambda: boot_prs(repo),
         'reports': lambda: test_reports(repo),
     }
@@ -179,18 +299,40 @@ def project(p):
             continue
         if k == 'activity':
             out['activity_24h'], out['activity_capped'] = v
+        elif k == 'readme':
+            out['status'] = readme_status(p, v)
+            base = 'https://raw.githubusercontent.com/%s/%s/' % (repo, meta.get('default_branch') or 'main')
+            for m in media_in(v, base):
+                m.update(origin='readme', title='README', url=meta['html_url'] + '#readme', user=repo.split('/')[0],
+                         assoc='OWNER', created=meta['pushed_at'])
+                found_media.append(m)
+        elif k == 'reports':
+            out['reports'], more = v
+            found_media.extend(more)
         else:
             out[k] = v
+    # README images carry the last push time; keep their first-seen time instead so they don't jump to the top each push
+    first_seen = {m['src']: m.get('created') for m in prev_media}
+    for m in found_media:
+        if m['origin'] == 'readme' and first_seen.get(m['src']):
+            m['created'] = first_seen[m['src']]
+    out['media'] = merge_media(p, found_media, prev_media, hidden)
     return out
 
 
 def main():
     with open(os.path.join(ROOT, 'stages.json'), encoding='utf-8') as f:
         cfg = json.load(f)
+    try:
+        with open(os.path.join(ROOT, 'data.json'), encoding='utf-8') as f:
+            old = {q['repo']: q for q in json.load(f).get('projects', [])}
+    except (OSError, ValueError):
+        old = {}
+    hidden = cfg.get('hide_media', [])
     data = {'fetched_at': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'),
             'scale': cfg['scale'], 'scale_notes': cfg.get('scale_notes', {}),
             'timeline': cfg.get('timeline', []), 'links': cfg.get('links', []),
-            'projects': [project(p) for p in cfg['projects']]}
+            'projects': [project(p, old.get(p['repo']), hidden) for p in cfg['projects']]}
     with open(os.path.join(ROOT, 'data.json'), 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, indent=1, ensure_ascii=False)
         f.write('\n')

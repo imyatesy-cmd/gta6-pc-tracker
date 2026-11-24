@@ -6,7 +6,7 @@ A small page showing how far the unofficial GTA VI PC ports have got, on a scale
   from `checkpoints` (19 steps whose points add up to 100, weighted toward the later, harder steps) and each project's
   `checks` (checkpoint id -> credit from 0 to 1; missing = 0). Credit only what a project has shown or reported.
 - `scripts/assess.py`: keeps checks, stage, note and blocker current on its own. When a project's README, boot notes
-  or commits change, a small model on GitHub Models (free with the Action's token) reads that text; a tick counts only
+  or commits change, Claude Haiku reads that text (repo secret `ANTHROPIC_API_KEY`; about $0.0005 a read); a tick counts only
   with a word-for-word quote from it, credit only rises automatically, and results are kept in `auto.json`. Stage
   comes from `stage_gates`. To overrule it for a project: `locks` (checkpoint -> value), `lock_text: true` (keep the
   hand-written note/blocker) or `auto: false` (all manual).

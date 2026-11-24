@@ -67,8 +67,8 @@
       "name": "Leonida CE",
       "approach": "Leonida community edition: static recompilation with experimental boot workarounds.",
       "stage": 4,
-      "note": "With its workarounds the game creates every graphics pipeline and presents frames, but they are all black and there is no window yet.",
-      "blocker": "Audio stalls about 2 minutes in: nothing feeds the game's XMA audio decoder, so the first audio frame never completes. Next step: a silent decoder pump based on VIctory's.",
+      "note": "With its workarounds the game creates every graphics pipeline, presents frames (still black, no window yet) and now runs its audio thread.",
+      "blocker": "Crashes at about 2 minutes on a separate memory bug: a block of memory is freed twice, then a null read.",
       "updated": "2026-11-24",
       "notes_file": "hacks/BOOT_NOTES.md",
       "milestones": [
@@ -79,6 +79,10 @@
         {
           "date": "2026-11-24",
           "text": "Runs to about 2 minutes; UI pipelines bound"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Audio stop cleared: patched the game's audio lock leak, the audio thread runs"
         }
       ],
       "status_rows": "^\\| Booting"
@@ -244,6 +248,10 @@
     {
       "date": "2026-11-24",
       "text": "Leonida CE presents its first (black) frames."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Leonida CE clears its audio stop; next stop is a double free at about 2 minutes."
     }
   ],
   "links": [

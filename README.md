@@ -2,7 +2,9 @@
 
 A small page showing how far the unofficial GTA VI PC ports have got, on a scale from 1 (loads) to 7 (playable).
 
-- `stages.json`: the projects and their stage, set by hand from each project's own reports.
+- `stages.json`: the projects and their stage, set by hand from each project's own reports. The completion bar comes
+  from `checkpoints` (19 steps whose points add up to 100, weighted toward the later, harder steps) and each project's
+  `checks` (checkpoint id -> credit from 0 to 1; missing = 0). Credit only what a project has shown or reported.
 - `scripts/update.py`: fetches each repo's recent commits and README status into `data.json` (standard library only).
   It also collects screenshots and videos posted in each repo's issues, PRs, comments and README (GitHub attachments,
   raw.githubusercontent, imgur, YouTube) and keeps the newest 30 per project across runs.

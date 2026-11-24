@@ -35,6 +35,21 @@ h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--mut
 .scale{display:grid;grid-template-columns:118px repeat(7,1fr);gap:0 0;margin-top:8px;font-size:.68rem;color:var(--muted)}
 .scale span{text-align:center;padding:0 2px;line-height:1.25}
 .scale span:first-child{text-align:left}
+:root{--lanew:118px}
+.track .lbl.out{color:var(--muted)}
+.pbar{position:relative;height:10px;border-radius:99px;background:var(--track);margin:14px 0 6px;overflow:hidden}
+.pbar .pfill{position:absolute;inset:0 auto 0 0;border-radius:99px;background:linear-gradient(90deg,var(--accent2),var(--accent));transition:width .8s ease}
+.pbar .tick{position:absolute;top:0;bottom:0;width:2px;background:var(--card)}
+.pline{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 6px}
+.pnum{font-size:1.35rem;font-weight:750;letter-spacing:-.02em;background:linear-gradient(90deg,var(--accent2),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent;margin-right:4px}
+.checks{display:grid;gap:10px;margin-top:8px}
+.cgroup{display:grid;grid-template-columns:1fr auto;gap:2px 8px;font-size:.86rem}
+.chead{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:650}
+.cpts{font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.crow{grid-column:1/-1;display:grid;grid-template-columns:18px 1fr auto;gap:6px;align-items:baseline;padding:2px 0}
+.crow .cmark{text-align:center;font-weight:700}
+.crow.done .cmark{color:var(--ok)}.crow.part .cmark{color:var(--accent)}.crow.todo{color:var(--muted)}
+.crow .cval{font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
 /* cards */
 .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:0 0 16px;transition:box-shadow .4s}
 .card.flash{box-shadow:0 0 0 3px var(--accent)}
@@ -71,7 +86,7 @@ footer{color:var(--muted);font-size:.8rem;margin-top:28px}
 .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:10px;margin-top:4px}
 .strip{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;margin:12px -2px 0;scroll-snap-type:x proximity}
 .strip .th{flex:0 0 168px;scroll-snap-align:start}
-.th{position:relative;display:block;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.th{position:relative;display:block;align-self:start;width:100%;padding:0;border:0;background:none;color:inherit;text-align:left;cursor:pointer;font:inherit}
 .th .pic{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:var(--track);border:1px solid var(--line)}
 .th img,.th video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
 .th:hover img,.th:hover video,.th:focus-visible img,.th:focus-visible video{transform:scale(1.04)}
@@ -99,7 +114,7 @@ dialog#lb::backdrop{background:rgba(8,8,12,.88);backdrop-filter:blur(6px)}
 #lb .nav button{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08);color:#fff;font-size:1.1rem;cursor:pointer}
 #lb .nav button:hover{background:rgba(255,255,255,.18)}
 .cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media (max-width:720px){.cols{grid-template-columns:1fr}.lane,.scale{grid-template-columns:84px 1fr}.scale{grid-template-columns:84px repeat(7,1fr)}.scale span{font-size:.6rem}}
+@media (max-width:720px){:root{--lanew:84px}.cols{grid-template-columns:1fr}.lane,.scale{grid-template-columns:84px 1fr}.scale{grid-template-columns:84px repeat(7,1fr)}.scale span{font-size:.6rem}}
 </style>
 </head>
 <body>
@@ -168,7 +183,29 @@ const cards = {};            // repo -> {card, list}
 function toast(msg) { const t = document.getElementById('toast'); t.textContent = msg; t.classList.add('show');
   clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 5000); }
 
-const ranked = () => [...data.projects].sort((a, b) => b.stage - a.stage || (b.stars || 0) - (a.stars || 0));
+// Completion: each checkpoint's points times the credit the project has for it (0-1); the points add up to 100.
+const cps = () => data.checkpoints || [];
+const pct = p => cps().length ? Math.round(cps().reduce((s, c) => s + c.points * Math.min(1, Math.max(0, Number((p.checks || {})[c.id]) || 0)), 0) * 10) / 10 : p.stage / 7 * 100;
+const stageSpans = () => { let at = 0; return data.scale.map((name, i) => { const w = cps().filter(c => c.stage === i + 1).reduce((s, c) => s + c.points, 0);
+  const span = { n: i + 1, name, start: at, w }; at += w; return span; }); };
+const fmtPct = v => (Math.round(v) === v ? v : v.toFixed(1)) + '%';
+const ranked = () => [...data.projects].sort((a, b) => pct(b) - pct(a) || b.stage - a.stage || (b.stars || 0) - (a.stars || 0));
+
+function checklist(p) {
+  const box = el('div', 'checks');
+  stageSpans().forEach(s => {
+    const items = cps().filter(c => c.stage === s.n); if (!items.length) return;
+    const got = items.reduce((t, c) => t + c.points * (Number((p.checks || {})[c.id]) || 0), 0);
+    const g = el('div', 'cgroup'); g.append(el('div', 'chead', `${s.n} ${s.name}`), el('div', 'cpts', `${fmtPct(Math.round(got * 10) / 10).replace('%', '')} / ${s.w}`));
+    items.forEach(c => { const v = Math.min(1, Math.max(0, Number((p.checks || {})[c.id]) || 0));
+      const row = el('div', 'crow ' + (v >= 1 ? 'done' : v > 0 ? 'part' : 'todo'));
+      row.append(el('span', 'cmark', v >= 1 ? '✓' : v > 0 ? '◐' : '○'), el('span', 'ctext', c.text),
+        el('span', 'cval', v >= 1 ? `${c.points}` : v > 0 ? `${Math.round(c.points * v * 10) / 10} of ${c.points}` : `0 of ${c.points}`));
+      g.append(row); });
+    box.append(g);
+  });
+  return box;
+}
 
 function reportItem(r, who) {
   const li = el('li'), t = el('time', null, ago(r.created)), sp = el('span'), a = el('a', null, (r.image ? '🖼 ' : '') + r.title);
@@ -253,15 +290,22 @@ function renderRace() {
   const ps = ranked();
   ps.forEach(p => {
     const lane = el('div', 'lane'), nm = el('a', 'nm', p.name); nm.href = '#' + p.repo.replace('/', '-');
-    const tr = el('div', 'track'), fill = el('div', 'fill');
-    fill.style.width = (p.stage / 7 * 100) + '%'; tr.append(fill);
-    for (let i = 1; i < 7; i++) { const t = el('div', 'tick'); t.style.left = (i / 7 * 100) + '%'; tr.append(t); }
-    const lbl = el('span', 'lbl', p.stage + '/7'); lbl.style.right = 'auto'; lbl.style.left = `calc(${p.stage / 7 * 100}% - 34px)`; tr.append(lbl);
-    tr.title = `Stage ${p.stage}: ${data.scale[p.stage - 1]}`;
+    const tr = el('div', 'track'), fill = el('div', 'fill'), v = pct(p);
+    fill.style.width = v + '%'; tr.append(fill);
+    const spans = stageSpans();
+    spans.slice(1).forEach(s => { const t = el('div', 'tick'); t.style.left = s.start + '%'; tr.append(t); });
+    const lbl = el('span', 'lbl ' + (v < 14 ? 'out' : ''), fmtPct(v));
+    if (v < 14) lbl.style.left = `calc(${v}% + 8px)`; else { lbl.style.right = 'auto'; lbl.style.left = `calc(${v}% - 46px)`; }
+    tr.append(lbl);
+    tr.title = `${fmtPct(v)} complete · stage ${p.stage}: ${data.scale[p.stage - 1]}`;
     lane.append(nm, tr); lanes.append(lane);
   });
-  const sc = document.getElementById('scale'); sc.textContent = ''; sc.append(el('span'));
-  data.scale.forEach((s, i) => { const x = el('span', null, (i + 1) + ' ' + s); x.title = data.scale_notes[i + 1] || ''; sc.append(x); });
+  const sc = document.getElementById('scale'); sc.textContent = '';
+  const spans = stageSpans();
+  sc.style.gridTemplateColumns = `var(--lanew) ${spans.map(s => Math.max(s.w, 0.01) + 'fr').join(' ')}`;
+  sc.append(el('span'));
+  spans.forEach(s => { const x = el('span', null, s.w >= 15 ? `${s.n} ${s.name}` : String(s.n));
+    x.title = `${s.n} ${s.name} (${s.w} points): ${data.scale_notes[s.n] || ''}`; sc.append(x); });
 }
 
 function spark(bins) {
@@ -281,9 +325,11 @@ function renderCards() {
     h2.append(a); h.append(h2, el('span', 'approach', p.repo)); c.append(h);
     if (p.approach) c.append(el('p', 'approach', p.approach));
     if (!p.reachable) c.append(el('p', 'down', 'Repository unreachable (' + p.error + '): taken down, made private or renamed.'));
-    const st = el('div', 'stages'); for (let i = 1; i <= 7; i++) { const d = el('div', i <= p.stage ? 'on' : ''); d.title = (i) + ' ' + data.scale[i - 1]; st.append(d); }
-    c.append(st);
-    const s = el('div'); s.append(el('span', 'stagetxt', `Stage ${p.stage} of 7: ${data.scale[p.stage - 1]}`), el('span', 'approach', ` · set ${p.updated}`)); c.append(s);
+    const v = pct(p), bar = el('div', 'pbar'), pf = el('div', 'pfill'); pf.style.width = v + '%'; bar.append(pf);
+    stageSpans().slice(1).forEach(s => { const t = el('div', 'tick'); t.style.left = s.start + '%'; bar.append(t); });
+    c.append(bar);
+    const s = el('div', 'pline'); s.append(el('span', 'pnum', fmtPct(v)), el('span', 'stagetxt', ` complete · stage ${p.stage} of 7: ${data.scale[p.stage - 1]}`),
+      el('span', 'approach', ` · set ${p.updated}`)); c.append(s);
     c.append(el('p', 'note', p.note));
     if (p.blocker) { const b = el('p', 'blocker'); b.append(el('b', null, 'Blocked by: '), document.createTextNode(p.blocker)); c.append(b); }
     const pm = mediaOf(p).map(m => ({ ...m, who: p.name }));
@@ -298,6 +344,12 @@ function renderCards() {
       add(ago(p.pushed_at), 'last push');
       c.append(stats);
       if (p.activity_24h) { const sp = el('div', 'spark'); sp.append(el('span', null, '24 h ago'), spark(p.activity_24h), el('span', null, 'now')); c.append(sp); }
+    }
+    if (cps().length) {
+      const done = cps().filter(x => Number((p.checks || {})[x.id]) >= 1).length, part = cps().filter(x => { const n = Number((p.checks || {})[x.id]); return n > 0 && n < 1; }).length;
+      const dc = el('details'); dc.append(el('summary', null, `Checklist: ${done} of ${cps().length} done${part ? `, ${part} partly` : ''}`), checklist(p));
+      if (data.checkpoint_notes) dc.append(el('p', 'approach', data.checkpoint_notes));
+      c.append(dc);
     }
     if (p.milestones && p.milestones.length) {
       const dt = el('details'), ul = el('ul', 'list ms'); dt.open = true; dt.append(el('summary', null, 'Milestones'));
@@ -351,7 +403,8 @@ function renderStatic() {
 async function loadData() {
   const r = await fetch('data.json', { cache: 'no-store' }); if (!r.ok) throw new Error('data.json ' + r.status);
   const d = await r.json(); const first = !data;
-  const changed = data && data.projects.map(p => p.stage + p.note).join() !== d.projects.map(p => p.stage + p.note).join();
+  const sig = x => x.projects.map(p => p.stage + p.note + JSON.stringify(p.checks || {})).join();
+  const changed = data && sig(data) !== sig(d);
   data = d; lastData = Date.now();
   // keep live commits newer than the snapshot
   data.projects.forEach(p => { const live = commits[p.repo] || [], snap = p.commits || [];

@@ -332,6 +332,7 @@ def main():
     data = {'fetched_at': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'),
             'scale': cfg['scale'], 'scale_notes': cfg.get('scale_notes', {}),
             'timeline': cfg.get('timeline', []), 'links': cfg.get('links', []),
+            'checkpoints': cfg.get('checkpoints', []), 'checkpoint_notes': cfg.get('checkpoint_notes', ''),
             'projects': [project(p, old.get(p['repo']), hidden) for p in cfg['projects']]}
     with open(os.path.join(ROOT, 'data.json'), 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, indent=1, ensure_ascii=False)

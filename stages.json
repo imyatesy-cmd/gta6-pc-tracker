@@ -40,7 +40,23 @@
           "text": "Same results reproduced on a second PC"
         }
       ],
-      "status_heading": "^## Status"
+      "status_heading": "^## Status",
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 0.87,
+        "frames": 1,
+        "window": 1,
+        "video": 1,
+        "audio": 1,
+        "menus": 1,
+        "input": 1,
+        "load": 1,
+        "repro": 1,
+        "world": 0.25
+      }
     },
     {
       "repo": "ivall/xcl",
@@ -60,7 +76,18 @@
           "text": "Unpacks the game's compressed streamed textures (BCPack)"
         }
       ],
-      "status_rows": "retail game"
+      "status_rows": "retail game",
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 0.5,
+        "frames": 1,
+        "window": 1,
+        "menus": 1,
+        "input": 1
+      }
     },
     {
       "repo": "IAmNotSiob/leonida-ce",
@@ -89,7 +116,17 @@
           "text": "One run reaches world loading (terrain and map data) and runs for about 6 minutes"
         }
       ],
-      "status_rows": "^\\| Booting"
+      "status_rows": "^\\| Booting",
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 1,
+        "frames": 1,
+        "audio": 1,
+        "load": 0.25
+      }
     },
     {
       "repo": "ubiquitarianism/leonida",
@@ -117,7 +154,10 @@
           "text": "An integration PR (#939) boots on Windows to the game's first-run menus (not merged yet)"
         }
       ],
-      "status_rows": "^\\| Booting"
+      "status_rows": "^\\| Booting",
+      "checks": {
+        "exe": 1
+      }
     },
     {
       "repo": "ThatRecompDev/five-star-recomp",
@@ -136,7 +176,20 @@
           "date": "2026-11-24",
           "text": "Reaches the story intro's title card, then stops"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 1,
+        "frames": 1,
+        "window": 1,
+        "video": 1,
+        "menus": 1,
+        "load": 1,
+        "world": 0.1
+      }
     },
     {
       "repo": "fablinoo/palmwave",
@@ -151,7 +204,17 @@
           "date": "2026-11-24",
           "text": "Loads the world and runs up to an hour with sound, no picture"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 0.5,
+        "audio": 1,
+        "load": 1,
+        "stable": 1
+      }
     },
     {
       "repo": "OpenCommunityEdition/OpenScarlett",
@@ -166,7 +229,18 @@
           "date": "2026-11-24",
           "text": "Intro video with sound at 30 fps"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 0.9,
+        "frames": 1,
+        "window": 1,
+        "video": 1,
+        "audio": 1
+      }
     },
     {
       "repo": "californiaAlmonds/OpenScarlett",
@@ -181,7 +255,16 @@
           "date": "2026-11-24",
           "text": "Intro video in full colour at 4K"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "frames": 1,
+        "window": 1,
+        "video": 1
+      }
     },
     {
       "repo": "R0Y00/Xbox2Windows",
@@ -196,7 +279,16 @@
           "date": "2026-11-24",
           "text": "Intro video and loading (modified diagnostic copy)"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 1,
+        "startup": 0.5,
+        "files": 0.5,
+        "device": 0.5,
+        "frames": 0.5,
+        "window": 0.5,
+        "video": 0.5
+      }
     },
     {
       "repo": "rpatty-dev/PercyScarlett",
@@ -211,7 +303,16 @@
           "date": "2026-11-24",
           "text": "Setup screens shown, then screenshots withdrawn"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 0.5,
+        "startup": 0.5,
+        "files": 0.5,
+        "device": 0.5,
+        "frames": 0.5,
+        "window": 0.5,
+        "menus": 0.5
+      }
     },
     {
       "repo": "OnlyMoisties/GTA6-BootTest",
@@ -226,7 +327,17 @@
           "date": "2026-11-24",
           "text": "First interface screen"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 1,
+        "startup": 1,
+        "files": 1,
+        "device": 1,
+        "shaders": 0.25,
+        "frames": 1,
+        "window": 1,
+        "menus": 0.5
+      }
     },
     {
       "repo": "Kajcsi/G6Recomp",
@@ -241,7 +352,12 @@
           "date": "2026-11-24",
           "text": "Window and graphics device"
         }
-      ]
+      ],
+      "checks": {
+        "exe": 0.5,
+        "startup": 0.25,
+        "device": 0.5
+      }
     }
   ],
   "timeline": [
@@ -291,5 +407,122 @@
       "name": "gta6pctracker.com (fake-download warnings)",
       "url": "https://gta6pctracker.com/"
     }
-  ]
+  ],
+  "checkpoints": [
+    {
+      "id": "exe",
+      "stage": 1,
+      "points": 2,
+      "text": "The game's executable loads and its code runs"
+    },
+    {
+      "id": "startup",
+      "stage": 2,
+      "points": 4,
+      "text": "Gets through startup: memory, threads, console runtime"
+    },
+    {
+      "id": "files",
+      "stage": 2,
+      "points": 4,
+      "text": "Reads the game's archives and streams data"
+    },
+    {
+      "id": "device",
+      "stage": 3,
+      "points": 3,
+      "text": "Creates the graphics device"
+    },
+    {
+      "id": "shaders",
+      "stage": 3,
+      "points": 6,
+      "text": "Translates the game's GPU shaders (part credit = share translated)"
+    },
+    {
+      "id": "frames",
+      "stage": 4,
+      "points": 3,
+      "text": "Presents frames, even black ones"
+    },
+    {
+      "id": "window",
+      "stage": 4,
+      "points": 2,
+      "text": "A picture in its own window"
+    },
+    {
+      "id": "video",
+      "stage": 5,
+      "points": 3,
+      "text": "Logos or the intro video play"
+    },
+    {
+      "id": "audio",
+      "stage": 5,
+      "points": 3,
+      "text": "Sound plays"
+    },
+    {
+      "id": "menus",
+      "stage": 5,
+      "points": 3,
+      "text": "Menus and first-run screens render"
+    },
+    {
+      "id": "input",
+      "stage": 5,
+      "points": 3,
+      "text": "Menus usable at full speed (about 30 fps)"
+    },
+    {
+      "id": "load",
+      "stage": 5,
+      "points": 6,
+      "text": "Loads into the game world"
+    },
+    {
+      "id": "repro",
+      "stage": 5,
+      "points": 2,
+      "text": "Results reproduced on a second PC"
+    },
+    {
+      "id": "world",
+      "stage": 6,
+      "points": 12,
+      "text": "The game world is visible on screen"
+    },
+    {
+      "id": "control",
+      "stage": 6,
+      "points": 10,
+      "text": "The player controls a character in the world"
+    },
+    {
+      "id": "fps",
+      "stage": 6,
+      "points": 8,
+      "text": "The world runs at 20+ fps"
+    },
+    {
+      "id": "stable",
+      "stage": 6,
+      "points": 8,
+      "text": "10+ minutes in the world without a crash"
+    },
+    {
+      "id": "missions",
+      "stage": 7,
+      "points": 8,
+      "text": "Cutscenes and missions progress"
+    },
+    {
+      "id": "long",
+      "stage": 7,
+      "points": 10,
+      "text": "30+ minutes of play at 20+ fps without a crash"
+    }
+  ],
+  "checkpoint_notes": "Credit is given only for what a project has shown or reported; anything unknown counts as nothing. 1 = done, between 0 and 1 = partly (for shaders, the share translated)."
 }

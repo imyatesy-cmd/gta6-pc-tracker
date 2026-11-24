@@ -67,8 +67,8 @@
       "name": "Leonida CE",
       "approach": "Leonida community edition: static recompilation with experimental boot workarounds.",
       "stage": 4,
-      "note": "With its workarounds the game creates every graphics pipeline, presents frames (still black, no window yet) and now runs its audio thread.",
-      "blocker": "Crashes at about 2 minutes on a separate memory bug: a block of memory is freed twice, then a null read.",
+      "note": "With its workarounds the game creates every graphics pipeline, presents frames (still black, no window yet) and runs its audio. One run got past the usual crash and started loading the world (terrain and map data) for almost 6 minutes.",
+      "blocker": "A timing-dependent memory corruption (a race) usually crashes it at about 2 minutes; it was avoided only when the game ran slowed down under a debugger.",
       "updated": "2026-11-24",
       "notes_file": "hacks/BOOT_NOTES.md",
       "milestones": [
@@ -83,6 +83,10 @@
         {
           "date": "2026-11-24",
           "text": "Audio stop cleared: patched the game's audio lock leak, the audio thread runs"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "One run reaches world loading (terrain and map data) and runs for about 6 minutes"
         }
       ],
       "status_rows": "^\\| Booting"
@@ -112,13 +116,17 @@
       "name": "five-star-recomp",
       "approach": "Static recompilation of the Xbox Series build.",
       "stage": 5,
-      "note": "Loads story mode. Stage self-reported; summarised from the GTA VI PC Race tracker.",
-      "blocker": "The GPU hangs on the first frame of the world; traced to meshlet culling.",
+      "note": "Gets through its first-run screens, loads story mode and reaches the story intro's title card. Stage self-reported; summarised from the project's README.",
+      "blocker": "Stops after the story intro's title card.",
       "updated": "2026-11-24",
       "milestones": [
         {
           "date": "2026-11-24",
           "text": "Loads story mode, then hangs on the first frame of the world"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Reaches the story intro's title card, then stops"
         }
       ]
     },
@@ -252,6 +260,14 @@
     {
       "date": "2026-11-24",
       "text": "Leonida CE clears its audio stop; next stop is a double free at about 2 minutes."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "five-star-recomp reaches the story intro's title card."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "A Leonida CE run gets past its 2-minute crash and starts loading the world."
     }
   ],
   "links": [

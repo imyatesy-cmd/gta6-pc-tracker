@@ -14,6 +14,9 @@ import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import assess  # noqa: E402
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = 'https://api.github.com'
 NOW = datetime.now(timezone.utc)
@@ -277,7 +280,7 @@ def project(p, previous=None, hidden=()):
         return out
     out.update(reachable=True, stars=meta['stargazers_count'], forks=meta['forks_count'], pushed_at=meta['pushed_at'],
                created_at=meta['created_at'], url=meta['html_url'], description=meta.get('description') or '')
-    found_media = []
+    found_media, src = [], {}
     parts = {
         'activity': lambda: hourly(repo, when(meta['created_at'])),
         'open_prs': lambda: count('/repos/%s/pulls?state=open' % repo),
@@ -300,6 +303,7 @@ def project(p, previous=None, hidden=()):
         if k == 'activity':
             out['activity_24h'], out['activity_capped'] = v
         elif k == 'readme':
+            src['readme'] = v
             out['status'] = readme_status(p, v)
             base = 'https://raw.githubusercontent.com/%s/%s/' % (repo, meta.get('default_branch') or 'main')
             for m in media_in(v, base):
@@ -311,6 +315,11 @@ def project(p, previous=None, hidden=()):
             found_media.extend(more)
         else:
             out[k] = v
+            if k == 'notes':
+                src['notes'] = v
+            elif k == 'commits':
+                src['commits'] = [c['message'] for c in v]
+    out['_src'] = src     # the project's own text, for assess.py; removed before data.json is written
     # README images carry the last push time; keep their first-seen time instead so they don't jump to the top each push
     first_seen = {m['src']: m.get('created') for m in prev_media}
     for m in found_media:
@@ -334,11 +343,13 @@ def main():
             'timeline': cfg.get('timeline', []), 'links': cfg.get('links', []),
             'checkpoints': cfg.get('checkpoints', []), 'checkpoint_notes': cfg.get('checkpoint_notes', ''),
             'projects': [project(p, old.get(p['repo']), hidden) for p in cfg['projects']]}
+    calls = assess.run(cfg, data['projects'], os.path.join(ROOT, 'auto.json'))
     with open(os.path.join(ROOT, 'data.json'), 'w', encoding='utf-8', newline='\n') as f:
         json.dump(data, f, indent=1, ensure_ascii=False)
         f.write('\n')
     bad = [p['repo'] for p in data['projects'] if not p.get('reachable')]
-    print('updated %d projects%s' % (len(data['projects']), '; unreachable: ' + ', '.join(bad) if bad else ''))
+    print('updated %d projects (%d assessed)%s' % (len(data['projects']), calls,
+                                                 '; unreachable: ' + ', '.join(bad) if bad else ''))
 
 
 if __name__ == '__main__':

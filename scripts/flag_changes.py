@@ -1,7 +1,7 @@
 """Compares the previous data.json (from git) with the new one and writes issue.md when something that may change a
-project's stage happened: its README status or boot notes changed, or the repo became unreachable.
+project's stage moved (assess.py sets stages automatically) or its repo became unreachable.
 
-The workflow opens a GitHub issue from issue.md, so the owner gets a notification and can update stages.json.
+The workflow opens a GitHub issue from issue.md as a notification; nothing needs doing unless it looks wrong.
 Standard library only.
 """
 import json
@@ -16,7 +16,7 @@ EDIT = 'https://github.com/{repo}/edit/main/stages.json'
 def load_prev():
     try:
         return json.loads(subprocess.run(['git', 'show', 'HEAD:data.json'], cwd=ROOT, capture_output=True,
-                                         check=True, text=True).stdout)
+                                         check=True, text=True, encoding='utf-8').stdout)
     except (subprocess.CalledProcessError, ValueError):
         return None
 
@@ -45,25 +45,24 @@ def main():
             continue
         if not p.get('reachable'):
             continue
-        st = new_lines(b.get('status'), p.get('status'))
-        if st and b.get('status'):
-            parts.append('### %s: README status changed\n\nNow stage %d (%s). New text:\n\n```\n%s\n```'
-                         % (name, p['stage'], cur['scale'][p['stage'] - 1], '\n'.join(st)[:1500]))
-        nt = new_lines(b.get('notes'), p.get('notes'))
-        if nt and b.get('notes'):
-            parts.append('### %s: boot notes changed\n\n```\n%s\n```' % (name, '\n'.join(nt)[:1500]))
+        if p.get('stage') != b.get('stage'):
+            ev = p.get('evidence') or {}
+            quotes = '\n'.join('- %s: "%s"' % (k, q) for k, q in ev.items())
+            parts.append('### %s: stage %s -> %s (set automatically)\n\nNow: %s\n\nQuotes behind its ticks:\n%s'
+                         % (name, b.get('stage'), p['stage'], p.get('note', ''), quotes or '(none)'))
     if not parts:
         return 0
     repo = os.environ.get('GITHUB_REPOSITORY', '')
-    body = ('Something changed that may move a project on the scale. If it did, update its `stage`, `note`, '
-            '`blocker` and `milestones` in [stages.json](%s), then close this issue.\n\n' % EDIT.format(repo=repo)
+    body = ('The tracker updated itself; nothing needs doing. If something below is wrong, pin the right value with '
+            '`locks` (or `lock_text`) on that project in [stages.json](%s), then close this issue.\n\n'
+            % EDIT.format(repo=repo)
             + '\n\n'.join(parts)
             + '\n\n_Text in code blocks is quoted from the projects\' own repos._')
     with open(os.path.join(ROOT, 'issue.md'), 'w', encoding='utf-8') as f:
         f.write(body)
     names = sorted({x.split('\n', 1)[0].split(':')[0].replace('### ', '').replace(' is unreachable', '') for x in parts})
     with open(os.path.join(ROOT, 'issue_title.txt'), 'w', encoding='utf-8') as f:
-        f.write('Stage check: ' + ', '.join(names))
+        f.write('Tracker update: ' + ', '.join(names))
     print('flagged:', ', '.join(names))
     return 0
 

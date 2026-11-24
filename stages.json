@@ -312,7 +312,17 @@
         "frames": 0.5,
         "window": 0.5,
         "menus": 0.5
-      }
+      },
+      "locks": {
+        "exe": 0.5,
+        "startup": 0.5,
+        "files": 0.5,
+        "device": 0.5,
+        "frames": 0.5,
+        "window": 0.5,
+        "menus": 0.5
+      },
+      "lock_text": true
     },
     {
       "repo": "OnlyMoisties/GTA6-BootTest",
@@ -524,5 +534,46 @@
       "text": "30+ minutes of play at 20+ fps without a crash"
     }
   ],
-  "checkpoint_notes": "Credit is given only for what a project has shown or reported; anything unknown counts as nothing. 1 = done, between 0 and 1 = partly (for shaders, the share translated)."
+  "checkpoint_notes": "Ticked automatically: when a project's README, boot notes or commits change, a model on GitHub Models reads them and credits a checkpoint only with a word-for-word quote from the project (hover a tick to see it). Credit only goes up automatically; anything unknown counts as nothing.",
+  "stage_gates": {
+    "1": [
+      [
+        "exe"
+      ]
+    ],
+    "2": [
+      [
+        "startup"
+      ]
+    ],
+    "3": [
+      [
+        "device"
+      ]
+    ],
+    "4": [
+      [
+        "frames"
+      ]
+    ],
+    "5": [
+      [
+        "video"
+      ],
+      [
+        "menus"
+      ]
+    ],
+    "6": [
+      [
+        "world",
+        "control"
+      ]
+    ],
+    "7": [
+      [
+        "long"
+      ]
+    ]
+  }
 }

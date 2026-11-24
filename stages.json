@@ -97,7 +97,7 @@
       "approach": "The main continuation of the original Leonida (static recompilation, Vulkan).",
       "stage": 1,
       "note": "Has the original's full history and is merging back the boot fixes closed when the original went private. Now merged: the console graphics-device fixes for the early boot stops, frame pacing and presentation (PresentX), an XMA2 audio decoder and offline networking.",
-      "blocker": "No retail run on the merged code has been reported yet, so how far it now gets is unmeasured; the later stops still need the remaining fixes.",
+      "blocker": "The integration branch that reaches the first-run menus is an open PR built on about 13 other unmerged PRs; main itself is not there yet.",
       "updated": "2026-11-24",
       "milestones": [
         {
@@ -111,6 +111,10 @@
         {
           "date": "2026-11-24",
           "text": "Boot fixes merged: console device stops, frame pacing/PresentX, XMA2 audio decoder, offline networking"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "An integration PR (#939) boots on Windows to the game's first-run menus (not merged yet)"
         }
       ],
       "status_rows": "^\\| Booting"
@@ -272,6 +276,10 @@
     {
       "date": "2026-11-24",
       "text": "A Leonida CE run gets past its 2-minute crash and starts loading the world."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Leonida Continued: an integration PR reaches the first-run menus on Windows, the first Leonida build to show the game's UI."
     }
   ],
   "links": [

@@ -1,0 +1,39 @@
+name: Update tracker data
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'   # every 15 minutes (12 repos x ~11 calls stays under the Action's 1,000 an hour) (GitHub may run scheduled jobs late)
+  workflow_dispatch:
+  push:
+    paths: ['stages.json', 'scripts/update.py']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch repo activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -I scripts/update.py
+      - name: Commit if changed
+        run: |
+          # fetched_at changes every run; only commit when something else changed too
+          if git diff --quiet -- data.json || [ "$(git diff -U0 -- data.json | grep -c '^[-+] ')" -le 2 ]; then
+            echo "no change"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "Update tracker data"
+          git push

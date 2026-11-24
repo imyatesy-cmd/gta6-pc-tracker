@@ -96,8 +96,8 @@
       "name": "Leonida Continued",
       "approach": "The main continuation of the original Leonida (static recompilation, Vulkan).",
       "stage": 1,
-      "note": "Has the original's full history and is re-merging the boot fixes that were closed when the original went private.",
-      "blocker": "On its own code the game crashes early in startup; the fixes that got further are not all merged yet.",
+      "note": "Has the original's full history and is merging back the boot fixes closed when the original went private. Now merged: the console graphics-device fixes for the early boot stops, frame pacing and presentation (PresentX), an XMA2 audio decoder and offline networking.",
+      "blocker": "No retail run on the merged code has been reported yet, so how far it now gets is unmeasured; the later stops still need the remaining fixes.",
       "updated": "2026-11-24",
       "milestones": [
         {
@@ -107,6 +107,10 @@
         {
           "date": "2026-11-24",
           "text": "Continuation fork opens; boot fixes start being re-merged"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Boot fixes merged: console device stops, frame pacing/PresentX, XMA2 audio decoder, offline networking"
         }
       ],
       "status_rows": "^\\| Booting"

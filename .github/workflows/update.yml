@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: update
@@ -26,6 +27,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python -I scripts/update.py
+      - name: Flag changes that may move a stage
+        run: python -I scripts/flag_changes.py
+      - name: Open an issue for them
+        if: hashFiles('issue.md') != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh issue create --title "$(cat issue_title.txt)" --body-file issue.md
+          rm -f issue.md issue_title.txt
       - name: Commit if changed
         run: |
           # fetched_at changes every run; only commit when something else changed too

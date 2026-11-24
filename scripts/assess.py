@@ -48,7 +48,13 @@ def ask(prompt):
         'Authorization': 'Bearer ' + os.environ['GITHUB_TOKEN'], 'Content-Type': 'application/json',
         'Accept': 'application/json', 'User-Agent': 'gta6-pc-tracker'})
     with urllib.request.urlopen(req, timeout=90) as r:
-        return json.loads(json.load(r)['choices'][0]['message']['content'])
+        raw = r.read().decode('utf-8', 'replace')
+    try:
+        content = json.loads(raw)['choices'][0]['message']['content']
+    except (ValueError, KeyError, IndexError, TypeError):
+        raise ValueError('unexpected reply %s' % raw[:300].replace('\n', ' '))
+    content = re.sub(r'^```(?:json)?\s*|\s*```$', '', content.strip())
+    return json.loads(content)
 
 
 SYSTEM = (

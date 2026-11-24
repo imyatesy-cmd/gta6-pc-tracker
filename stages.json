@@ -534,7 +534,7 @@
       "text": "30+ minutes of play at 20+ fps without a crash"
     }
   ],
-  "checkpoint_notes": "Ticked automatically: when a project's README, boot notes or commits change, a model on GitHub Models reads them and credits a checkpoint only with a word-for-word quote from the project (hover a tick to see it). Credit only goes up automatically; anything unknown counts as nothing.",
+  "checkpoint_notes": "Set from each project's own reports. Credit is given only for what a project has shown or reported; anything unknown counts as nothing. Ticks marked “auto” were read from the project's text (hover for the quote).",
   "stage_gates": {
     "1": [
       [

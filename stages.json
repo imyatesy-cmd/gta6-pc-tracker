@@ -1,0 +1,259 @@
+{
+  "scale": [
+    "Loads",
+    "Starts up",
+    "Graphics device",
+    "First frames",
+    "Recognisable picture",
+    "In-game",
+    "Playable"
+  ],
+  "scale_notes": {
+    "1": "The executable is loaded and its code starts running.",
+    "2": "Gets through the game's own startup (runtime, memory, threads, files).",
+    "3": "Creates its graphics device and starts talking to the GPU.",
+    "4": "Submits or presents frames, even if they are black.",
+    "5": "Something recognisable on screen: logos, video, menus.",
+    "6": "The game world on screen and under player control.",
+    "7": "In-game and under player control for 30+ minutes without a crash, at 20+ fps, on some PC."
+  },
+  "projects": [
+    {
+      "repo": "Marvisak/VIctory",
+      "name": "VIctory",
+      "approach": "Runs the console code natively on Windows; console GPU code recompiled to DXIL for D3D12.",
+      "stage": 5,
+      "note": "Boots, runs its menus at 30 fps and shows the first mission's title card. Inside the world the picture is dark at 1-2 fps. Reproduced on a second PC (RTX 4070 SUPER).",
+      "blocker": "The world: dark, 1-2 fps, and the GPU hangs after about 2 minutes. About 350 shader programs still untranslated.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-23",
+          "text": "Boots and runs its first-boot screens and menus at 30 fps"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "The first mission's title card renders; the world after it is dark"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Same results reproduced on a second PC"
+        }
+      ],
+      "status_heading": "^## Status"
+    },
+    {
+      "repo": "ivall/xcl",
+      "name": "XCL",
+      "approach": "A general Xbox Series to Windows compatibility layer; also runs other console games fully.",
+      "stage": 5,
+      "note": "Starts in about 4 s, runs at a steady 30 fps without crashing, and gets through its menus to the settings.",
+      "blocker": "Gameplay not reached; the minimap's mesh pipelines are refused.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Menus and settings at a steady 30 fps"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Unpacks the game's compressed streamed textures (BCPack)"
+        }
+      ],
+      "status_rows": "retail game"
+    },
+    {
+      "repo": "IAmNotSiob/leonida-ce",
+      "name": "Leonida CE",
+      "approach": "Leonida community edition: static recompilation with experimental boot workarounds.",
+      "stage": 4,
+      "note": "With its workarounds the game creates every graphics pipeline and presents frames, but they are all black and there is no window yet.",
+      "blocker": "Audio stalls about 2 minutes in: nothing feeds the game's XMA audio decoder, so the first audio frame never completes. Next step: a silent decoder pump based on VIctory's.",
+      "updated": "2026-11-24",
+      "notes_file": "hacks/BOOT_NOTES.md",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Presents its first frames (black, no window)"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Runs to about 2 minutes; UI pipelines bound"
+        }
+      ],
+      "status_rows": "^\\| Booting"
+    },
+    {
+      "repo": "ubiquitarianism/leonida",
+      "name": "Leonida Continued",
+      "approach": "The main continuation of the original Leonida (static recompilation, Vulkan).",
+      "stage": 1,
+      "note": "Has the original's full history and is re-merging the boot fixes that were closed when the original went private.",
+      "blocker": "On its own code the game crashes early in startup; the fixes that got further are not all merged yet.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-23",
+          "text": "Original Leonida contributor builds reach the game's frame loop (stubbed pipelines)"
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Continuation fork opens; boot fixes start being re-merged"
+        }
+      ],
+      "status_rows": "^\\| Booting"
+    },
+    {
+      "repo": "ThatRecompDev/five-star-recomp",
+      "name": "five-star-recomp",
+      "approach": "Static recompilation of the Xbox Series build.",
+      "stage": 5,
+      "note": "Loads story mode. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "The GPU hangs on the first frame of the world; traced to meshlet culling.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Loads story mode, then hangs on the first frame of the world"
+        }
+      ]
+    },
+    {
+      "repo": "fablinoo/palmwave",
+      "name": "Palmwave",
+      "approach": "A fork of XCL (Xbox Series compatibility layer for Windows).",
+      "stage": 5,
+      "note": "Loads the world and runs for up to an hour with sound. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "Shows nothing on screen while the world's compute shaders compile.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Loads the world and runs up to an hour with sound, no picture"
+        }
+      ]
+    },
+    {
+      "repo": "OpenCommunityEdition/OpenScarlett",
+      "name": "OpenScarlett CE",
+      "approach": "Community edition of OpenScarlett (Xbox Series translation layer).",
+      "stage": 5,
+      "note": "Plays the intro video with sound at 30 fps. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "Stops while the first scene streams in.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Intro video with sound at 30 fps"
+        }
+      ]
+    },
+    {
+      "repo": "californiaAlmonds/OpenScarlett",
+      "name": "OpenScarlett",
+      "approach": "Open-source C++20 Xbox Series translation layer.",
+      "stage": 5,
+      "note": "Startup passes and the intro video plays in full colour at 4K. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "Nothing reported past the intro video.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Intro video in full colour at 4K"
+        }
+      ]
+    },
+    {
+      "repo": "R0Y00/Xbox2Windows",
+      "name": "Xbox2Windows",
+      "approach": "Static recompilation research for Xbox Series software.",
+      "stage": 5,
+      "note": "Intro video and loading screen, but only with a modified diagnostic copy of the executable and a debugger skipping its asserts. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "Startup of the unmodified executable is unverified.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Intro video and loading (modified diagnostic copy)"
+        }
+      ]
+    },
+    {
+      "repo": "rpatty-dev/PercyScarlett",
+      "name": "PercyScarlett",
+      "approach": "Xbox Series translation layer for Windows 10/11.",
+      "stage": 5,
+      "note": "Showed the game's setup screens (brightness screen). Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "Screenshots and the game's name were withdrawn 20 minutes after posting.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Setup screens shown, then screenshots withdrawn"
+        }
+      ]
+    },
+    {
+      "repo": "OnlyMoisties/GTA6-BootTest",
+      "name": "GTA6-BootTest",
+      "approach": "Stand-in DLLs and a harness to boot the Xbox build.",
+      "stage": 5,
+      "note": "Shows the first interface screen through translated shaders. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "Nothing reported past the first screen.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "First interface screen"
+        }
+      ]
+    },
+    {
+      "repo": "Kajcsi/G6Recomp",
+      "name": "G6Recomp",
+      "approach": "Unofficial static recompilation of the Xbox Series build.",
+      "stage": 3,
+      "note": "Creates a window and the graphics device. Stage self-reported; summarised from the GTA VI PC Race tracker.",
+      "blocker": "No frame drawn yet.",
+      "updated": "2026-11-24",
+      "milestones": [
+        {
+          "date": "2026-11-24",
+          "text": "Window and graphics device"
+        }
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-11-18",
+      "text": "Take-Two files four DMCA notices on GitHub, all against GTA V ports. None names a GTA VI project."
+    },
+    {
+      "date": "2026-11-23",
+      "text": "The Xbox build's executable leaks, according to press reports; PC port projects start testing."
+    },
+    {
+      "date": "2026-11-23",
+      "text": "The original Leonida repo goes private and its creator steps away."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "VIctory shows the first mission's title card; reproduced on a second PC."
+    },
+    {
+      "date": "2026-11-24",
+      "text": "Leonida CE presents its first (black) frames."
+    }
+  ],
+  "links": [
+    {
+      "name": "GTA VI PC Race (all ports, 1-7 scale)",
+      "url": "https://vuyp.github.io/gta6-pc-race/"
+    },
+    {
+      "name": "gta6pctracker.com (fake-download warnings)",
+      "url": "https://gta6pctracker.com/"
+    }
+  ]
+}

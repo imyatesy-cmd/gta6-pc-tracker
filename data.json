@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-11-25T15:26:02Z",
+ "fetched_at": "2026-11-25T23:34:45Z",
  "scale": [
   "Loads",
   "Starts up",
@@ -228,6 +228,66 @@
     "world": 0.25
    },
    "media": [
+    {
+     "kind": "image",
+     "src": "https://github.com/user-attachments/assets/8ebe2b7c-9497-430a-960c-d871fba241d8",
+     "origin": "issue",
+     "title": "#2777: RTX 2080 Super (Turing): series-x renders UI but no lighting, ~0 fps, crashes",
+     "url": "https://github.com/Marvisak/VIctory/issues/2777",
+     "user": "mointheflow1",
+     "assoc": "NONE",
+     "created": "2026-11-25T20:16:52Z"
+    },
+    {
+     "kind": "image",
+     "src": "https://github.com/user-attachments/assets/eae2f9e9-8574-4c67-b367-2a2ad672a77b",
+     "origin": "issue",
+     "title": "#2777: RTX 2080 Super (Turing): series-x renders UI but no lighting, ~0 fps, crashes",
+     "url": "https://github.com/Marvisak/VIctory/issues/2777",
+     "user": "mointheflow1",
+     "assoc": "NONE",
+     "created": "2026-11-25T20:16:52Z"
+    },
+    {
+     "kind": "image",
+     "src": "https://github.com/user-attachments/assets/c7359257-9cb5-4bc9-86ae-c5458f9b4681",
+     "origin": "issue",
+     "title": "#2691: Got it running with poor graphics (read more)",
+     "url": "https://github.com/Marvisak/VIctory/issues/2691",
+     "user": "QuernCZE",
+     "assoc": "NONE",
+     "created": "2026-11-25T18:18:15Z"
+    },
+    {
+     "kind": "image",
+     "src": "https://github.com/user-attachments/assets/4186d308-cdd6-4e79-8ab5-cc4307389c70",
+     "origin": "issue",
+     "title": "#2691: Got it running with poor graphics (read more)",
+     "url": "https://github.com/Marvisak/VIctory/issues/2691",
+     "user": "QuernCZE",
+     "assoc": "NONE",
+     "created": "2026-11-25T18:18:15Z"
+    },
+    {
+     "kind": "image",
+     "src": "https://github.com/user-attachments/assets/6e43862c-3547-409b-9fc5-4a70a369189a",
+     "origin": "issue",
+     "title": "#2691: Got it running with poor graphics (read more)",
+     "url": "https://github.com/Marvisak/VIctory/issues/2691",
+     "user": "QuernCZE",
+     "assoc": "NONE",
+     "created": "2026-11-25T18:18:15Z"
+    },
+    {
+     "kind": "image",
+     "src": "https://github.com/user-attachments/assets/97b68559-8f4b-4892-b1f1-590169619440",
+     "origin": "issue",
+     "title": "#2653: Crash RTX4060",
+     "url": "https://github.com/Marvisak/VIctory/issues/2653",
+     "user": "GitUser999A",
+     "assoc": "NONE",
+     "created": "2026-11-25T17:34:51Z"
+    },
     {
      "kind": "image",
      "src": "https://github.com/user-attachments/assets/87f427d1-a7ee-4c71-8530-1ec70008acc5",
@@ -471,335 +531,325 @@
      "user": "MD5Visual",
      "assoc": "NONE",
      "created": "2026-11-24T12:05:20Z"
-    },
-    {
-     "kind": "image",
-     "src": "https://github.com/user-attachments/assets/4fad7b95-28eb-4fce-bc9a-46e93ec40e7a",
-     "origin": "issue",
-     "title": "#794: I made it to credits",
-     "url": "https://github.com/Marvisak/VIctory/issues/794",
-     "user": "edupode",
-     "assoc": "NONE",
-     "created": "2026-11-24T11:02:32Z"
     }
    ],
    "reachable": true,
-   "stars": 12237,
-   "forks": 1857,
-   "pushed_at": "2026-11-25T01:39:21Z",
+   "stars": 12585,
+   "forks": 2051,
+   "pushed_at": "2026-11-25T23:27:48Z",
    "created_at": "2026-11-23T21:47:25Z",
    "url": "https://github.com/Marvisak/VIctory",
    "description": "An attempt at running GTA VI on PC",
    "activity_24h": [
-    14,
-    8,
-    16,
-    5,
-    3,
-    9,
-    30,
-    5,
     134,
     2,
+    7,
+    6,
+    9,
+    5,
+    9,
+    7,
+    1,
+    21,
     2,
+    3,
+    1,
+    3,
+    6,
+    3,
+    1,
+    1,
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
+    75,
+    2
    ],
    "activity_capped": false,
-   "open_prs": 1140,
-   "contributors": 98,
+   "open_prs": 1200,
+   "contributors": 130,
    "commits": [
     {
-     "sha": "940d32f",
-     "url": "https://github.com/Marvisak/VIctory/commit/940d32f69b22265690a0b5a15d6ded572ba33baf",
-     "date": "2026-11-25T01:36:53Z",
-     "message": "GPU: a marked page's copy-back does not save the page for its own copy"
+     "sha": "63bcca4",
+     "url": "https://github.com/Marvisak/VIctory/commit/63bcca43c6a00a758510398fa43096ce7e4f7df0",
+     "date": "2026-11-25T23:27:42Z",
+     "message": "update readme"
     },
     {
-     "sha": "cd94d35",
-     "url": "https://github.com/Marvisak/VIctory/commit/cd94d35388765f85d4dd88f24d444e018c468ccd",
-     "date": "2026-11-25T01:36:53Z",
-     "message": "GPU: shaders mark the pages they write through views; copy-backs compare only those"
+     "sha": "842b0cb",
+     "url": "https://github.com/Marvisak/VIctory/commit/842b0cb76f8f5fa9289bd779783c51ec24d75302",
+     "date": "2026-11-25T22:48:01Z",
+     "message": "GPU: the depth bounds test reaches the host (#158)"
     },
     {
-     "sha": "ccfb029",
-     "url": "https://github.com/Marvisak/VIctory/commit/ccfb02996eac831853e8324156f123eeff083e9d",
-     "date": "2026-11-25T01:12:31Z",
-     "message": "Tests: a machine with no GPU has no hardware adapter to check shaders on"
+     "sha": "219878a",
+     "url": "https://github.com/Marvisak/VIctory/commit/219878a0e7754511d89306331812971bb2153f5f",
+     "date": "2026-11-25T22:19:59Z",
+     "message": "GPU: a null shader view has no alias source"
     },
     {
-     "sha": "42363ab",
-     "url": "https://github.com/Marvisak/VIctory/commit/42363ab6cd5265f0fb3b500ad265f2b84c6b5dbf",
-     "date": "2026-11-25T00:43:05Z",
-     "message": "Tests: hardware-only shader checks skip on a machine without a GPU"
+     "sha": "f3578e3",
+     "url": "https://github.com/Marvisak/VIctory/commit/f3578e386ea0f06153445af10a698df029620aad",
+     "date": "2026-11-25T21:57:42Z",
+     "message": "Shaders: decode f16 inline float constants in whole-wave v_add_f16 simulation (#2493)"
     },
     {
-     "sha": "4118f33",
-     "url": "https://github.com/Marvisak/VIctory/commit/4118f33b3910f6b6b738216d6a66e8b355502b28",
-     "date": "2026-11-25T00:24:05Z",
-     "message": "Merge pull request #928 from BastienRodz/gpu/device-removed-reason"
+     "sha": "e815cef",
+     "url": "https://github.com/Marvisak/VIctory/commit/e815cef29b448dbaa37484a1095a041a5df2d18a",
+     "date": "2026-11-25T21:57:34Z",
+     "message": "shader: look up last byte for straddling memory writes (#2484)"
     },
     {
-     "sha": "4436fca",
-     "url": "https://github.com/Marvisak/VIctory/commit/4436fca34dd4200a0c061fab4f479021063bf34c",
-     "date": "2026-11-25T00:23:57Z",
-     "message": "Merge pull request #1696 from Calvix2k/codex/shader-interp-p2-f16-029"
+     "sha": "366a978",
+     "url": "https://github.com/Marvisak/VIctory/commit/366a9786cb7b5277f71515092293ca55f5954407",
+     "date": "2026-11-25T21:57:27Z",
+     "message": "Shaders: guarded scalar writes kill stale SGPRs in dead_on_edge (#2468)"
     },
     {
-     "sha": "5fa5de3",
-     "url": "https://github.com/Marvisak/VIctory/commit/5fa5de35eec21664ec448dfcf742128986ed944f",
-     "date": "2026-11-25T00:23:49Z",
-     "message": "Merge pull request #1733 from moe-miau/fix/shader-helper-lane-readfirstlane"
+     "sha": "ea488a9",
+     "url": "https://github.com/Marvisak/VIctory/commit/ea488a9f9901e4375c547a57795ae8cb79d577a4",
+     "date": "2026-11-25T21:57:19Z",
+     "message": "GPU: no typed unordered view in a format the host cannot store to (#2462)"
     },
     {
-     "sha": "fcdefcf",
-     "url": "https://github.com/Marvisak/VIctory/commit/fcdefcfc89af9466555e84439cd5477764427a7f",
-     "date": "2026-11-25T00:23:42Z",
-     "message": "Merge pull request #1322 from KevinPratap/fix/shadow-busy-title-writes"
+     "sha": "136e39d",
+     "url": "https://github.com/Marvisak/VIctory/commit/136e39d09a147fe00e2bdefc42b7ce1ec3d2134b",
+     "date": "2026-11-25T21:57:12Z",
+     "message": "GPU: a page whose alias cannot be guarded stays changed (#2455)"
     },
     {
-     "sha": "1bde03c",
-     "url": "https://github.com/Marvisak/VIctory/commit/1bde03c5befb3afd0843ced35448d5ed25c9ac0f",
-     "date": "2026-11-25T00:23:35Z",
-     "message": "Merge pull request #1695 from zhaibingye/fix/waterfall-require-device"
+     "sha": "78ed12e",
+     "url": "https://github.com/Marvisak/VIctory/commit/78ed12eb79774bf141efaaf6ebd626a10bfb5bbf",
+     "date": "2026-11-25T21:57:05Z",
+     "message": "GPU: write a null CBV when CreateConstantBufferView gets a null desc (#2449)"
     },
     {
-     "sha": "3688adc",
-     "url": "https://github.com/Marvisak/VIctory/commit/3688adc5abfded974311a04cf35302c8b1476e5d",
-     "date": "2026-11-25T00:23:28Z",
-     "message": "Merge pull request #1636 from davutsimsekk/fix/flat-offset-twelve-bits"
+     "sha": "120233c",
+     "url": "https://github.com/Marvisak/VIctory/commit/120233cf912173e4411431a4b47579ef420310fe",
+     "date": "2026-11-25T21:56:57Z",
+     "message": "Shader: ignore guarded or modified v_mov_b32 in Lower::konst (#2448)"
     },
     {
-     "sha": "13d1237",
-     "url": "https://github.com/Marvisak/VIctory/commit/13d1237b181e3f6f755010ddcc61136dd0b3b0e3",
-     "date": "2026-11-25T00:23:19Z",
-     "message": "Merge pull request #1626 from AwsAli05/gpu/throttle-swap-chain-retries"
+     "sha": "7ac1f54",
+     "url": "https://github.com/Marvisak/VIctory/commit/7ac1f54d83179d4d7656b39dee0a06917d139e2e",
+     "date": "2026-11-25T21:56:50Z",
+     "message": "Shaders: seed POPS collision id with wave_id != collision_id (#2395)"
     },
     {
-     "sha": "3c47fd4",
-     "url": "https://github.com/Marvisak/VIctory/commit/3c47fd4945dd717a09ae42e14d6eae8bd10a4020",
-     "date": "2026-11-25T00:23:12Z",
-     "message": "Merge pull request #1562 from BastienRodz/gpu/fence1-iid"
+     "sha": "5c7489f",
+     "url": "https://github.com/Marvisak/VIctory/commit/5c7489f911cc005119ad60722a8b6807508fe355",
+     "date": "2026-11-25T21:56:43Z",
+     "message": "test: an ISA census across every opcode table (#2378)"
     },
     {
-     "sha": "f73e8e1",
-     "url": "https://github.com/Marvisak/VIctory/commit/f73e8e18849e73b72c444d3a287fdbe6e97ccb5a",
-     "date": "2026-11-25T00:23:04Z",
-     "message": "Merge pull request #1476 from Texbirds/perf/dxbc-md5-table"
+     "sha": "106377d",
+     "url": "https://github.com/Marvisak/VIctory/commit/106377d143e6dc8df99022126f0d0dc1afd2b0b6",
+     "date": "2026-11-25T21:56:35Z",
+     "message": "GPU: a partial refresh of an armed page updates the bytes saved of it (#2377)"
     },
     {
-     "sha": "520fefc",
-     "url": "https://github.com/Marvisak/VIctory/commit/520fefc0aec2990bef62ca0033d12660a7bb9245",
-     "date": "2026-11-25T00:22:56Z",
-     "message": "Merge pull request #1471 from Texbirds/fix/bitcode-fold-dead-phi-latch"
+     "sha": "4a53da7",
+     "url": "https://github.com/Marvisak/VIctory/commit/4a53da72498b7b230be28f739d9ad251dc4988b4",
+     "date": "2026-11-25T21:56:28Z",
+     "message": "Shaders: a loop that leaves to a no-output end is no discard (#2306)"
     },
     {
-     "sha": "24effa8",
-     "url": "https://github.com/Marvisak/VIctory/commit/24effa8a739ee4ef5130338d7cae13bfa6f1b705",
-     "date": "2026-11-25T00:22:48Z",
-     "message": "Merge pull request #1446 from geiyiliyabumo/fix/list-create-initial-pipeline"
+     "sha": "6fcbbe9",
+     "url": "https://github.com/Marvisak/VIctory/commit/6fcbbe9b7740edb6605fd159835ca0abced87d7d",
+     "date": "2026-11-25T21:56:20Z",
+     "message": "GPU: a pipeline stream's shader bytecode is read unaligned (#2301)"
     }
    ],
-   "status": "**Not playable yet.** The title boots, runs its menus at its own 30 fps,\nloads the world and shows it: slowly, and with rendering defects.\n\n| Stage | State |\n|-------|-------|\n| Boot, first-boot screens (accessibility, language, settings, legal) | works, 30 fps |\n| Intro video with sound | works |\n| Start screen, profile and saves | works |\n| Loading into the world (about 50 s) | works |\n| The world (first mission's intro) | drawn and shown: streets, buildings, vehicles, characters, the title card and credits; 1-2 s per frame. Surfaces are unlit, a band of distant geometry is missing, characters come out broken in some shots |\n\nTested on one machine: Windows 11, AMD RX 6700 XT.\n\n> **Warning.** Entering the world on a real GPU has hung it in earlier\n> builds, and Windows then resets the display driver (every monitor goes\n> black for a moment). The latest runs did not, but it is not ruled out; a\n> run can also end on a GPU fault (`crashes.log`). A diagnostics build with\n> `VICTORY_D3D12_WARP=1` renders on the software adapter instead (too slow\n> to reach the world in minutes).\n\nWhat each part does today and what it still needs:\n\n| Subsystem | Today | Needs |\n|-----------|-------|-------|\n| Loader | Runs the title's executable and its DLLs in our process; crash reports name the faulting code and are kept in `crashes.log` | – |\n| Runtime services | One signed-in offline user, licences, packages, saves that survive a kill at any step, text entry dialog | Speech is silent; the dialog and relaunch are untested live |\n| Network | Offline by design: the title cannot reach the network | – |\n| Files and streaming | Archives and streamed data read, zlib and BCPack decoded in parallel | Loading is limited by writes into title memory |\n| Input | XInput pads, keyboard, keyboard stand-in pad | Trigger rumble |\n| Audio | Menu, video and loading sound; XMA voices and Opus streams decode | Reverb is silent; Opus results unverified against the title |\n| GPU: menus | Draws, compute and presentation on host D3D12; only changed title memory is copied | Frame pacing drifts on one screen in release builds |\n| GPU: world | The scene is drawn and presented: mesh pipelines, indirect execution, views the shaders pick from the heap themselves, title memory read by address (ray-tracing structures), depth written from compute, pipelines pre-built or made by worker threads and kept on disk | Lighting (surfaces are unlit) and some missing geometry; frames take 1-2 s; draws of untranslated shaders are dropped; real queries, depth bounds, HDR and scaling are missing |\n| Shaders | Console GPU code recompiled to DXIL, ahead of time (`translate --cache`) or at first use, cached on disk. Menus: all. World: mesh 8,765 of 8,765, vertex/pixel 12,550 of 12,592, compute 2,579 of 2,637 | Merged geometry stages (195 programs) and about 100 others; fused multiply-adds follow the host GPU; some compute programs need a GPU with 64-lane waves |\n| Textures | Console tiled layouts and detiling for the modes the title uses | Render-target metadata planes |\n| Series S mode | Runs through the menus to the loading screen | The world, as above |",
+   "status": "**Not playable yet, because of the framerate: about 1 frame per second in the\nworld.** Nothing else keeps the game from working: the title boots, runs its\nmenus at its own 30 fps, loads the world, plays the intro cutscene and\nreaches the **prologue**, the mission after it, with the graphics fully\ndisplayed. \n\n| Stage | State |\n|-------|-------|\n| Boot, first-boot screens (accessibility, language, settings, legal) | works, 30 fps |\n| Intro video with sound | works |\n| Start screen, profile and saves | works |\n| Loading into the world (about a minute) | works |\n| The intro cutscene | plays at about 1 fps (0.9-1.0 s a frame, warm cache, quiet machine): textured and lit characters with whole hair, buildings, sky, depth of field, the title card, credits and interface. Missing: ray-traced shadows and indirect light, the local-light shadow mask. Seen in some shots: a pink band over nearer bodies, a stand-in head on a secondary character for a few frames |\n| The prologue | reached; the graphics are fully displayed, at about 1 fps |\n\nIn the intro cutscene at 1 fps the opening credits land over other shots than\non a console: they follow the frame count, the shots follow the clock.\n\nTested on one machine: Windows 11, AMD RX 6700 XT (12 GB).\n\n> **Warning.** Entering the world on a real GPU hung it in earlier builds,\n> and Windows then reset the display driver (every monitor goes black for a\n> moment). The latest runs, several minutes each in the world, did not, but\n> it is not ruled out; a run can also end on a GPU fault (`crashes.log`). A\n> diagnostics build with `VICTORY_D3D12_WARP=1` renders on the software\n> adapter instead (too slow to reach the world in minutes).\n\nWhat each part does today and what it still needs:\n\n| Subsystem | Today | Needs |\n|-----------|-------|-------|\n| Loader | Runs the title's executable and its DLLs in our process; crash reports name the faulting code and are kept in `crashes.log` | – |\n| Runtime services | One signed-in offline user, licences, packages, saves that survive a kill at any step, text entry dialog | Speech is silent; the dialog and relaunch are untested live |\n| Network | Offline by design: the title cannot reach the network | – |\n| Files and streaming | Archives and streamed data read, zlib and BCPack decoded in parallel | Loading is limited by writes into title memory |\n| Input | XInput pads, keyboard, keyboard stand-in pad | Trigger rumble |\n| Audio | Menu, video and loading sound; XMA voices and Opus streams decode | Reverb is silent; Opus results unverified against the title |\n| GPU: menus | Draws, compute and presentation on host D3D12; only changed title memory is copied | Frame pacing drifts on one screen in release builds |\n| GPU: world | The scene is drawn and presented: mesh pipelines, indirect execution, views the shaders pick from the heap themselves, title memory read by address, depth written from compute, lists that wait for values other queues write, textures made when a shader first reads them, pipelines pre-built or made by worker threads and kept on disk, depth bounds on supporting adapters (synthetic tests) | The title's ray-tracing structures are never built (no ray-traced shadows or indirect light in the intro cutscene); about 1 s a frame; draws of untranslated shaders are dropped; real queries, HDR and scaling are missing |\n| Shaders | Console GPU code recompiled to DXIL, ahead of time (`translate --cache`) or at first use, cached on disk. Menus: all. World: all but under 300 of 24,387 programs | Merged geometry stages (195 programs) and under 100 others; fused multiply-adds follow the host GPU; some compute programs need a GPU with 64-lane waves |\n| Textures | Console tiled layouts and detiling for the modes the title uses | Render-target metadata planes |\n| Series S mode | Menus, loading and the world run with the PC upscaler (`VICTORY_FIDELITYFX_DIR`, about 1 s a frame) | The title's own upscaler DLLs: six of their passes are untranslated, so their picture is wrong |",
    "boot_prs": [
     {
-     "number": 2533,
-     "title": "Game: guarantee 8-byte alignment for pipeline stream subobjects and input elements",
-     "url": "https://github.com/Marvisak/VIctory/pull/2533",
-     "user": "reeledMarek",
-     "created": "2026-11-25T15:23:44Z",
+     "number": 2905,
+     "title": "GPU: no copy of a host texture onto itself",
+     "url": "https://github.com/Marvisak/VIctory/pull/2905",
+     "user": "0xkn0wh3r3",
+     "created": "2026-11-25T23:32:53Z",
      "draft": false
     },
     {
-     "number": 2529,
-     "title": "Xmem: honour 32-bit allocation alignment",
-     "url": "https://github.com/Marvisak/VIctory/pull/2529",
-     "user": "XratePirate",
-     "created": "2026-11-25T15:21:52Z",
+     "number": 2904,
+     "title": "DirectStorage: workers read a file through a handle each",
+     "url": "https://github.com/Marvisak/VIctory/pull/2904",
+     "user": "0xkn0wh3r3",
+     "created": "2026-11-25T23:32:51Z",
      "draft": false
     },
     {
-     "number": 2528,
-     "title": "GPU diagnostics: count texture data without row padding",
-     "url": "https://github.com/Marvisak/VIctory/pull/2528",
-     "user": "andrewpozdnakov7-jpg",
-     "created": "2026-11-25T15:21:02Z",
+     "number": 2883,
+     "title": "DirectStorage: physical pages the host refused a view of are written on a retry",
+     "url": "https://github.com/Marvisak/VIctory/pull/2883",
+     "user": "0xkn0wh3r3",
+     "created": "2026-11-25T23:01:33Z",
      "draft": false
     },
     {
-     "number": 2524,
-     "title": "HLE: bounds-check ACP notification writes and XMA pump address arithmetic",
-     "url": "https://github.com/Marvisak/VIctory/pull/2524",
-     "user": "reeledMarek",
-     "created": "2026-11-25T15:16:40Z",
+     "number": 2877,
+     "title": "GPU: make frame pacing tests deterministic with a virtual clock",
+     "url": "https://github.com/Marvisak/VIctory/pull/2877",
+     "user": "alexandruiulian201-bot",
+     "created": "2026-11-25T22:56:01Z",
      "draft": false
     },
     {
-     "number": 2523,
-     "title": "HLE: retain IDStorageFile references across queued DirectStorage read requests",
-     "url": "https://github.com/Marvisak/VIctory/pull/2523",
-     "user": "reeledMarek",
-     "created": "2026-11-25T15:16:38Z",
+     "number": 2869,
+     "title": "Shaders: a buffer descriptor made raw from first-lane reads needs its waterfall (#2867)",
+     "url": "https://github.com/Marvisak/VIctory/pull/2869",
+     "user": "BastienRodz",
+     "created": "2026-11-25T22:46:58Z",
      "draft": false
     },
     {
-     "number": 2514,
-     "title": "GPU: the pipeline cache folder's stale staging files are swept at start",
-     "url": "https://github.com/Marvisak/VIctory/pull/2514",
-     "user": "oni-swr",
-     "created": "2026-11-25T15:08:37Z",
-     "draft": false
-    },
-    {
-     "number": 2510,
-     "title": "GPU: sweep cut pipeline-cache staging files; an exit save waits for a running one",
-     "url": "https://github.com/Marvisak/VIctory/pull/2510",
-     "user": "Ingenioeren",
-     "created": "2026-11-25T15:03:31Z",
-     "draft": false
-    },
-    {
-     "number": 2507,
-     "title": "hle: validate DirectStorage staging buffer sizes (NEW-83)",
-     "url": "https://github.com/Marvisak/VIctory/pull/2507",
-     "user": "TheGrayOrange",
-     "created": "2026-11-25T15:00:28Z",
-     "draft": false
-    },
-    {
-     "number": 2505,
-     "title": "Formats: treat XMA2 PacketSkipCount 0xff as end-of-stream",
-     "url": "https://github.com/Marvisak/VIctory/pull/2505",
-     "user": "VastyViz",
-     "created": "2026-11-25T14:58:38Z",
-     "draft": false
-    },
-    {
-     "number": 2501,
-     "title": "Shaders: a BVH node offset from a root descriptor is computed in 64 bits",
-     "url": "https://github.com/Marvisak/VIctory/pull/2501",
-     "user": "Calvix2k",
-     "created": "2026-11-25T14:54:46Z",
-     "draft": false
-    },
-    {
-     "number": 2498,
-     "title": "GPU tests: release the owned descriptor heap fixture",
-     "url": "https://github.com/Marvisak/VIctory/pull/2498",
-     "user": "VlREX",
-     "created": "2026-11-25T14:51:53Z",
+     "number": 2863,
+     "title": "Diagnostics: opt-in native Graphics settings tab and menu traces",
+     "url": "https://github.com/Marvisak/VIctory/pull/2863",
+     "user": "AwkGrep256",
+     "created": "2026-11-25T22:37:22Z",
      "draft": true
     },
     {
-     "number": 2487,
-     "title": "GPU tests: release the bindless fixture descriptor heap",
-     "url": "https://github.com/Marvisak/VIctory/pull/2487",
-     "user": "VlREX",
-     "created": "2026-11-25T14:44:12Z",
-     "draft": true
+     "number": 2859,
+     "title": "Formats, GPU: a streamed texture's small mips are read before its large ones are there",
+     "url": "https://github.com/Marvisak/VIctory/pull/2859",
+     "user": "0xkn0wh3r3",
+     "created": "2026-11-25T22:32:25Z",
+     "draft": false
+    },
+    {
+     "number": 2857,
+     "title": "Shaders: a mesh program's PSV0 counts shared memory only when it has some",
+     "url": "https://github.com/Marvisak/VIctory/pull/2857",
+     "user": "kais7654",
+     "created": "2026-11-25T22:31:16Z",
+     "draft": false
+    },
+    {
+     "number": 2856,
+     "title": "GPU: a wider loose window covers a later smaller ask",
+     "url": "https://github.com/Marvisak/VIctory/pull/2856",
+     "user": "Luislariosss",
+     "created": "2026-11-25T22:27:45Z",
+     "draft": false
+    },
+    {
+     "number": 2855,
+     "title": "xmem: a refused XMemVirtualAlloc leaves the host's reason in the last error",
+     "url": "https://github.com/Marvisak/VIctory/pull/2855",
+     "user": "0xkn0wh3r3",
+     "created": "2026-11-25T22:27:34Z",
+     "draft": false
+    },
+    {
+     "number": 2853,
+     "title": "Preserve pipeline cache retries and reject unmapped BVH nodes",
+     "url": "https://github.com/Marvisak/VIctory/pull/2853",
+     "user": "Lkxex",
+     "created": "2026-11-25T22:24:30Z",
+     "draft": false
+    },
+    {
+     "number": 2848,
+     "title": "victory-gpu: take per-frame allocations, locks and system calls off the frame paths (7 places the profile points at)",
+     "url": "https://github.com/Marvisak/VIctory/pull/2848",
+     "user": "pes7",
+     "created": "2026-11-25T22:10:32Z",
+     "draft": false
     }
    ],
    "reports": [
     {
      "kind": "comment",
-     "title": "Comment on #2297",
-     "url": "https://github.com/Marvisak/VIctory/pull/2297#issuecomment-7166826223",
-     "user": "Marvisak",
-     "created": "2026-11-25T15:25:42Z",
+     "title": "Comment on #2678",
+     "url": "https://github.com/Marvisak/VIctory/pull/2678#issuecomment-7177758977",
+     "user": "shawshanker18",
+     "created": "2026-11-25T23:34:47Z",
      "image": false,
-     "text": "Automated triage for the maintainers. **Needs work.** The problem is real, but this change moves the wrong pixels to other draws instead of fixing them. Clearing `deferred.textures` in `HostList::defer_copy` / `HostList::defer` (`crates/vic…"
+     "text": "Trimmed to the smaller first version suggested in triage. What stays: the terminal list with search links, `--draft` (allowlist only) and `--json`. What's gone: `--html`, the filled-in issue forms and their tests, about 200 lines. The fulle…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2469",
-     "url": "https://github.com/Marvisak/VIctory/issues/2469#issuecomment-7166807436",
-     "user": "thegl0w",
-     "created": "2026-11-25T15:24:58Z",
+     "title": "Comment on #2203",
+     "url": "https://github.com/Marvisak/VIctory/pull/2203#issuecomment-7177744765",
+     "user": "ElSeba0811",
+     "created": "2026-11-25T23:34:10Z",
      "image": false,
-     "text": "> *Follow-up written with AI assistance (Claude Code). Measured on my own machine; no game data, no disassembly, no code bytes. Offsets are relative to the title's image base.* ## Follow-up 2: one value sets both the cap and the floor; with…"
+     "text": "Completed GTX fork trial — 2026-11-25 **We now have visible partial scene geometry on the GTX 1070 Ti.** The image still has large black areas and severely overexposed/blurred regions. The run lasted **582.28 seconds (9m 42s, including load…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2280",
-     "url": "https://github.com/Marvisak/VIctory/pull/2280#issuecomment-7166805569",
-     "user": "r4tedx",
-     "created": "2026-11-25T15:24:54Z",
+     "title": "Comment on #2349",
+     "url": "https://github.com/Marvisak/VIctory/pull/2349#issuecomment-7177744728",
+     "user": "denkencar-sketch",
+     "created": "2026-11-25T23:34:10Z",
      "image": false,
-     "text": "@Calvix2k here it is as one commit on top of this PR's head (`7ef96fa9`), for you to cherry-pick: [r4tedx/VIctory@5de3f541](https://github.com/r4tedx/VIctory/commit/5de3f541) on branch `fix/2280-word-scan`. - **`differing`:** inside a 1 KiB…"
+     "text": "Converting to draft while this is split/reworked against current \\main\\: - Idea 4 (shadow writeback merge) is now covered by merged #2054. - Idea 3 (lock-free unchanged check) partially overlaps with \\main\\'s atomic \\dirty_bit\\ / \\Tracked::…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1785",
-     "url": "https://github.com/Marvisak/VIctory/issues/1785#issuecomment-7166801971",
-     "user": "KingKaom",
-     "created": "2026-11-25T15:24:46Z",
+     "title": "Comment on #2741",
+     "url": "https://github.com/Marvisak/VIctory/pull/2741#issuecomment-7177738839",
+     "user": "fuzeofficlal",
+     "created": "2026-11-25T23:33:54Z",
      "image": false,
-     "text": "**Both PRs together, RX 9070 XT: 2 h 01 min, zero faults.** Triage asked for #2122 alone; since both fixes were up, we ran the merged pair (`main` `940d32f` + #2122 + #1936, gate ON) as one more run — same binary profile (diag), same intera…"
+     "text": "Rebased onto `origin/main` (`63bcca43`) and updated in `ed0b242c` per triage feedback: - Replaced the `iat_rva == 0` special case in `entries` (`crates/victory-pe/src/image.rs`) with `iat_slot_in_section(sections, rva)` verifying that the e…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1247",
-     "url": "https://github.com/Marvisak/VIctory/issues/1247#issuecomment-7166793526",
-     "user": "reboot0000-cmd",
-     "created": "2026-11-25T15:24:26Z",
+     "title": "Comment on #2830",
+     "url": "https://github.com/Marvisak/VIctory/pull/2830#issuecomment-7177729989",
+     "user": "futurepro62",
+     "created": "2026-11-25T23:33:33Z",
      "image": false,
-     "text": "Closing the loop on the 394 compute refusals in my table above: they are all one cause, measured at archive scale. The driver's reason is identical for every one (`CreateComputeShader: Shader wants wave lane count of 64 but maximum wave lan…"
+     "text": "Full-suite run on NVIDIA, since this PR has no test report yet. Tested exact head `36eb5f6` (on its base `13f91ca`). **Tested** - NVIDIA GeForce RTX 5070 Ti 16 GB (Blackwell, 32-lane waves only, mesh shaders), driver 621.40, Ryzen 7 9800X3D…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #189",
-     "url": "https://github.com/Marvisak/VIctory/pull/189#issuecomment-7166784485",
-     "user": "Auroraooy",
-     "created": "2026-11-25T15:24:06Z",
+     "title": "Comment on #2134",
+     "url": "https://github.com/Marvisak/VIctory/pull/2134#issuecomment-7177726999",
+     "user": "xndbogdan",
+     "created": "2026-11-25T23:33:25Z",
      "image": false,
-     "text": "Heads-up from real RTX 2080 Ti (Turing, SM 6.5) testing on Windows 10 19045: on PR head `92778cd`, `cargo test -p victory-shader --locked -- wave64 --test-threads=1` gives `18 passed; 19 failed`. All GPU tests fail before shader execution w…"
+     "text": "I ran this on two machines to compare open copy PRs, and found three things. **1. It doesn't build on current `main`** (`842b0cb`). `Shadow::mark_written` calls `bitmap()`, which now takes `memory: bool` (one bitmap for shaders that use tit…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2397",
-     "url": "https://github.com/Marvisak/VIctory/pull/2397#issuecomment-7166783325",
-     "user": "KainanP",
-     "created": "2026-11-25T15:24:03Z",
+     "title": "Comment on #2051",
+     "url": "https://github.com/Marvisak/VIctory/pull/2051#issuecomment-7177726360",
+     "user": "xndbogdan",
+     "created": "2026-11-25T23:33:24Z",
      "image": false,
-     "text": "Thanks for the triage. Reworked in `b7ce077` (force-pushed; `200f5ae` by geiyiliyabumo is kept as is): - **`COUNTERS`:** `C` now ends with a `Count` variant (not a counter, documented to stay last), and `const COUNTERS: usize = C::Count as …"
+     "text": "Results from #2134's `world_frame_preparing` on two quite different CPUs, against the same benchmark on `main`. **Builds:** `main` `842b0cb` with #2134 merged, and the same with this PR merged on top (`6a3296f`). `diag` profile with `diagno…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2337",
-     "url": "https://github.com/Marvisak/VIctory/pull/2337#issuecomment-7166780049",
-     "user": "Marvisak",
-     "created": "2026-11-25T15:23:56Z",
+     "title": "Comment on #2742",
+     "url": "https://github.com/Marvisak/VIctory/pull/2742#issuecomment-7177721501",
+     "user": "fuzeofficlal",
+     "created": "2026-11-25T23:33:11Z",
      "image": false,
-     "text": "Automated triage for the maintainers. **Needs work: needs the maintainer's decision.** One commit of about 4,100 added lines: a Win32 HID DualSense backend under `modules/gameinput/dualsense/`, a WASAPI 4-channel haptics path using process-…"
-    },
-    {
-     "kind": "issue",
-     "title": "wave64 GPU tests fail on RTX 2080 Ti (Turing / SM 6.5) - expected at least one SM 6.6 adapter",
-     "url": "https://github.com/Marvisak/VIctory/issues/2535",
-     "user": "Auroraooy",
-     "created": "2026-11-25T15:23:54Z",
-     "image": false,
-     "text": "While validating PR #189 on real 32-lane NVIDIA hardware, I cloned the PR head `92778cd` and ran: [code] Environment: Windows 10 Pro for Workstations build 19045, Core Ultra 7 265K (20 cores), 95 GiB RAM, RTX 2080 Ti 11 GB, driver 595.79, c…"
+     "text": "Rebased onto `origin/main` (`842b0cb`) and scoped down in `284f50f2` per triage feedback: - Removed the pre-unmap page validation change (keeping `unmap(&mut physical, base, n * PAGE)` up front, matching `main`) and dropped `unknown_page_le…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2220",
-     "url": "https://github.com/Marvisak/VIctory/issues/2220#issuecomment-7166767563",
-     "user": "reboot0000-cmd",
-     "created": "2026-11-25T15:23:27Z",
+     "title": "Comment on #1633",
+     "url": "https://github.com/Marvisak/VIctory/issues/1633#issuecomment-7177712575",
+     "user": "alexdeliu",
+     "created": "2026-11-25T23:32:48Z",
      "image": false,
-     "text": "**All 394 refused compute pipelines on this host are the wave64-on-wave32 case â€” and the driver's criterion is the *minimum* lane count, not \"declares a wave size\".** Full archive, not a session sample. Host: Windows 10 IoT Enterprise LTS…"
+     "text": "On FIND-26, the question Jackster left open (\"worth confirming on a machine where the world runs\"): data from in-game runs. No game data here, only counts and code offsets. **Setup:** Belobug/VIctory-Belobug-AMD at `000ffdd` (not `main` her…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #2831",
+     "url": "https://github.com/Marvisak/VIctory/pull/2831#issuecomment-7177693023",
+     "user": "cloph-dsp",
+     "created": "2026-11-25T23:31:59Z",
+     "image": false,
+     "text": "Local verification on Windows / rustc 1.100.0 / MSVC, no game data, no GPU, no clippy/rustup. - `git diff --check` against merge-base 13f91ca is clean; 1 file, +114/-5. - Negative control: `resource::tests::first_lane_reads_no_waterfall_loo…"
     }
    ],
    "evidence": {},
@@ -1029,282 +1079,314 @@
     }
    ],
    "reachable": true,
-   "stars": 8164,
-   "forks": 1106,
-   "pushed_at": "2026-11-25T15:20:35Z",
+   "stars": 8304,
+   "forks": 1135,
+   "pushed_at": "2026-11-25T23:12:12Z",
    "created_at": "2026-11-20T20:03:21Z",
    "url": "https://github.com/xcl-dev/xcl",
    "description": "Xbox Series compatibility layer for Windows - runs console game code natively, reimplements the console system libraries and recompiles RDNA2 shaders to DXIL",
    "activity_24h": [
-    32,
-    15,
-    11,
-    14,
-    13,
-    64,
-    12,
-    15,
-    30,
-    66,
+    37,
+    67,
     44,
+    5,
+    6,
+    9,
+    11,
+    6,
+    1,
+    5,
     3,
-    0,
+    52,
+    23,
+    12,
     13,
     10,
-    7,
-    2,
-    3,
-    0,
-    44,
     12,
-    2,
     4,
-    7
+    29,
+    40,
+    7,
+    0,
+    1,
+    1
    ],
    "activity_capped": false,
-   "open_prs": 1268,
-   "contributors": 119,
+   "open_prs": 1341,
+   "contributors": 145,
    "commits": [
     {
-     "sha": "0829441",
-     "url": "https://github.com/xcl-dev/xcl/commit/082944135cd2b96288470a595861fa608eee08dc",
-     "date": "2026-11-25T15:20:32Z",
-     "message": "D3D12.X: the scratch of split dispatches is bounded over all recordings"
+     "sha": "08db802",
+     "url": "https://github.com/xcl-dev/xcl/commit/08db8020d323bf478964fcc586152cce54959cfc",
+     "date": "2026-11-25T23:01:59Z",
+     "message": "Merge pull request #174 from gefydev/mem-accessor-cost"
     },
     {
-     "sha": "e9ddf17",
-     "url": "https://github.com/xcl-dev/xcl/commit/e9ddf17e145c589d9ba9e79178e2068ef1204bba",
-     "date": "2026-11-25T15:18:46Z",
-     "message": "D3D12.X: a split dispatch runs in slabs that share a bounded scratch"
+     "sha": "e1d84b7",
+     "url": "https://github.com/xcl-dev/xcl/commit/e1d84b7d9153f86a97d2ec5d209d196046fc0bea",
+     "date": "2026-11-25T21:36:24Z",
+     "message": "Merge pull request #2313 from gefydev/readme-diagnostics-switches"
     },
     {
-     "sha": "625a0f3",
-     "url": "https://github.com/xcl-dev/xcl/commit/625a0f36485c488cf3764b07609652c352d022fd",
-     "date": "2026-11-25T15:18:46Z",
-     "message": "D3D12.X: stand-ins of pipelines not built yet share the driver's pipelines"
+     "sha": "6d12f58",
+     "url": "https://github.com/xcl-dev/xcl/commit/6d12f58a229bc73889878a448c64dc3af25eeba0",
+     "date": "2026-11-25T19:59:50Z",
+     "message": "Merge pull request #2368 from coolpersonnn/direct-dxil-flat-loads"
     },
     {
-     "sha": "12f25f1",
-     "url": "https://github.com/xcl-dev/xcl/commit/12f25f147c40f883a07cf022f520792dcee4bab9",
-     "date": "2026-11-25T15:16:14Z",
-     "message": "Recompiler: whole-wave reductions of wave32 VS / PS count every live lane"
+     "sha": "e0d93c8",
+     "url": "https://github.com/xcl-dev/xcl/commit/e0d93c84ad8253f6e17738d14741c1bab7061127",
+     "date": "2026-11-25T19:51:26Z",
+     "message": "Merge pull request #2118 from Royalflamejlh/fix/compute-bind-defer"
     },
     {
-     "sha": "7906df7",
-     "url": "https://github.com/xcl-dev/xcl/commit/7906df76ec2da841ed2e4f90feae88ba7a1912cc",
-     "date": "2026-11-25T15:16:14Z",
-     "message": "Merge pull request #2305 from madaraXor/recomp-readfirstlane-live-lane"
+     "sha": "6d051da",
+     "url": "https://github.com/xcl-dev/xcl/commit/6d051da51ba3fe7ba7d4ef542da71f544646e3ba",
+     "date": "2026-11-25T19:43:36Z",
+     "message": "Merge pull request #2383 from emusynths/verify_heap_windows_correctness"
     },
     {
-     "sha": "8fcc111",
-     "url": "https://github.com/xcl-dev/xcl/commit/8fcc11131f9fe3daec6cfb207bacf87f73f75463",
-     "date": "2026-11-25T14:54:26Z",
-     "message": "Recompiler: a lane-mask test in a pixel shader counts live lanes only"
+     "sha": "fda0b1f",
+     "url": "https://github.com/xcl-dev/xcl/commit/fda0b1fcf82ec47cbf99ed5bdf7270ace1d6f6a6",
+     "date": "2026-11-25T19:43:19Z",
+     "message": "Merge pull request #2408 from emusynths/heap_windows_correctness_tests"
     },
     {
-     "sha": "0306d10",
-     "url": "https://github.com/xcl-dev/xcl/commit/0306d1050017e6a4f30381721b3de16582b78e01",
-     "date": "2026-11-25T14:51:17Z",
-     "message": "Recompiler: v_readfirstlane in a pixel shader reads a live lane first"
+     "sha": "6044729",
+     "url": "https://github.com/xcl-dev/xcl/commit/6044729477db63730f46ddee576ad6f7e53f89e9",
+     "date": "2026-11-25T19:37:33Z",
+     "message": "D3D12.X: the put-off dispatches of a list share one split scratch"
     },
     {
-     "sha": "06c9f55",
-     "url": "https://github.com/xcl-dev/xcl/commit/06c9f5505f63f10c5ec49ef932d75b2c28177324",
-     "date": "2026-11-25T13:41:19Z",
-     "message": "Merge pull request #929 from shelbykb2/pr/title-list-reset-139"
+     "sha": "889ef3e",
+     "url": "https://github.com/xcl-dev/xcl/commit/889ef3e8aa7f267323ab4879e735e65da6bcef10",
+     "date": "2026-11-25T19:36:02Z",
+     "message": "Merge pull request #770 from Luxuryig/tests-unaligned-tile-reuse"
     },
     {
-     "sha": "afc5ee8",
-     "url": "https://github.com/xcl-dev/xcl/commit/afc5ee86ae3a9521c9f15d96505cd73fe72f2191",
-     "date": "2026-11-25T13:34:26Z",
-     "message": "Merge pull request #2126 from Kalmarv/direct-split-lazy-restore"
+     "sha": "72f848c",
+     "url": "https://github.com/xcl-dev/xcl/commit/72f848cabfa588201554c1c01c9406a73fe7e964",
+     "date": "2026-11-25T19:35:45Z",
+     "message": "Merge pull request #2466 from xcl-dev/tests-host-answers"
     },
     {
-     "sha": "eafdf36",
-     "url": "https://github.com/xcl-dev/xcl/commit/eafdf36fb79954e94f6adc23ad9573cfe65478e6",
-     "date": "2026-11-25T13:34:25Z",
-     "message": "Merge pull request #2107 from Kalmarv/direct-split-oversized-scc"
+     "sha": "3f60df5",
+     "url": "https://github.com/xcl-dev/xcl/commit/3f60df5a5ace7b6cef3e222be808037772b61aa6",
+     "date": "2026-11-25T19:30:51Z",
+     "message": "Tests: host comparisons take the driver's own answer under Wine"
     },
     {
-     "sha": "5b22c92",
-     "url": "https://github.com/xcl-dev/xcl/commit/5b22c92a93338f303b14af1af6dc7a1b7499a796",
-     "date": "2026-11-25T13:34:24Z",
-     "message": "Merge pull request #2080 from Kalmarv/direct-dispatch-split"
+     "sha": "06055a7",
+     "url": "https://github.com/xcl-dev/xcl/commit/06055a7a0fb43c5f83f55e7a2ce201417de171e9",
+     "date": "2026-11-25T19:24:26Z",
+     "message": "Merge pull request #1497 from amazedturnip/xcl/tests-d3d12x-guard-thunks-and-game-caller-routin-164822"
     },
     {
-     "sha": "379725a",
-     "url": "https://github.com/xcl-dev/xcl/commit/379725aefffe3023696f2f8c784315f7a6fbc318",
-     "date": "2026-11-25T13:19:49Z",
-     "message": "Merge pull request #1592 from marquezinii/dred-pipeline-labels"
+     "sha": "8f87d72",
+     "url": "https://github.com/xcl-dev/xcl/commit/8f87d724da211a6a7e909d479b07fba0014c1051",
+     "date": "2026-11-25T19:24:10Z",
+     "message": "Merge pull request #1646 from razormontana/tests/d3d12-command-queue-parity"
     },
     {
-     "sha": "8e9af35",
-     "url": "https://github.com/xcl-dev/xcl/commit/8e9af35c331f7cdc07b64eadc16a34e5c9c7b48f",
-     "date": "2026-11-25T13:17:19Z",
-     "message": "D3D12.X: the newer layout's DispatchMesh is the older #127"
+     "sha": "2715714",
+     "url": "https://github.com/xcl-dev/xcl/commit/27157141c308c18ddf699a3618b30d6716290547",
+     "date": "2026-11-25T19:23:53Z",
+     "message": "Merge pull request #617 from towiice/tests/d3d12-create-reserved-resource"
     },
     {
-     "sha": "f6fa8a9",
-     "url": "https://github.com/xcl-dev/xcl/commit/f6fa8a931eaadf925cb42dbac8024af9e3875e1b",
-     "date": "2026-11-25T11:47:14Z",
-     "message": "Tests: read back skipped and overlapping edge payloads"
+     "sha": "44eb541",
+     "url": "https://github.com/xcl-dev/xcl/commit/44eb541cde023fcf31d18541d93551650014cafe",
+     "date": "2026-11-25T19:23:37Z",
+     "message": "Merge pull request #2006 from brandostrong/subobject-table-test"
     },
     {
-     "sha": "ad03e65",
-     "url": "https://github.com/xcl-dev/xcl/commit/ad03e65eb9228414c20d8b0e46064dc174c212a0",
-     "date": "2026-11-25T11:46:55Z",
-     "message": "Recompiler: keep split payload slots stable and restore at their uses"
+     "sha": "d48b065",
+     "url": "https://github.com/xcl-dev/xcl/commit/d48b065ea6cd6b6b5629fe1ffe34c946857878a0",
+     "date": "2026-11-25T19:23:21Z",
+     "message": "Merge pull request #1475 from Tjabooo/tests/depth-uav-refusal-windows-only"
     }
    ],
    "status": "| **A newer retail game** | 🚧&nbsp;**≈&nbsp;60&nbsp;%**<br><sub>estimate</sub> | starts in ~4 s, runs at a steady 30 fps without a crash, shows its menus and goes on past the first one to its settings; fits a 32 GB machine (~15 GB committed in the menus). With the NVIDIA integration branch ([#2057](https://github.com/xcl-dev/xcl/pull/2057)) it goes on into its 3D world: **~5 fps there** on an RTX 5090 (14 fps on average over a whole 5-minute run, its menus and loading included) | not playable yet: the picture of the world is incomplete (its minimap and other mesh pipelines are refused), and it does not keep running there for long |",
    "boot_prs": [
     {
-     "number": 2324,
-     "title": "GPU: use CreateDXGIFactory2 and clean fallback/skip in large texture upload test",
-     "url": "https://github.com/xcl-dev/xcl/pull/2324",
-     "user": "Decodere",
-     "created": "2026-11-25T14:28:51Z",
+     "number": 2573,
+     "title": "D3D12.X: share staging for zero-filled lazy texture mips (#1773)",
+     "url": "https://github.com/xcl-dev/xcl/pull/2573",
+     "user": "razormontana",
+     "created": "2026-11-25T23:18:38Z",
      "draft": false
     },
     {
-     "number": 2323,
-     "title": "D3D12.X: ensure view and sampler descriptor heaps before console-list dispatches",
-     "url": "https://github.com/xcl-dev/xcl/pull/2323",
-     "user": "Decodere",
-     "created": "2026-11-25T14:23:04Z",
+     "number": 2569,
+     "title": "DirectStorage: wake waiters from ordered completion events (#1833)",
+     "url": "https://github.com/xcl-dev/xcl/pull/2569",
+     "user": "razormontana",
+     "created": "2026-11-25T23:17:28Z",
      "draft": false
     },
     {
-     "number": 2306,
-     "title": "D3D12.X: XCL_TEXTURE_LEVEL_PAGES=1 gives a sampled texture's levels their pages with their texels",
-     "url": "https://github.com/xcl-dev/xcl/pull/2306",
-     "user": "imnicho",
-     "created": "2026-11-25T13:22:32Z",
+     "number": 2558,
+     "title": "D3D12.X: title texture uploads run on the title's queue and wait for its page mappings",
+     "url": "https://github.com/xcl-dev/xcl/pull/2558",
+     "user": "treybertram06",
+     "created": "2026-11-25T22:55:35Z",
      "draft": false
     },
     {
-     "number": 2296,
-     "title": "D3D12.X: clamp PcCalls across frame boundaries and drop orphaned PSO jobs immediately",
-     "url": "https://github.com/xcl-dev/xcl/pull/2296",
-     "user": "Decodere",
-     "created": "2026-11-25T12:58:02Z",
+     "number": 2555,
+     "title": "xcl run: prepare shaders in the game window before title execution",
+     "url": "https://github.com/xcl-dev/xcl/pull/2555",
+     "user": "bmjask",
+     "created": "2026-11-25T22:46:10Z",
      "draft": false
     },
     {
-     "number": 2288,
-     "title": "Recompiler: guard direct DXIL window stores with bit tests",
-     "url": "https://github.com/xcl-dev/xcl/pull/2288",
-     "user": "coolpersonnn",
-     "created": "2026-11-25T12:27:42Z",
+     "number": 2548,
+     "title": "D3D12.X: Reset, KickoffX and CreateCommandList do not wait for a compute pipeline still being built",
+     "url": "https://github.com/xcl-dev/xcl/pull/2548",
+     "user": "tiagonleal",
+     "created": "2026-11-25T22:41:17Z",
+     "draft": false
+    },
+    {
+     "number": 2547,
+     "title": "D3D12.X: with XCL_PSO_WAIT_MS set, a put-off dispatch waits for its pipeline at the submit instead of being dropped",
+     "url": "https://github.com/xcl-dev/xcl/pull/2547",
+     "user": "grahamster2",
+     "created": "2026-11-25T22:36:33Z",
+     "draft": false
+    },
+    {
+     "number": 2545,
+     "title": "D3D12.X: skip repeated exhausted descriptor searches",
+     "url": "https://github.com/xcl-dev/xcl/pull/2545",
+     "user": "jeroenhaentjens",
+     "created": "2026-11-25T22:33:41Z",
      "draft": true
     },
     {
-     "number": 2283,
-     "title": "Menu: use an exclusive RAII temp manifest for the activation context",
-     "url": "https://github.com/xcl-dev/xcl/pull/2283",
-     "user": "Decodere",
-     "created": "2026-11-25T12:23:50Z",
+     "number": 2537,
+     "title": "D3D12.X: preserve concrete sRGB plane formats in PresentX compositor SRVs",
+     "url": "https://github.com/xcl-dev/xcl/pull/2537",
+     "user": "ramon-victor",
+     "created": "2026-11-25T22:04:56Z",
      "draft": false
     },
     {
-     "number": 2270,
-     "title": "D3D12.X: unmap a superseded texture only once the work before it is done",
-     "url": "https://github.com/xcl-dev/xcl/pull/2270",
-     "user": "joeypercia",
-     "created": "2026-11-25T11:55:29Z",
+     "number": 2530,
+     "title": "DirectStorage: reuse small sequential file input buffers",
+     "url": "https://github.com/xcl-dev/xcl/pull/2530",
+     "user": "razormontana",
+     "created": "2026-11-25T21:47:21Z",
      "draft": false
+    },
+    {
+     "number": 2529,
+     "title": "Scripts: align world-load stalls with logged compiles and GPU waits",
+     "url": "https://github.com/xcl-dev/xcl/pull/2529",
+     "user": "razormontana",
+     "created": "2026-11-25T21:47:12Z",
+     "draft": false
+    },
+    {
+     "number": 2523,
+     "title": "D3D12.X: MakeResident and Evict give the driver the pipeline behind a stand-in",
+     "url": "https://github.com/xcl-dev/xcl/pull/2523",
+     "user": "oni-swr",
+     "created": "2026-11-25T21:33:07Z",
+     "draft": true
     }
    ],
    "reports": [
     {
      "kind": "comment",
-     "title": "Comment on #939",
-     "url": "https://github.com/xcl-dev/xcl/pull/939#issuecomment-7166843699",
-     "user": "oni-swr",
-     "created": "2026-11-25T15:26:22Z",
+     "title": "Comment on #2547",
+     "url": "https://github.com/xcl-dev/xcl/pull/2547#issuecomment-7177729012",
+     "user": "SlopTart",
+     "created": "2026-11-25T23:33:30Z",
      "image": false,
-     "text": "Independent AMD report for `37e2dcad707cdecc6ebee67963cc8097de760566`. **Tested** - AMD Radeon RX 7800 XT (driver 32.0.31035.1003), Ryzen 7 5700X3D, Windows 11 build 26200, rustc 1.100.0, debug profile for tests, release for smoke. Tested a…"
+     "text": "**Tested**: current PR head merged onto current `origin/main` (clean), Linux (Arch, kernel 7.2.15), Mesa 26.2.5 RADV, Radeon RX 7900 XT (NAVI31), cargo target `x86_64-pc-windows-gnu` run under wine-11.0 (Proton), rustc 1.94.0, vkd3d-proton …"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2316",
-     "url": "https://github.com/xcl-dev/xcl/pull/2316#issuecomment-7166843007",
-     "user": "oni-swr",
-     "created": "2026-11-25T15:26:20Z",
+     "title": "Comment on #2546",
+     "url": "https://github.com/xcl-dev/xcl/pull/2546#issuecomment-7177728689",
+     "user": "SlopTart",
+     "created": "2026-11-25T23:33:29Z",
      "image": false,
-     "text": "Independent AMD report for `83fc1bdb1ffd39641a428eab31e6f099d0017168`. **Tested** - AMD Radeon RX 7800 XT (driver 32.0.31035.1003), Ryzen 7 5700X3D, Windows 11 build 26200, rustc 1.100.0, debug profile for tests, release for smoke. Tested a…"
+     "text": "**Tested**: current PR head merged onto current `origin/main` (clean), Linux (Arch, kernel 7.2.15), Mesa 26.2.5 RADV, Radeon RX 7900 XT (NAVI31), cargo target `x86_64-pc-windows-gnu` run under wine-11.0 (Proton), rustc 1.94.0, vkd3d-proton …"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2321",
-     "url": "https://github.com/xcl-dev/xcl/pull/2321#issuecomment-7166842420",
-     "user": "oni-swr",
-     "created": "2026-11-25T15:26:19Z",
+     "title": "Comment on #2545",
+     "url": "https://github.com/xcl-dev/xcl/pull/2545#issuecomment-7177728373",
+     "user": "SlopTart",
+     "created": "2026-11-25T23:33:29Z",
      "image": false,
-     "text": "Independent AMD report for `1b017c18138183a2a6d8dfff68b6a3dd259a5fec`. **Tested** - AMD Radeon RX 7800 XT (driver 32.0.31035.1003), Ryzen 7 5700X3D, Windows 11 build 26200, rustc 1.100.0, debug profile for tests, release for smoke. Tested a…"
+     "text": "**Tested**: current PR head merged onto current `origin/main` (clean), Linux (Arch, kernel 7.2.15), Mesa 26.2.5 RADV, Radeon RX 7900 XT (NAVI31), cargo target `x86_64-pc-windows-gnu` run under wine-11.0 (Proton), rustc 1.94.0, vkd3d-proton …"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2320",
-     "url": "https://github.com/xcl-dev/xcl/pull/2320#issuecomment-7166841711",
-     "user": "oni-swr",
-     "created": "2026-11-25T15:26:17Z",
+     "title": "Comment on #2530",
+     "url": "https://github.com/xcl-dev/xcl/pull/2530#issuecomment-7177697374",
+     "user": "emirduran707",
+     "created": "2026-11-25T23:32:10Z",
      "image": false,
-     "text": "Independent AMD report for `4db9383acea69d0c355ce5d2cb339a9f6ad1d2bb`. **Tested** - AMD Radeon RX 7800 XT (driver 32.0.31035.1003), Ryzen 7 5700X3D, Windows 11 build 26200, rustc 1.100.0, debug profile for tests, release for smoke. Tested a…"
+     "text": "Independent AMD RDNA4 (native wave64) verification of exact PR head `73643dae7e179eb0dfc2c27d3503aff7e2351f34` on Windows 11 Pro 26300 (AMD Radeon RX 9060 XT 16 GB, driver `32.0.31044.16`, Ryzen 5 5600, Rust 1.100.0 MSVC, DXC `1.9.2602.17`)…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2256",
-     "url": "https://github.com/xcl-dev/xcl/pull/2256#issuecomment-7166801445",
-     "user": "nnonno91",
-     "created": "2026-11-25T15:24:45Z",
+     "title": "Comment on #2548",
+     "url": "https://github.com/xcl-dev/xcl/pull/2548#issuecomment-7177696585",
+     "user": "emirduran707",
+     "created": "2026-11-25T23:32:08Z",
      "image": false,
-     "text": "Independent Windows check of `69b0bf635f778ff79ccfca4025328ddee044e2bb`. Repeated shader loads returned the original value, and the load after a store read the updated value on both adapters. **Tested** - Windows 11 25H2 (26200.9974), Ryzen…"
+     "text": "Independent AMD RDNA4 (native wave64) verification of exact PR head `5ac8e857a86835d04c8152c3f3066925d4f07f7d` on Windows 11 Pro 26300 (AMD Radeon RX 9060 XT 16 GB, driver `32.0.31044.16`, Ryzen 5 5600, Rust 1.100.0 MSVC, DXC `1.9.2602.17`)…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2254",
-     "url": "https://github.com/xcl-dev/xcl/pull/2254#issuecomment-7166800372",
-     "user": "nnonno91",
-     "created": "2026-11-25T15:24:42Z",
+     "title": "Comment on #2534",
+     "url": "https://github.com/xcl-dev/xcl/pull/2534#issuecomment-7177669914",
+     "user": "luckyteagirl",
+     "created": "2026-11-25T23:31:01Z",
      "image": false,
-     "text": "Independent Windows check of `c1e6807941d8951c111900b14cce7cef2c2543c6`. The geometry translation tests passed, and the new heap-window test caught the original builder failure with the parent implementation. **Tested** - Windows 11 25H2 (2…"
+     "text": "**RX 6800M focused validation on exact PR head `b3fced11b79fe70204212a03ec78e60dca110eb9`** (Windows 11 build 26200, Radeon RX 6800M driver `30.0.13002.13003`, Rust 1.99.0 MSVC, DXC/DXIL 1.8.2502.11): `XCL_ADAPTER=6800M XCL_REQUIRE_GPU=1 XC…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2141",
-     "url": "https://github.com/xcl-dev/xcl/pull/2141#issuecomment-7166798738",
-     "user": "Royalflamejlh",
-     "created": "2026-11-25T15:24:38Z",
-     "image": false,
-     "text": "Closing: #1996 (merged as `ae00ec7`) gives the builds a submit waits for a cap of their own, `XCL_HUGE_PSO_WANTED_CONCURRENCY`. At 6 it did on our RTX 4060 Ti what this lane did (1 run: 2.47 build-seconds a second against 1.84 to 1.91 at th…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #505",
-     "url": "https://github.com/xcl-dev/xcl/issues/505#issuecomment-7166776906",
-     "user": "Ariorh1337",
-     "created": "2026-11-25T15:23:49Z",
-     "image": false,
-     "text": "@schoperena a pattern for your step 1: the runs on this title with no world-load removal that I know of were both on `XCL_DIRECT_DXIL=1` (@KDenKC, RTX 5090, `main` `1a0bbe3`, 2 of 2; @throny, RTX 4080, `main` `06c9f55`, 2 of 2). Every run o…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2247",
-     "url": "https://github.com/xcl-dev/xcl/pull/2247#issuecomment-7166747588",
+     "title": "Comment on #2521",
+     "url": "https://github.com/xcl-dev/xcl/pull/2521#issuecomment-7177660455",
      "user": "thehollowedone",
-     "created": "2026-11-25T15:22:41Z",
+     "created": "2026-11-25T23:30:38Z",
      "image": false,
-     "text": "Independent Windows integration check of [5081dc8](https://github.com/xcl-dev/xcl/commit/5081dc8b6e22fc74f6fe7d31de333182e8f7ec92) on [12f25f1](https://github.com/xcl-dev/xcl/commit/12f25f147c40f883a07cf022f520792dcee4bab9), which includes …"
+     "text": "Independent Windows check of [head `c5f68ed`](https://github.com/xcl-dev/xcl/commit/c5f68eddf00db07ada4c5cddedabddf9c7eff300). The saved-directory-entry regression and full workspace suite passed on this machine. **Tested** - Windows 11 Pro…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1803",
-     "url": "https://github.com/xcl-dev/xcl/pull/1803#issuecomment-7166741913",
-     "user": "Gevroska",
-     "created": "2026-11-25T15:22:28Z",
+     "title": "Comment on #1972",
+     "url": "https://github.com/xcl-dev/xcl/pull/1972#issuecomment-7177645417",
+     "user": "Kalmarv",
+     "created": "2026-11-25T23:30:02Z",
      "image": false,
-     "text": "Following up on my CPU tests, I ran GTA VI on Windows with an RTX 3080 to check whether this change affected what appeared on screen during loading. I compared stock `06c9f550` with the same revision plus PR head `cb007514`. Each build ran …"
+     "text": "@raylitebull, a measurement next to this PR, from work on the size of the DXIL we hand the NVIDIA driver (#1096). Bound DXIL over 802 compute programs a retail title (title: ea3b5e4d) has in use at its device-memory crash, translated offlin…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #1906",
+     "url": "https://github.com/xcl-dev/xcl/pull/1906#issuecomment-7177645082",
+     "user": "Kalmarv",
+     "created": "2026-11-25T23:30:01Z",
+     "image": false,
+     "text": "@Decodere, a measurement and an offer for this PR, from work on the size of the DXIL we hand the NVIDIA driver (#1096). Bound DXIL over 802 compute programs a retail title (title: ea3b5e4d) has in use at its device-memory crash, translated …"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #2572",
+     "url": "https://github.com/xcl-dev/xcl/pull/2572#issuecomment-7177618292",
+     "user": "DavidM1911",
+     "created": "2026-11-25T23:28:51Z",
+     "image": false,
+     "text": "Verification on RTX 3060 Ti (Windows 11): **merge conflict with current `main`** (many files, e.g. `crates/xcl/src/gpu/recomp/pso.rs`, `crates/xcl/src/hle/d3d12x/real.rs`, `crates/xcl/src/shaders.rs`) — needs a rebase before it can be teste…"
     }
    ],
    "evidence": {},
@@ -1351,190 +1433,136 @@
    },
    "media": [],
    "reachable": true,
-   "stars": 24,
+   "stars": 26,
    "forks": 7,
-   "pushed_at": "2026-11-25T15:17:16Z",
+   "pushed_at": "2026-11-25T22:17:54Z",
    "created_at": "2026-11-24T01:22:10Z",
    "url": "https://github.com/IAmNotSiob/leonida-ce",
    "description": "Leonida CE: community edition of Leonida, GTA VI (Xbox Series) static recompilation, built on your PC from your own copy. GPLv3.",
    "activity_24h": [
-    3,
     5,
     1,
+    2,
+    10,
     3,
+    10,
     2,
     1,
-    3,
-    3,
-    6,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
     1,
-    1,
-    3,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0
    ],
    "activity_capped": false,
-   "open_prs": 2,
+   "open_prs": 1,
    "contributors": 415,
    "commits": [
     {
-     "sha": "cb9e268",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/cb9e2682e653226bb764316d9a92b930820df5f6",
-     "date": "2026-11-25T02:38:35Z",
-     "message": "README: warn about fake Discords and websites"
+     "sha": "b3c6ead",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/b3c6eadfc428eca06c2235d4383c8dbe3dd69cb6",
+     "date": "2026-11-25T20:51:07Z",
+     "message": "docs: LEONIDA_ARENA_MB=4095 is required now; point to first-light for the boot fixes"
     },
     {
-     "sha": "53faa82",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/53faa823dab5d94d3eeacd8cf6f64b105acc7b03",
-     "date": "2026-11-25T02:36:37Z",
-     "message": "README: rework for Leonida CE"
+     "sha": "325ad70",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/325ad704676f760072622ad0223394883c78e7aa",
+     "date": "2026-11-25T15:32:07Z",
+     "message": "README: status after the first-light work"
     },
     {
-     "sha": "f457845",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/f45784508dea8fc101c5e41f220c72fab1f995a2",
-     "date": "2026-11-25T02:34:30Z",
-     "message": "Logo: add a CE mark"
+     "sha": "04f932a",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/04f932aa1e078a99950cdaf4ac82728f04f581fa",
+     "date": "2026-11-25T15:27:09Z",
+     "message": "Merge pull request #6 from IAmNotSiob/ci-fixes"
     },
     {
-     "sha": "93c9a22",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/93c9a22e0eda7c8065de840804a33ff0da64470a",
-     "date": "2026-11-25T02:21:56Z",
-     "message": "README: bring the status up to date"
+     "sha": "87951bf",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/87951bfe96e5f110893f452c976fa59dd84c48c8",
+     "date": "2026-11-25T06:38:37Z",
+     "message": "tests: read the original DDS before the calibration rebuild replaces it"
     },
     {
-     "sha": "e8ca18c",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/e8ca18c790088c44c25a598178bcaef3422a1838",
-     "date": "2026-11-25T00:58:00Z",
-     "message": "End the nightmare"
+     "sha": "e4050ac",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/e4050acefdde858c58ab771ef0a51e9781bca22d",
+     "date": "2026-11-25T06:08:42Z",
+     "message": "tests: block rpf9dump's final output path; skip sopc validation without SPIRV-Tools"
     },
     {
-     "sha": "734a38f",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/734a38fc4086c144001505cd49439b0f801c142b",
-     "date": "2026-11-25T00:14:53Z",
-     "message": "Boot unblocked: lazy graphics pipelines; pad hack and buffer sync opt-in"
+     "sha": "527e8aa",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/527e8aa201622095efaac9d5d3c6657d9514daa4",
+     "date": "2026-11-25T05:38:34Z",
+     "message": "CI: skip f16 validation without SPIRV-Tools; give the Windows check job 30 minutes"
     },
     {
-     "sha": "441aacc",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/441aacc1e1bff5d1671a8033754b79f44b5e5a00",
-     "date": "2026-11-24T23:43:07Z",
-     "message": "Merge remote-tracking branch 'gpu/main'"
+     "sha": "fba2715",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/fba27159c9d86a9509439c60f1c8520ed3a66739",
+     "date": "2026-11-25T05:03:19Z",
+     "message": "tests: resolve the temp root in test_guest_scene_reference's unicode CLI test"
     },
     {
-     "sha": "dafe2ca",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/dafe2ca8d10008db9748ec50589c7b1bf952b89b",
-     "date": "2026-11-24T23:43:05Z",
-     "message": "Boot: opt-in skip of the stalling init call in task node 0xB198EC07"
+     "sha": "c10c102",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/c10c1020a60e16bc1352bab6f00505e732fa9fa0",
+     "date": "2026-11-25T04:50:56Z",
+     "message": "rdna2_decode: decode export target null as the special register, as the parser does"
     },
     {
-     "sha": "5089e97",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/5089e97b0b88811a1ee7363f66e847140d20878e",
-     "date": "2026-11-24T23:42:45Z",
-     "message": "Merge pull request #5 from French-General/psomatch-fast"
+     "sha": "f5438ab",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/f5438ab10c5133a1e374a545e9bfcfa58039949b",
+     "date": "2026-11-25T04:39:03Z",
+     "message": "Windows: name OSError paths as given; resolve 8.3 temp paths in tests"
     },
     {
-     "sha": "7573099",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/7573099af4d4c4ae6515f96fb52f26a1e04b1bf8",
-     "date": "2026-11-24T23:42:38Z",
-     "message": "Merge pull request #4 from French-General/refusal-diagnostic"
+     "sha": "1bf2f2c",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/1bf2f2c8d2789301f91e9b1f0bde308c4eb28d59",
+     "date": "2026-11-25T04:38:28Z",
+     "message": "docs: fix table rows, a repeated block and an undocumented env var"
     },
     {
-     "sha": "ea4d522",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/ea4d522f2cd641d8aa3c5d139cdaeaf575a6528e",
-     "date": "2026-11-24T23:32:50Z",
-     "message": "Boot: PLM notification shims; notes on the black screen diagnosis"
+     "sha": "01b2ded",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/01b2ded7fa6ae2bcb0d66f450d2a39d6c0cf4cdb",
+     "date": "2026-11-25T04:38:28Z",
+     "message": "wiring: stdout guards, runtime.yml trigger paths, fallback build sources"
     },
     {
-     "sha": "4baad13",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/4baad13959bf5e236efd5fbafa8ccf46e2717491",
-     "date": "2026-11-24T23:12:10Z",
-     "message": "Boot: active-pad hack, boot-state logging, guarded title copies, VIctory service answers"
+     "sha": "a6c7217",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/a6c7217e57b748582d8ed48ddb738d46a143d0f5",
+     "date": "2026-11-25T04:37:26Z",
+     "message": "tile_probe: report a missing numpy as one error line; resolve macOS temp paths in tests"
     },
     {
-     "sha": "c61e7d2",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/c61e7d2053fc0aa21a7f75b582aa2c2f2e14637b",
-     "date": "2026-11-24T22:52:39Z",
-     "message": "d3d12_xs: device slots 86 (pipeline stream) and 81 (frame statistics); service-call trace"
+     "sha": "c6cc747",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/c6cc747870fafef8d6019259d8d85d81f03ac465",
+     "date": "2026-11-25T04:37:26Z",
+     "message": "rdna2_decode, bvh_slot_check: fix two real bugs; update stale translator tests"
     },
     {
-     "sha": "d928213",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/d928213feba4dbc452d07eebd15bea1c966317f1",
-     "date": "2026-11-24T22:26:15Z",
-     "message": "hacks/psomatch.py: a numpy fast path for a full want list"
+     "sha": "b1bdb28",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/b1bdb28f7286701c211677b3ad2376166967a3d9",
+     "date": "2026-11-25T04:35:47Z",
+     "message": "tests: bink_index refuses a non-KB2 named file; update stale expectations"
     },
     {
-     "sha": "d106fb3",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/d106fb3b87d1c803181599b7e431d6d8b5409ddb",
-     "date": "2026-11-24T22:21:07Z",
-     "message": "Black frames: sync the title's upload-ring windows into the arena per draw"
+     "sha": "2a559e9",
+     "url": "https://github.com/IAmNotSiob/leonida-ce/commit/2a559e976dbdb27835a3ef4fe9200f221ad93fc5",
+     "date": "2026-11-25T04:35:38Z",
+     "message": "find_hash_lookup, rpf_probe: fix two real bugs the newly-run tests caught"
     }
    ],
+   "status": "",
    "boot_prs": [],
-   "reports": [
-    {
-     "kind": "comment",
-     "title": "Comment on #2",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/issues/2#issuecomment-7145815656",
-     "user": "French-General",
-     "created": "2026-11-24T22:06:37Z",
-     "image": false,
-     "text": "﻿Rebuilt on `0455b51` and ran the retail package on native Windows 11 (RTX 3070 Laptop). Confirming your picture, plus one refused resource that may be worth a look. ## The run - `ReadFile` no longer fails with error 998, and the run gets p…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/issues/2#issuecomment-7140423149",
-     "user": "IAmNotSiob",
-     "created": "2026-11-24T18:17:01Z",
-     "image": false,
-     "text": "Found the Windows \"loading forever\" cause, fixed in 525c44e. XMem commits the game's console memory one page at a time, on the first CPU touch, through a vectored exception handler. The Windows kernel never raises that fault. So a `ReadFile…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/issues/2#issuecomment-7139694132",
-     "user": "French-General",
-     "created": "2026-11-24T17:46:51Z",
-     "image": false,
-     "text": "﻿Offering to take the host→arena rebasing, if nobody is already on it. I have the measurements from the Windows side and the change looks bounded; I would rather ask than collide with work in flight. ## What I would build **`addr(va) = heap…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #3",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/pull/3#issuecomment-7138044375",
-     "user": "French-General",
-     "created": "2026-11-24T16:40:57Z",
-     "image": false,
-     "text": "﻿Done as asked, in `6e02c93`: - `ce_data_path(const wchar_t* leaf)` in `d3d12_xs_device.h` (it is shared, so the one call site in `d3d12_vulkan_device.cpp` uses it qualified). - It reads `LEONIDA_CE_DATA_DIR` and **defaults to `Z:\\root`**, …"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/issues/2#issuecomment-7136408309",
-     "user": "IAmNotSiob",
-     "created": "2026-11-24T15:39:59Z",
-     "image": false,
-     "text": "Thanks to both of you for the detailed reports, and sorry for the slow reply; I hadn't been watching the tracker. **The `CreateDescriptorHeap` failure (@Razen114514).** As of `1403e90`, a failed `CreateDescriptorHeap` logs one line with: - …"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2",
-     "url": "https://github.com/IAmNotSiob/leonida-ce/issues/2#issuecomment-7136114309",
-     "user": "Razen114514",
-     "created": "2026-11-24T15:29:26Z",
-     "image": false,
-     "text": "## Your two negatives answer both questions, and I would take you up on the first offer Both answers are more useful than a positive would have been, and the second one changes the shape of the problem. ### What your (1) rules out No factor…"
-    }
-   ],
+   "reports": [],
    "notes": "## 2026-11-24 (later): after console footprints (9bd2a8d)\n\n- The 2.2 GB GPU pool (title allocator 2, object at 0x1471c2808: base +0x20, size +0x30 = 0x89700000, used\n  +0x58) no longer fills: allocation answers are console footprints now. The title runs to about 124 s and\n  binds its UI pipelines (VertexCxformEAlpha, BatchVertexCxformEAlpha); frames are still all zero.\n- Next stop at about 124 s: soft asserts in the title's free (game+0x1887b0; +0x187fb, +0x1881f, +0x1884a check\n  the block header at -0x10/-0xc/-0x2), then a null read at +0x538d0e6 under a recursive teardown\n  (+0x183aaf / +0x18435f). A block freed there is not from that heap, or its header was overwritten.\n- The bad free (gdb, break at game+0x1400187fb with the other soft asserts patched to nop): the block's\n  allocated bit (header word at -0x2, bit 10) is clear, so it was already freed (double free) or its header was\n  overwritten; its payload is float data (1.0f). It is freed by a container's teardown (game+0x455aeb0: count at\n  +0x32, entries at +0x38, each freed through the allocator at 0x14abcc310, vtable +0x60), under +0x515ad70.\n  Teardown at this point is an error path: something earlier failed. The first anomaly in the run is a write\n  past a stream buffer's capacity at about 98 s (soft assert +0x4dcbc9d, game+0x4dcbc55: remaining < size;\n  the write is skipped and returns false). Next: what fills that buffer, and why it is too small here.\n- The overflowing buffer (game+0x4dcbc55, about 100 s) is a shared command stream, not a DSP queue: records\n  tagged 0x...04002821 carry float parameters (0.55, 0.2, 1000, 2000). Writers flush a local buffer into it\n  (game+0x4e52a40: lock at owner+8, append via +0x4dcbc40) from +0x5ab13e8 through +0x4e529a0. The stream comes\n  from the table at *0x149ae9950 (+0x4dcbc10): per slot an object with several 0x28-byte streams and a current\n  index at +0xc8, so a consumer is meant to switch streams each frame and drain the old one (the switch is in the\n  large function around +0x4dc3df2/+0x4dc3e11). No thread was in that code in the stack dumps, and the stream fills\n  in about 100 s. A null ALSA device (ALSA_CONFIG_PATH with pcm.!default type null, run setting only) removed the\n  ALSA open errors but did not change this. Next: who calls the switch, and what it waits on.\n- gdb from 20 s to 280 s: the stream append (+0x4dcbc72) runs on several threads (gdb threads 27, 96), about\n  1,000 times in that window; neither write of the stream index (+0x4dc3e11, +0x4dc2e23) ever runs. Either the\n  consumer is elsewhere or its thread never runs. AcpHal now acknowledges commands (97ca179), but the title only\n  registers for messages (command 2) before this stop, so the coprocessor is not what the consumer waits on.\n  gdb note: a breakpoint must be on an instruction boundary (check game.asm), or the run breaks silently.\n- The stream consumer, found: game+0x43a6b40 walks every stream-table entry (count at 0x149ae9958) and is called\n  only from the manage",
    "evidence": {},
    "locked": [],
@@ -1680,274 +1708,322 @@
     }
    ],
    "reachable": true,
-   "stars": 2207,
-   "forks": 488,
-   "pushed_at": "2026-11-25T14:52:34Z",
+   "stars": 2323,
+   "forks": 531,
+   "pushed_at": "2026-11-25T23:32:02Z",
    "created_at": "2026-11-23T23:54:39Z",
    "url": "https://github.com/ubiquitarianism/leonida",
    "description": "A continuation of Leonida, the Xbox > PC port interface for GTA VI",
    "activity_24h": [
-    38,
-    47,
-    30,
-    17,
-    19,
+    21,
+    50,
+    45,
     35,
-    36,
-    43,
-    20,
-    43,
-    42,
-    35,
-    8,
+    9,
     5,
     2,
     2,
-    9,
-    13,
-    7,
-    13,
     11,
+    13,
     10,
-    4,
-    7
+    13,
+    31,
+    21,
+    5,
+    14,
+    14,
+    15,
+    5,
+    20,
+    13,
+    77,
+    43,
+    21
    ],
    "activity_capped": false,
-   "open_prs": 1296,
-   "contributors": 431,
+   "open_prs": 1365,
+   "contributors": 430,
    "commits": [
     {
-     "sha": "b0f3d39",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/b0f3d3998f0401eb7df8ddbb7a303d1e6bee9fb8",
-     "date": "2026-11-25T14:52:34Z",
-     "message": "Merge pull request #1631 from Tyrannys/title-window-overflow"
+     "sha": "33bd07c",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/33bd07cf86bb42236635c27341359b3fe841d1d5",
+     "date": "2026-11-25T23:32:02Z",
+     "message": "Merge pull request #1176 from abnalstlll-byte/feat/test-wine-timeouts-device-filter"
     },
     {
-     "sha": "3d4f661",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/3d4f661238f72fbc2133cf80649be1b258c2db91",
-     "date": "2026-11-25T14:49:35Z",
-     "message": "Merge pull request #1192 from GGandCo/fix/host-import-prefix"
+     "sha": "95eacfa",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/95eacfa7cfe88a128c5483e07b3384c4c34ada02",
+     "date": "2026-11-25T23:31:53Z",
+     "message": "Merge pull request #1166 from abnalstlll-byte/feat/bl4-descriptor-address-translation"
     },
     {
-     "sha": "45219a6",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/45219a640014635a633a9b1afaea78a9495f5424",
-     "date": "2026-11-25T14:44:19Z",
-     "message": "d3d12 test: skip the write-back check when a refused import is a shadow"
+     "sha": "c1e1ef0",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/c1e1ef0b81234ac46ca25a810ab81219408ea6ba",
+     "date": "2026-11-25T23:27:57Z",
+     "message": "Merge pull request #1953 from abnalstlll-byte/feat/rt-lazy-pipeline-f16-top-location"
     },
     {
-     "sha": "769634d",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/769634dd61e4ff352ebf0ce0b2c69fd4596bce9b",
-     "date": "2026-11-25T14:40:21Z",
-     "message": "Merge main into fix/host-import-prefix"
+     "sha": "093be90",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/093be901ae20ac7c3bcd79763f7d45e37d962e73",
+     "date": "2026-11-25T23:27:10Z",
+     "message": "Merge pull request #2141 from abnalstlll-byte/feat/rt-direct-heap-arena-remap"
     },
     {
-     "sha": "446574e",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/446574e7610921947112069f3b3d36f40a20230b",
-     "date": "2026-11-25T14:40:05Z",
-     "message": "Merge pull request #1785 from IlyassRS3/fix/rt-title-window-and-arena-bounds"
+     "sha": "cb1d5f5",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/cb1d5f57fc0bbc48ca089e603b0f9871717b6940",
+     "date": "2026-11-25T23:21:07Z",
+     "message": "Merge pull request #2128 from aslan2142/rt-title-hud-vram-budget"
     },
     {
-     "sha": "c3b58ef",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/c3b58ef03dba482eef1b0d5a7dda5fec07ad382f",
-     "date": "2026-11-25T14:38:52Z",
-     "message": "Merge pull request #1732 from kawaii-shakal/arena-rebar-cap"
+     "sha": "3838576",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/38385762bd400e8260c7b3c8a80bb0c03fcc44c4",
+     "date": "2026-11-25T23:18:57Z",
+     "message": "dev overlay: the title HUD's VRAM and private memory figures"
     },
     {
-     "sha": "24a29f8",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/24a29f8b4e17e186882d08d2aa0cc71f8eb5c388",
-     "date": "2026-11-25T14:37:56Z",
-     "message": "Merge pull request #1827 from DadaCap/title-staged-no-host-copy"
+     "sha": "d4fb292",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/d4fb292344088e7925ddeb3bbceb5a9ac46de8c2",
+     "date": "2026-11-25T23:18:55Z",
+     "message": "Merge main into rt-title-hud-vram-budget"
     },
     {
-     "sha": "71a769d",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/71a769d7d85208f86c6e2e50263aca7df1becce9",
-     "date": "2026-11-25T13:55:52Z",
-     "message": "Merge pull request #1691 from OreoFR/rt-slot57-depth-raster"
+     "sha": "ffcfe68",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/ffcfe68f12891826a2b15e19f31149d8bb44e778",
+     "date": "2026-11-25T23:02:32Z",
+     "message": "Merge pull request #2137 from Snooozs/dev-overlay"
     },
     {
-     "sha": "77baf90",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/77baf906275d7b695664adbf0b33f3c2b306a1dc",
-     "date": "2026-11-25T13:46:46Z",
-     "message": "Merge pull request #1703 from OreoFR/rt-dual-source-blend"
+     "sha": "a0723a9",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/a0723a9e9261705f3d6d6619ee88b172fd0fc90a",
+     "date": "2026-11-25T23:01:37Z",
+     "message": "Merge pull request #671 from aslan2142/frame-pacer-bounded-queue"
     },
     {
-     "sha": "02d719c",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/02d719cdacae0a12414c9bc970812768daa49d5b",
-     "date": "2026-11-25T13:41:35Z",
-     "message": "Merge main into title-window-overflow; keep only the window-cap test"
+     "sha": "8564bb4",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/8564bb48bbf89c7fdbab7488ce1174faee32d1c2",
+     "date": "2026-11-25T23:00:45Z",
+     "message": "Merge pull request #688 from aslan2142/game-rmdir-create-race"
     },
     {
-     "sha": "5e95fa2",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/5e95fa2f46d5df1a8397d5ee871add369031d8b6",
-     "date": "2026-11-25T13:28:49Z",
-     "message": "Merge pull request #1671 from OreoFR/rt-slot57-blend-state"
+     "sha": "d468104",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/d4681041ec3c91a4ddfcd352d6909bb296466f26",
+     "date": "2026-11-25T22:59:57Z",
+     "message": "Merge pull request #710 from aslan2142/gpuav-as-type"
     },
     {
-     "sha": "384abe5",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/384abe5b06d08e349f4b4e4394c68f036da47dc7",
-     "date": "2026-11-25T13:15:49Z",
-     "message": "Merge pull request #1843 from aslan2142/rt-input-script-no-sdl3"
+     "sha": "340e8a4",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/340e8a415c380edc8294b133444df7562acaa24b",
+     "date": "2026-11-25T22:59:09Z",
+     "message": "Merge pull request #638 from aslan2142/skip-int3-wine"
     },
     {
-     "sha": "002c720",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/002c720f299abe4f1e4c8a4d7db2b710b774f88f",
-     "date": "2026-11-25T13:01:35Z",
-     "message": "docs: preserve original statistics comment encoding"
+     "sha": "92170fe",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/92170fe7af4739242723ff78b6cddd129986e536",
+     "date": "2026-11-25T22:58:24Z",
+     "message": "d3d12: remap directly-indexed heaps to arena shader VA (RT-DIRECT-HEAP-ARENA-REMAP)"
     },
     {
-     "sha": "ca68cb7",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/ca68cb7859e79105896b6931503b301100e1834a",
-     "date": "2026-11-25T13:01:35Z",
-     "message": "fix: stage texel-misaligned imported host texture copies"
+     "sha": "696d70d",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/696d70da19d8e799cae6013f3ff5ee26aeacaf17",
+     "date": "2026-11-25T22:58:18Z",
+     "message": "Merge pull request #677 from aslan2142/root-sig-flag-mask"
     },
     {
-     "sha": "56846f6",
-     "url": "https://github.com/ubiquitarianism/leonida/commit/56846f650d2e712a24efd6d60124d9741f03d258",
-     "date": "2026-11-25T13:01:35Z",
-     "message": "tests: isolate host-prefix coherence and preserve full heap coverage"
+     "sha": "809d186",
+     "url": "https://github.com/ubiquitarianism/leonida/commit/809d1869afb66f6778bcc6758b050d3ea97e7bba",
+     "date": "2026-11-25T22:57:31Z",
+     "message": "Merge pull request #657 from aslan2142/root-constants-zero"
     }
    ],
    "status": "| Booting the game | ⚠️ Through the story load into the world phase, on native Windows and Linux/Proton; no world frame verified yet ([report](docs/linux_proton.md)) |",
    "boot_prs": [
     {
-     "number": 1890,
-     "title": "vk_pipeline_check: synthesize --bary-fallback GS stage for PS pipelines (VK-PIPELINE-CHECK-BARY-FALLBACK)",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1890",
-     "user": "robot00f",
-     "created": "2026-11-25T14:33:54Z",
+     "number": 2146,
+     "title": "present: LEONIDA_PRESENT_DUMP_SLOW_MS also dumps every present that comes late (RT-PRESENT-DUMP-SLOW)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2146",
+     "user": "thegalaxydev",
+     "created": "2026-11-25T23:20:40Z",
+     "draft": true
+    },
+    {
+     "number": 2145,
+     "title": "tools: skip Ogg Opus outputs that already exist, so a stopped audio e…",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2145",
+     "user": "fiestorra",
+     "created": "2026-11-25T23:18:42Z",
+     "draft": true
+    },
+    {
+     "number": 2139,
+     "title": "title_window, xgameruntime_offline: skip what needs a desktop when there is no interactive window station",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2139",
+     "user": "qhukz13",
+     "created": "2026-11-25T22:46:19Z",
      "draft": false
     },
     {
-     "number": 1886,
-     "title": "d3d12: the session pipeline cache is saved up to 4 GiB, checkpoints included (RT-SESSION-CACHE-LIMIT)",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1886",
-     "user": "DadaCap",
-     "created": "2026-11-25T14:27:14Z",
+     "number": 2138,
+     "title": "[integration] RT-BOOT-COMBINED: translator fixes + null-barrier fix on main; scripted pad past legal terms to the story load",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2138",
+     "user": "ubiquitarianism",
+     "created": "2026-11-25T22:31:48Z",
      "draft": false
     },
     {
-     "number": 1885,
-     "title": "make_game, vk_subgroup_info: auto-enable --mesh-compute without VK_EXT_mesh_shader (MAKE-GAME-MESH-COMPUTE-NO-EXT)",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1885",
-     "user": "robot00f",
-     "created": "2026-11-25T14:23:02Z",
+     "number": 2134,
+     "title": "silent_audio: pace the 10 ms passes with a high-resolution timer (SILENT-AUDIO-PASS-CADENCE)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2134",
+     "user": "syfyra",
+     "created": "2026-11-25T22:28:20Z",
+     "draft": true
+    },
+    {
+     "number": 2133,
+     "title": "silent_audio: an empty GetBuffer packet leaves nothing pending (SILENT-AUDIO-EMPTY-PACKET)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2133",
+     "user": "syfyra",
+     "created": "2026-11-25T22:27:13Z",
+     "draft": true
+    },
+    {
+     "number": 2129,
+     "title": "d3d12: a window's GPU writes go back to the title's pages (RT-TITLE-WINDOW-WRITE-BACK)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2129",
+     "user": "star41905453-coder",
+     "created": "2026-11-25T22:01:54Z",
      "draft": false
     },
     {
-     "number": 1863,
-     "title": "runtime: bound prepared_ mesh-stats loop, recycle all finished slot batches, handle zero-count indirect dispatch",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1863",
-     "user": "IlyassRS3",
-     "created": "2026-11-25T13:27:32Z",
+     "number": 2122,
+     "title": "d3d12: the title texture pass can time-box its mapped and stale visits (RT-TITLE-EVERY-BUDGET)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2122",
+     "user": "OreoFR",
+     "created": "2026-11-25T21:34:47Z",
      "draft": false
     },
     {
-     "number": 1856,
-     "title": "scripts/ci_expected_failures: detect Windows crash codes, dedup annotations, avoid blank stdout",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1856",
-     "user": "kirigayakazima",
-     "created": "2026-11-25T13:18:19Z",
+     "number": 2120,
+     "title": "RT-HANG-DUMP-THREAD-STACKS: port the LEONIDA_HANG_DUMP thread-stack-dump knob to main",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2120",
+     "user": "tengotengo",
+     "created": "2026-11-25T21:31:44Z",
+     "draft": true
+    },
+    {
+     "number": 2106,
+     "title": "present: LEONIDA_FPS_CAP ceiling and one intro-splash decode (RT-PRES…",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2106",
+     "user": "BubsMcgee",
+     "created": "2026-11-25T20:52:25Z",
+     "draft": true
+    },
+    {
+     "number": 2098,
+     "title": "Improve post-load GPU memory and pipeline handling (RT-POST-LOAD-GPU-MEMORY)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2098",
+     "user": "Moriz82",
+     "created": "2026-11-25T20:31:16Z",
      "draft": false
     },
     {
-     "number": 1854,
-     "title": "build_runtime.ps1: link d3d12_xs_pso_stream.cpp into root_sig_test and device_proxy_test (BUILD-FALLBACK-PSO-STREAM)",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1854",
-     "user": "ambroseautomation",
-     "created": "2026-11-25T13:11:35Z",
+     "number": 2097,
+     "title": "d3d12: a mesh PSO with conservative rasterization needs no topology type (RT-MESH-PSO-CONSERVATIVE-TOPOLOGY)",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2097",
+     "user": "Snooozs",
+     "created": "2026-11-25T20:19:58Z",
      "draft": false
     }
    ],
    "reports": [
     {
      "kind": "comment",
-     "title": "Comment on #1884",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1884#issuecomment-7166844196",
-     "user": "BubsMcgee",
-     "created": "2026-11-25T15:26:23Z",
+     "title": "Comment on #1383",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/1383#issuecomment-7177526397",
+     "user": "kevincommits",
+     "created": "2026-11-25T23:24:51Z",
      "image": false,
-     "text": "Verified the usage-bit finding end to end on Windows 11 / NVIDIA RTX 3080 Ti (driver 616.64, Vulkan SDK 1.4.363.0, Khronos validation layer), by rebasing the capture commit onto our #1891 foundation and running the new test. - **Without the…"
+     "text": "Independent run with QEMU. Apple M5 Pro, macOS 27.2.1 (26B131), Python 3.14.2, QEMU 11.1.3 from Homebrew. I merged `main` at `cb1d5f57f` into the branch locally (826 commits behind, no conflicts). Head tested: `2193b80d0`. **The emitters pa…"
+    },
+    {
+     "kind": "issue",
+     "title": "Retail boot stops with int3 after ~1653 D3D12 calls on Volta/Wine (no world frame)",
+     "url": "https://github.com/ubiquitarianism/leonida/issues/2147",
+     "user": "31415-n",
+     "created": "2026-11-25T23:22:41Z",
+     "image": false,
+     "text": "Reproducible bounded retail run; no game data, paths, addresses or logs attached. Setup: local 1.0.2.1 package. Port built from main 1fe5072af plus PR #1930 cherry-picks (bary-fallback per-vertex support). Full shader corpus translated 26,5…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1472",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1472#issuecomment-7166828512",
-     "user": "3L1A5-1",
-     "created": "2026-11-25T15:25:47Z",
+     "title": "Comment on #2128",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2128#issuecomment-7177444065",
+     "user": "aslan2142",
+     "created": "2026-11-25T23:21:10Z",
      "image": false,
-     "text": "Confirmed on another Intel CPU without CLWB, on native Windows: i5-9400F (6 threads; no SSE4a, CLZERO, MONITORX or CLWB), RTX 2060 SUPER, NVIDIA 617.14, Windows 11 26300, retail 1.0.2.1. I compared two 600 s boots of the same tree: `main` `…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #1877",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1877#issuecomment-7166824067",
-     "user": "Timon360SB",
-     "created": "2026-11-25T15:25:37Z",
-     "image": false,
-     "text": "## Independent verification — Turing and Blackwell - **Base:** `77baf906275d7b695664adbf0b33f3c2b306a1dc` - **Head:** `47e177df6a6f07ea036c60c36aace6ba489e47f9` ### Environment | GPU | Windows 11 build | |---|---| | RTX 5070 (Blackwell) | 2…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #1759",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1759#issuecomment-7166819409",
-     "user": "Tyrannys",
-     "created": "2026-11-25T15:25:26Z",
-     "image": false,
-     "text": "**Independent verification** of head `5acf9b9f50f282bd564c9bd30e477bd4b61092af`, merged onto current `main` (71a769d7d) without conflicts. Windows 11 Pro, RTX 4070 SUPER (NVIDIA 621.01), MSVC 19.52.37029, RelWithDebInfo. - `xbox_bvh_builder…"
+     "text": "Merged. The title HUD (#1922) and the dev overlay (#2137) now show real memory figures under Wine. - **VRAM:** from `VK_EXT_memory_budget` on the runtime's own device: used and budget over the device-local heaps, plus what the other heaps u…"
     },
     {
      "kind": "comment",
      "title": "Comment on #1608",
-     "url": "https://github.com/ubiquitarianism/leonida/issues/1608#issuecomment-7166810805",
-     "user": "efeekrb",
-     "created": "2026-11-25T15:25:06Z",
+     "url": "https://github.com/ubiquitarianism/leonida/issues/1608#issuecomment-7177423854",
+     "user": "jean-melikian",
+     "created": "2026-11-25T23:20:12Z",
      "image": false,
-     "text": "finding: d3d12_texture_tiles ignores LEONIDA_HOST_ADAPTER and picks its native D3D12 adapter itself - runtime/test/d3d12_texture_tiles_test.cpp:251 (`native_device()`, used at line 286); the other comparison tests (for example d3d12_buffer_…"
+     "text": "finding: `rdna2spirv.py` emits an invalid `OpSelect` for one pixel shader when it is translated inside a full shard, but the same shader translates and passes `spirv-val` when it is translated on its own: some translator state carries over …"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #1862",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/1862#issuecomment-7177376259",
+     "user": "Coderlord",
+     "created": "2026-11-25T23:17:56Z",
+     "image": false,
+     "text": "Note: #2138 (RT-BOOT-COMBINED, open) carries #1495's `restore_dot4_op_sel`, which replaces `restore_dot4_inline_sel` and is already tried in the exact re-anchoring branch. On #2138's head the 29 FSPX programs translate 29 of 29 with llvm-mc…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #2142",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2142#issuecomment-7177349224",
+     "user": "ecox982745",
+     "created": "2026-11-25T23:16:40Z",
+     "image": false,
+     "text": "**On an RTX 4090, the parent rendered 8/24 synthetic draws correctly and this head rendered 24/24.** I compared `d3b67a704` with `a449806dc` on Windows 11, NVIDIA 616.64. All 24 fragment modules per revision passed `spirv-val --target-env v…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #1379",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/1379#issuecomment-7177329781",
+     "user": "kevincommits",
+     "created": "2026-11-25T23:15:47Z",
+     "image": false,
+     "text": "Independent run with QEMU. Apple M5 Pro, macOS 27.2.1 (26B131), Python 3.14.2, QEMU 11.1.3 from Homebrew. I merged `main` at `ffcfe68f1` into the branch locally (830 commits behind, no conflicts). Head tested: `5d9101482`. **The fix is real…"
     },
     {
      "kind": "comment",
      "title": "Comment on #1608",
-     "url": "https://github.com/ubiquitarianism/leonida/issues/1608#issuecomment-7166780916",
-     "user": "Snooozs",
-     "created": "2026-11-25T15:23:58Z",
+     "url": "https://github.com/ubiquitarianism/leonida/issues/1608#issuecomment-7177216880",
+     "user": "klikso",
+     "created": "2026-11-25T23:09:48Z",
      "image": false,
-     "text": "Retail boot data, native Windows 10 19045, RTX 5060 Ti 16 GB, NVIDIA 621.01, 32 GB RAM, own 1.0.2.1, counts only. Build: `main` b0f3d3998 + #1893 #1851 #1827 #1849 #1889 #1860 #1592 (merged with main, see there) #1887 #1886 #1882; FSPX 29 o…"
+     "text": "done: INPUT-SCRIPT-HOLD -> #2144 finding (follow-up to my [autosave finding](https://github.com/ubiquitarianism/leonida/issues/1608#issuecomment-7172103888)): past the \"Couldn't autosave\" prompt the boot reaches the **prologue's movement co…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1856",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/1856#issuecomment-7166780740",
-     "user": "DeadlyChirp",
-     "created": "2026-11-25T15:23:57Z",
+     "title": "Comment on #663",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/663#issuecomment-7177080209",
+     "user": "thiefyzheng",
+     "created": "2026-11-25T23:02:37Z",
      "image": false,
-     "text": "Tested on Windows 11, Python 3.12.10, with this PR merged onto upstream main b0f3d3998 (merge commit 7ed2de634). `python -I tests/test_ci_expected_failures.py`: - PR: 17 tests OK. main: 14 tests OK. The 3 new tests pass on Windows. (AI-assi…"
+     "text": "Update: merged current `main` (`5fab93967`) into the branch (the docs table had a conflict; both sets of rows kept, no force-push) and re-ran all three GPUs on that commit, native and `LEONIDA_W64_EMULATE=1`, in `a26e9ad68` (results text on…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #797",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/797#issuecomment-7166780270",
-     "user": "DeadlyChirp",
-     "created": "2026-11-25T15:23:56Z",
+     "title": "Comment on #2137",
+     "url": "https://github.com/ubiquitarianism/leonida/pull/2137#issuecomment-7177079722",
+     "user": "aslan2142",
+     "created": "2026-11-25T23:02:35Z",
      "image": false,
-     "text": "Tested on Windows 11, Python 3.12.10, with this PR merged onto upstream main b0f3d3998 (merge commit d70e9d631). `python -I tests/test_mode_round_probe.py`: - PR: 13 tests OK. main: 11 tests OK. The 2 new tests pass on Windows. (AI-assisted…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #796",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/796#issuecomment-7166779649",
-     "user": "DeadlyChirp",
-     "created": "2026-11-25T15:23:55Z",
-     "image": false,
-     "text": "Tested on Windows 11, Python 3.12.10, with this PR merged onto upstream main b0f3d3998 (merge commit 5fc3e33b4). `python -I tests/test_image_query_probe.py`: - PR: 21 tests OK (1 skipped). main: 19 tests OK (1 skipped). - The skip is the ex…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #779",
-     "url": "https://github.com/ubiquitarianism/leonida/pull/779#issuecomment-7166778925",
-     "user": "DeadlyChirp",
-     "created": "2026-11-25T15:23:53Z",
-     "image": false,
-     "text": "Tested on Windows 11, Python 3.12.10, with this PR merged onto upstream main b0f3d3998 (merge commit 1ed165078). `python -I tests/test_awc_manifest.py`: - PR: 25 tests OK (2 skipped). main: 23 tests OK (2 skipped). - The skips are the exist…"
+     "text": "Merged, thanks! A good view for the boots that look frozen. - **Reviewed:** off by default (`LEONIDA_DEV_OVERLAY=1`). The always-on part is a few relaxed atomics per submission phase and per pipeline build, and nested scopes stay balanced. …"
     }
    ],
    "evidence": {},
@@ -1987,131 +2063,131 @@
    },
    "media": [],
    "reachable": true,
-   "stars": 216,
+   "stars": 220,
    "forks": 14,
-   "pushed_at": "2026-11-25T15:21:34Z",
+   "pushed_at": "2026-11-25T23:18:21Z",
    "created_at": "2026-11-23T09:57:42Z",
    "url": "https://github.com/ThatRecompDev/five-star-recomp",
    "description": "Pre-work for a PC port of the Xbox Series GTA VI release: formats, shader translation and an offline console runtime",
    "activity_24h": [
     0,
     0,
-    5,
-    15,
-    41,
-    27,
-    40,
-    19,
-    24,
-    17,
+    0,
     16,
-    12,
-    19,
+    13,
+    15,
     10,
     15,
-    9,
-    33,
-    20,
-    36,
-    35,
-    20,
+    28,
+    26,
     31,
-    38,
-    18
+    37,
+    20,
+    35,
+    34,
+    22,
+    28,
+    53,
+    27,
+    22,
+    18,
+    20,
+    22,
+    8
    ],
    "activity_capped": true,
    "open_prs": 0,
    "contributors": 5,
    "commits": [
     {
-     "sha": "d7b8b13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/d7b8b13c7721da0e51e2c162023b90c457c24ce8",
-     "date": "2026-11-25T15:20:42Z",
-     "message": "Restore the stand-in fills for held ray-tracing passes (the black screen was an input-script bug, not this change)"
+     "sha": "416fce1",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/416fce1b14b6c6698b7f52b0a811091bf7fc6551",
+     "date": "2026-11-25T23:18:19Z",
+     "message": "CompileTicketTests: the budget's memory probes are replaced, so the host's memory does not decide them (CI)"
     },
     {
-     "sha": "45eace9",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/45eace9c1c026fa8603f849aa6d7b79ee58f0358",
-     "date": "2026-11-25T15:17:49Z",
-     "message": "Revert \"Merge lane-present: stand-in fills for held ray-tracing passes (--no-rt-stand-ins)\""
+     "sha": "0a2db0b",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/0a2db0b53d06554e483ae04e5d78446d8beb5472",
+     "date": "2026-11-25T23:05:39Z",
+     "message": "Diagnostics: the return-address scan tests an image's code sections before VirtualQuery"
     },
     {
-     "sha": "3634930",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/3634930c7edc30cded7003b8e6946eeddb1841b2",
-     "date": "2026-11-25T15:12:30Z",
-     "message": "Merge lane-present: stand-in fills for held ray-tracing passes (--no-rt-stand-ins)"
+     "sha": "d004be6",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/d004be6612336be8d9c13fc608af2a5554823750",
+     "date": "2026-11-25T22:51:30Z",
+     "message": "Depth twins: a prelude reads the twin through its own view; a reused heap index no longer names the twin; prelude log"
     },
     {
-     "sha": "ff362c3",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/ff362c366dfd947f72f562d0425f8e0477a009d2",
-     "date": "2026-11-25T15:12:30Z",
-     "message": "Merge lane-lowvram: fivestar run --warm, setup's warm step matches the boot"
+     "sha": "c7d9a79",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/c7d9a79eecd9ad904099e8c6484e57c2ef648fb9",
+     "date": "2026-11-25T22:42:39Z",
+     "message": "Merge lane-perf2: compile budget tickets, Exit removes exactly its own reservation (#13)"
     },
     {
-     "sha": "395abdf",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/395abdf8fbc2abc70b1fcfc479a28f4efdebe1f6",
-     "date": "2026-11-25T15:12:18Z",
-     "message": "Stand-in fills: the repository's rules (statement groups, method length, no lambda on the dispatch path, named constants)"
+     "sha": "f6a1efd",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/f6a1efd02234435c0d7cb74d50ad6b872ffcb9ff",
+     "date": "2026-11-25T22:41:15Z",
+     "message": "Compile budget: Exit takes back exactly the compile Enter admitted"
     },
     {
-     "sha": "0c773bd",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/0c773bd28a23311502d1d2c4f8649ab453731f02",
-     "date": "2026-11-25T15:10:01Z",
-     "message": "Setup's pipeline-warm step warms from the boot's folders and stamps the cache"
+     "sha": "e251d0e",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/e251d0ec2af0c95bb8c6036a906666f3cefc5bc4",
+     "date": "2026-11-25T22:40:30Z",
+     "message": "Merge lane-world"
     },
     {
-     "sha": "9806986",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/98069863247770c7fe78e26109d0e5a86808b8f8",
-     "date": "2026-11-25T15:08:03Z",
-     "message": "fivestar run --warm: the journal warm-up after a translator update"
+     "sha": "60fdccf",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/60fdccf22f6128cc0dbce5e8abbf59b4bd230d68",
+     "date": "2026-11-25T22:40:30Z",
+     "message": "Merge lane-lowvram"
     },
     {
-     "sha": "1bdee50",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/1bdee50f24f37b6f701204e72f40719814162536",
-     "date": "2026-11-25T15:06:09Z",
-     "message": "Held ray-tracing passes get stand-in outputs: shadow masks fully lit, reflections black, screen-probe light grey"
+     "sha": "e21107d",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/e21107d6a89c1088983c926ecefbfa0d8d0b6fc6",
+     "date": "2026-11-25T22:34:49Z",
+     "message": "Depth twins and render-target states: no stale pointers across runtimes; a wrapped bound check"
     },
     {
-     "sha": "b1484e7",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/b1484e7180072b47841a27cd20688387f08c42ec",
-     "date": "2026-11-25T14:45:06Z",
-     "message": "Merge branch 'main' into lane-present"
+     "sha": "1f452df",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/1f452dfde8d631fc1b119a7e205f160277f22e16",
+     "date": "2026-11-25T22:27:52Z",
+     "message": "THIRD_PARTY_NOTICES: drop leftover merge markers"
     },
     {
-     "sha": "e77ebbd",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/e77ebbdb873f9e40151adcb801c0b7e48c300913",
-     "date": "2026-11-25T14:39:54Z",
-     "message": "Merge lane-world: depth-UAV instrumentation"
+     "sha": "a400d1e",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/a400d1e8c94360ed35e92927ea8dab4f7026e592",
+     "date": "2026-11-25T22:26:56Z",
+     "message": "Merge lane-perf2: --mesh-launch amplification launch for indirect mesh draws (after Kelvaroq 0041), --gpu-upload-heaps"
     },
     {
-     "sha": "4cd2f4d",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/4cd2f4ddd24b5f0ee621a7c32d325b0d3648204b",
-     "date": "2026-11-25T14:39:05Z",
-     "message": "Depth UAVs: each depth texture whose UAV becomes a null view is logged with its heap index, the pipelines whose tables hold one are named at"
+     "sha": "c0355a7",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/c0355a728496ce8ca19c10b998101595ea9efa65",
+     "date": "2026-11-25T22:24:51Z",
+     "message": "Add --mesh-launch and --gpu-upload-heaps (after Kelvaroq 0041, 0022/0039)"
     },
     {
-     "sha": "2539efd",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/2539efdc2bdabc6918889e8040065df0779691e8",
-     "date": "2026-11-25T14:38:57Z",
-     "message": "Merge lane-dxilswitch: held ray-tracing pipelines never reach the driver; disposed runtimes stop being active; fence-only barriers in the sw"
+     "sha": "63557ec",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/63557ecd06091abb2070a6e88183f674b235ecd7",
+     "date": "2026-11-25T22:23:41Z",
+     "message": "Merge branch 'main' into lane-world"
     },
     {
-     "sha": "7b96f20",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/7b96f203ecc272cf53d5f9c794499fe341199bd3",
-     "date": "2026-11-25T14:38:56Z",
-     "message": "Merge lane-lowvram: backstop test registers its own handler; ray-tracing test owns its runtime"
+     "sha": "68ac38a",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/68ac38acf5adad7987725aaa8565adf932a6b39f",
+     "date": "2026-11-25T22:23:29Z",
+     "message": "Merge lane-lowvram: depth-twin copies follow submission order through queue preludes (after victory-fork)"
     },
     {
-     "sha": "e3431b2",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/e3431b2efb256bb05500cb7f7e6af7f35f94a9a3",
-     "date": "2026-11-25T14:38:43Z",
-     "message": "Tests: the backstop test no longer depends on the reporter's entry; a log flake fixed"
+     "sha": "6fb94bb",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/6fb94bb9be4edb9dc445678ed979417f6ddf054c",
+     "date": "2026-11-25T22:23:05Z",
+     "message": "Depth twins: copies ordered by submission; a prelude on the loader's own direct queue"
     },
     {
-     "sha": "3a27ac7",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/3a27ac7bcafde80782874640d25ab259c937ce9c",
-     "date": "2026-11-25T14:32:52Z",
-     "message": "Merge lane-lowvram: multi-process warm-up, CLZERO backstop handler, heap attribution"
+     "sha": "812d117",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/commit/812d1177ad1a7a255f0e5fc778758260e5b45d53",
+     "date": "2026-11-25T22:20:54Z",
+     "message": "ResourceBarrierSlots: untracked resources moved in a method of their own (method length)"
     }
    ],
    "status": "GTA VI does not run yet. Its main executable is now available: under the loader it starts, runs through its memory\nset-up, archive opening and graphics device set-up, presents frames to its own window, shows its logo, intro art and\nfirst-run screens, loads story mode and plays the opening cutscene's art, credit cards, dialogue and sound at 30 frames\na second. The cutscene's 3D world now draws into the G-buffer (geometry is in place), but lighting and composition do\nnot reach the screen yet. Details and numbers are\nin the\n[wiki](https://github.com/ThatRecompDev/five-star-recomp/wiki/Status).\n\n| Area | State |\n|---|---|\n| Shader translation | Every shader stage the game uses is translated (vertex, pixel, compute, mesh, geometry, ray intersection), and all 25,908 programs compile. Branches become structured `if`/`else` and loops, 39% smaller than the older dispatch loop and checked to give the same results on real programs. Instruction behaviour is checked on D3D12 WARP. Shaders are translated when the game first uses them and compiled by a DXIL backend of our own, 5 to 20 times faster than dxc, in a separate compile process; dxc remains the fallback. |\n| Archives | Contents can be extracted without the encrypted file table (no names yet). Metadata files parse completely. |\n| Textures | Every texture decodes exactly with the BCPack tables, which you supply yourself (`fivestar setup --bcpack-tables`); without them 99.44% are readable and BC7, BC6H and BC3 (about 2,000 textures) are not. |\n| Models | Drawable geometry (meshlets, packed vertices) decodes and exports as OBJ ([docs/models.md](docs/models.md)). |\n| Loader | The game executable and its support libraries load with all imports resolved; the game boots through its start-up, answers its first-run screens through a scripted gamepad ([docs/first-run.input](docs/first-run.input)) and starts loading story mode. The console runtime, audio decoding and system libraries are implemented for offline use. |\n| Graphics API | The game's D3D12.X device runs on desktop D3D12: its pipelines build from the translated shaders (with a disk cache), its descriptors and barriers are translated, and it presents its logo, intro video and menus with complete UI text. Shaders that read memory through console GPU addresses reach the game's memory through an address map. The GPU hang after the story load (shader loops that never ended) is bounded; open: the story load itself, which stops on corrupted game memory ([docs/d3d12x-shim.md](docs/d3d12x-shim.md)). |\n\nThe [wiki](../../wiki) has the details, research notes and the current progress report.",
@@ -2119,93 +2195,93 @@
    "reports": [
     {
      "kind": "comment",
-     "title": "Comment on #13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7165613947",
-     "user": "danik1222",
-     "created": "2026-11-25T14:39:31Z",
-     "image": false,
-     "text": "﻿**Intro path on 7d0393d with --watch-hang: the hang block names the events.** 25.200 presents, then the watchdog (\u0000xc0000005, thread 8136) at ~1400 s. Captures are the same uniform story-load frame, mean rgb (32, 32, 44). The stall line (n…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7163655919",
-     "user": "danik1222",
-     "created": "2026-11-25T13:21:19Z",
-     "image": false,
-     "text": "﻿**Intro path on 2735cb0 (with \bba95b5): 34.800 presents at 34 ms, and the story load never finishes.** Eight captures, all the same uniform frame -- mean rgb (32, 32, 44), 8,270,851 of 8,294,400 pixels not black -- i.e. the story-load scre…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7162989661",
-     "user": "danik1222",
-     "created": "2026-11-25T12:53:04Z",
-     "image": false,
-     "text": "﻿Before the \bba95b5 runs: the intro path on 376adc4 ended in **another \u0000xC000001D, and the shape is the one you fixed for CLWB**: [code] \u0000x144E8AAB0 = **RVA 0x4e8aab0**, one of the **CLZERO** sites (cpu: emulating CLZERO at game_scarlett_ma…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7162481495",
-     "user": "danik1222",
-     "created": "2026-11-25T12:31:05Z",
-     "image": false,
-     "text": "﻿**The two paths are different, and --watch-hang names what stalls.** Current main (376adc4), same command line, --evict-windows --watch-hang --d3d12-breadcrumbs. **A. Save-load path (GdkData present).** 43.800 presents at **33.7 ms (30 fps…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7161126249",
-     "user": "danik1222",
-     "created": "2026-11-25T11:29:59Z",
-     "image": true,
-     "text": "﻿Two frames from the 19134c8 warm boot, on a temporary host (they expire in **72 h** and are not mirrored anywhere, so nothing of the game stays online): - Jason, present 1800: https://litter.catbox.moe/zeq1s4.png - Lucia, present 3600: htt…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #13",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7158839808",
-     "user": "danik1222",
-     "created": "2026-11-25T09:49:01Z",
-     "image": false,
-     "text": "﻿Here is the FAULT block from the warm boot ( un-20261125-094537.log, fault at ~30 min, after the cutscene had been drawing): [code] The instruction at RVA 0x23cf683 is `C7 04 25 00000000 21D48B` -- an **absolute store to address 0** (`mov …"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #19",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/19#issuecomment-7155813052",
+     "title": "Comment on #50",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/50#issuecomment-7175767431",
      "user": "Sr-0w",
-     "created": "2026-11-25T07:23:48Z",
+     "created": "2026-11-25T21:58:03Z",
      "image": false,
-     "text": "Thanks for 671b8bc and aca5a03. On 72b7328, the RX 7800 XT gets further: the story load and the opening credits, at about 30 fps. Two things measured since then: **1. With the commit charge at its limit, amdxc64 dereferences null instead of…"
+     "text": "**In game (recorded runs, RX 7800 XT, 600 s each, same input script)** | | without this PR | with it | |---|---|---| | pipelines the driver finished during the run | 431 | 547 (+27%) | | one tiled-lighting pixel pipeline, cold (`shader pso`…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #49",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/49#issuecomment-7175766917",
+     "user": "Sr-0w",
+     "created": "2026-11-25T21:58:01Z",
+     "image": false,
+     "text": "**In game (recorded runs, RX 7800 XT)** - Before (main + the other open PRs, without this one): the run ended at about 375 s on the game's 30 s main-loop watchdog. The frame thread was waiting on its job workers. One of them was compiling a…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #47",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/47#issuecomment-7175765827",
+     "user": "Sr-0w",
+     "created": "2026-11-25T21:57:59Z",
+     "image": false,
+     "text": "**In game:** this history is what found the watchdog cause fixed by #49. The run with it showed: - the frame thread waiting on the \"last worker done\" event; - 4 workers asleep; - the 5th still Running in `CreatePipelineState` at 5, 15 and 2…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #13",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7173886893",
+     "user": "Solarthis",
+     "created": "2026-11-25T20:35:06Z",
+     "image": false,
+     "text": "a5e1f25's diagnosis holds on a completely different backend, which is the useful part of this: ours is Vulkan on Metal on Apple Silicon with unified memory, so the budget is not DXGI's non-local segment and there is no VRAM to run short of.…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #49",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/49#issuecomment-7171877650",
+     "user": "ThatRecompDev",
+     "created": "2026-11-25T19:08:39Z",
+     "image": false,
+     "text": "nice, getting that 25 s compile off the game thread makes a lot of sense, and skipping the draw while it's pending matches what we already do for pending pipelines. two things before merging though: moving BeforeDraw above CopyTwin breaks -…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #46",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/pull/46#issuecomment-7171871222",
+     "user": "ThatRecompDev",
+     "created": "2026-11-25T19:08:22Z",
+     "image": false,
+     "text": "good catch, that would explain the hang watch going silent mid-run. putting the check in Snapshot covers both Capture and FrameRegisters, so it can't come back through another caller. merged (9dbad2f). it landed right after we reworked the …"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #13",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/13#issuecomment-7169203834",
+     "user": "danik1222",
+     "created": "2026-11-25T17:14:05Z",
+     "image": false,
+     "text": "**Answer to the heap question, and this run got further than any before.** `1930d7b`, intro path, `--watch-hang --memory-map 120`, 1.616 s (27 min), 36.600 presents, exit `0xc0000005` at RVA `0x23cf683` (your own 30 s watchdog again). **Zer…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #41",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/41#issuecomment-7168978462",
+     "user": "ThatRecompDev",
+     "created": "2026-11-25T17:05:05Z",
+     "image": false,
+     "text": "dug into this a bit. the 30 fps cap is actually the game's own choice: every frame it says which rate it wants, and that becomes a 33.3 ms interval for the console's frame events, which our pacer just follows. the engine clearly runs at oth…"
     },
     {
      "kind": "issue",
-     "title": "Device hung on AMD: the GPU reads retired textures after the registry released them; --placed-textures avoids it",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/23",
-     "user": "Sr-0w",
-     "created": "2026-11-25T07:11:44Z",
+     "title": "Help wanted: frame pacing and a 60 fps / uncapped option",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/41",
+     "user": "ThatRecompDev",
+     "created": "2026-11-25T16:23:10Z",
      "image": false,
-     "text": "On an RX 7800 XT the device hangs (DXGI_ERROR_DEVICE_HUNG) 3 to 8 minutes into the opening cutscene. DRED puts the page fault in a retired texture that `GpuTextureRegistry` released after its grace period. With `--placed-textures` the same …"
+     "text": "﻿the game targets 30 fps on console. once the world runs at speed we'd like an option to unlock it (60 fps or uncapped), like other PC ports offer. what we need to find out: - how the game paces frames: present interval / vsync count, a fra…"
     },
     {
      "kind": "issue",
-     "title": "AMD driver compiles take 3-8x the budget's estimate and grow quadratically: one compute program cannot be built on 64 GB",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/19",
-     "user": "Sr-0w",
-     "created": "2026-11-25T05:22:02Z",
+     "title": "Help wanted: where does a world frame's CPU time go?",
+     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/39",
+     "user": "ThatRecompDev",
+     "created": "2026-11-25T16:23:07Z",
      "image": false,
-     "text": "On an AMD card the driver's pipeline compiles take far more memory than `CompileBudget` expects, and the memory a compile takes grows about quadratically with its DXIL. With the default 4 driver compiles the loader reaches the machine's com…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #9",
-     "url": "https://github.com/ThatRecompDev/five-star-recomp/issues/9#issuecomment-7149435865",
-     "user": "marquezinii",
-     "created": "2026-11-25T01:19:47Z",
-     "image": false,
-     "text": "A new NVIDIA finding from real boots on the RTX 5070 (12 GB), driver cache warm, main at `9e8772a` plus #14. The story load hits a GPU hang (TDR: `nvlddmkm` event 153, removal reason 0x887a0006) in 4 of 7 boots, between 60 s and 280 s, with…"
+     "text": "﻿the opening cutscene and menus already hold 30 fps, but once the 3D world loads the frame rate drops well below that. before we optimise blindly we need to know where a world frame's CPU time goes. what would help: - a per-frame CPU breakd…"
     }
    ],
    "evidence": {},
@@ -2260,25 +2336,17 @@
     }
    ],
    "reachable": true,
-   "stars": 84,
+   "stars": 85,
    "forks": 4,
    "pushed_at": "2026-11-25T09:45:19Z",
    "created_at": "2026-11-21T04:47:46Z",
    "url": "https://github.com/OpenCommunityEdition/OpenScarlett",
    "description": "",
    "activity_24h": [
-    2,
-    1,
+    0,
+    0,
     3,
-    1,
-    0,
-    1,
-    1,
-    0,
-    0,
-    0,
-    2,
-    8,
+    7,
     1,
     4,
     2,
@@ -2286,6 +2354,14 @@
     1,
     0,
     1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -2419,7 +2495,7 @@
    },
    "media": [],
    "reachable": true,
-   "stars": 100,
+   "stars": 102,
    "forks": 12,
    "pushed_at": "2026-11-24T21:43:43Z",
    "created_at": "2026-11-21T14:35:25Z",
@@ -2432,7 +2508,7 @@
     0,
     0,
     0,
-    1,
+    0,
     0,
     0,
     0,
@@ -2560,6 +2636,24 @@
    "reports": [
     {
      "kind": "issue",
+     "title": "[Contribution] Clean-Room GPU BCPack Decoder (DX12 Zero-Copy C-ABI + Vulkan 1.3 SPIR-V) & 1.25M Descriptor Paging (MIT/Apache-2.0)",
+     "url": "https://github.com/californiaAlmonds/OpenScarlett/issues/63",
+     "user": "POMXARK",
+     "created": "2026-11-25T19:28:11Z",
+     "image": false,
+     "text": "Hi team, Congrats on the awesome bring-up progress! Since OpenScarlett targets both **D3D12** and **Vulkan 1.4** (and C++20 runtime shims without a Rust dependency), I wanted to share a **clean-room, `MIT OR Apache-2.0` licensed GPU BCPack …"
+    },
+    {
+     "kind": "issue",
+     "title": "[HW Report] NVIDIA GeForce RTX 5070 | Windows 11 26H2 x64 (Build 26300.10075) | 67/67 PASS",
+     "url": "https://github.com/californiaAlmonds/OpenScarlett/issues/62",
+     "user": "C01derest",
+     "created": "2026-11-25T17:32:54Z",
+     "image": false,
+     "text": "### Windows Version & Build Windows 11 26H2 x64 (Build 26300.10075) ### GPU(s) & Driver Capabilities NVIDIA GeForce RTX 5070 (VRAM=11944 MB | Wave=32..32 | SM=0x66 | DXR=12 | MeshTier=10) | Vulkan: NVIDIA GeForce RTX 5070 | API 1.4.351 | Ha…"
+    },
+    {
+     "kind": "issue",
      "title": "[HW Report] RTX 5070 Laptop GPU | Windows 11 26H2 x64 (Build 26300.9711) | 66/67 FAIL",
      "url": "https://github.com/californiaAlmonds/OpenScarlett/issues/61",
      "user": "GennyDotJson",
@@ -2575,24 +2669,6 @@
      "created": "2026-11-25T07:35:30Z",
      "image": false,
      "text": "### Windows Version & Build Windows 11 26H2 x64 (Build 26300.10075) ### GPU(s) & Driver Capabilities NVIDIA GeForce MX250 (VRAM=4012 MB | Wave=32..32 | SM=0x66 | DXR=0 | MeshTier=0) | Vulkan: NVIDIA GeForce MX250 | API 1.4.312 | Hardware IC…"
-    },
-    {
-     "kind": "issue",
-     "title": "[HW Report] NVIDIA GeForce RTX 5060 | Windows 11 26H2 x64 (Build 26300.10075) | 67/67 PASS",
-     "url": "https://github.com/californiaAlmonds/OpenScarlett/issues/58",
-     "user": "Kris399",
-     "created": "2026-11-24T21:15:03Z",
-     "image": false,
-     "text": "### Windows Version & Build Windows 11 26H2 x64 (Build 26300.10075) ### GPU(s) & Driver Capabilities NVIDIA GeForce RTX 5060 (VRAM=7895 MB | Wave=32..32 | SM=0x66 | DXR=12 | MeshTier=10) | Vulkan: NVIDIA GeForce RTX 5060 | API 1.4.357 | Har…"
-    },
-    {
-     "kind": "issue",
-     "title": "[HW Report] AMD Radeon RX 6700 XT | Windows 10 22H2 x64 (Build 19045.6466) | 64/67 FAIL",
-     "url": "https://github.com/californiaAlmonds/OpenScarlett/issues/57",
-     "user": "rahendraputrap",
-     "created": "2026-11-24T18:58:35Z",
-     "image": false,
-     "text": "### Windows Version & Build Windows 10 22H2 x64 (Build 19045.6466) ### GPU(s) & Driver Capabilities AMD Radeon RX 6700 XT (VRAM=12242 MB | Wave=32..64 | SM=0x65 | DXR=11 | MeshTier=10) | Vulkan: AMD Radeon RX 6700 XT | API 1.4.315 | Hardwar…"
     }
    ],
    "evidence": {},
@@ -2657,149 +2733,213 @@
     }
    ],
    "reachable": true,
-   "stars": 1943,
-   "forks": 226,
-   "pushed_at": "2026-11-25T15:22:10Z",
+   "stars": 1952,
+   "forks": 228,
+   "pushed_at": "2026-11-25T23:35:09Z",
    "created_at": "2026-11-20T17:43:52Z",
    "url": "https://github.com/R0Y00/Xbox2Windows",
    "description": "Static recompilation research for Xbox Series X|S software on x64 Windows, with source-built CPU and GPU tests. Full-game startup is unverified.",
    "activity_24h": [
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    25,
-    79,
-    62,
-    50,
-    19,
-    12,
-    16,
-    28,
-    25,
+    21,
+    18,
+    11,
+    20,
+    32,
+    18,
     17,
     21,
-    21,
-    11,
-    28,
+    19,
+    14,
+    36,
     25,
-    31,
-    30
+    30,
+    27,
+    3,
+    15,
+    7,
+    37,
+    44,
+    30,
+    26,
+    27
    ],
    "activity_capped": true,
-   "open_prs": 96,
-   "contributors": 109,
+   "open_prs": 110,
+   "contributors": 112,
    "commits": [
     {
-     "sha": "7092683",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/7092683a9a9bfa8952e5df415b5ae0ee93220fc9",
-     "date": "2026-11-25T15:12:05Z",
-     "message": "tests: open the vm_translation_check section heaps from a mapped view (#2393)"
+     "sha": "51fdbbc",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/51fdbbce9099ef1b185ca4305790e00da2edf736",
+     "date": "2026-11-25T23:35:09Z",
+     "message": "ffx: add upfront path guards and atomic writes to ffx_working_set_delta with CLI suite (#2616)"
     },
     {
-     "sha": "106603a",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/106603a724edc4dc135c59e2e3478de84352ef79",
-     "date": "2026-11-25T15:10:55Z",
-     "message": "startup: write shader requests from the shader archive before a run (#1750)"
+     "sha": "b97bb64",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/b97bb64d250f5d5ce04290860de1fe4c7b4c918a",
+     "date": "2026-11-25T23:34:49Z",
+     "message": "shader: harden rdna_cvt_pk_u8 CLI validation and atomic writes with CLI suite (#2619)"
     },
     {
-     "sha": "abf6492",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/abf6492fbfc28bc838d3925ca4b55335228f552d",
-     "date": "2026-11-25T15:10:11Z",
-     "message": "shader: lower flat_load_dwordx2 and global_load_dwordx2 through TitleLookup in pixel_aot (#2386)"
+     "sha": "cf22fa9",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/cf22fa995c86bd55d75a64c341a7710270ae5862",
+     "date": "2026-11-25T23:33:56Z",
+     "message": "pe: sort package scan and harden CLI path guards in pe_package_preflight with CLI suite (#2609)"
     },
     {
-     "sha": "0eaa2ef",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/0eaa2effa1d923f803974a822d18a7312ae19a27",
-     "date": "2026-11-25T15:09:56Z",
-     "message": "shader: lower the first active lane at compute dispatch entry (#2389)"
+     "sha": "780c0bc",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/780c0bc492b21a9853af7fdde6e200ee0437ad7e",
+     "date": "2026-11-25T23:33:06Z",
+     "message": "cpu: lower 32/64-bit BMI2 BZHI, MULX, PDEP, and PEXT in cpu_bmi2_bit_aot (#2621)"
     },
     {
-     "sha": "a4f7a95",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/a4f7a95cd6cd27a451471d0f377176905e229acf",
-     "date": "2026-11-25T15:08:49Z",
-     "message": "tests: start pixel_aot checks through runpy so cached bytecode is reused (#2362)"
+     "sha": "d371ce4",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/d371ce46c57bf972f225616d462f99486f323f77",
+     "date": "2026-11-25T23:31:05Z",
+     "message": "cpu: lower 16 VEX.256 AVX2 cross-lane extend and dword/qword unpack forms (#2614)"
     },
     {
-     "sha": "565f9d5",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/565f9d59dbfcc326768fdad6d6471ef10bb9e187",
-     "date": "2026-11-25T15:08:31Z",
-     "message": "shader: lower buffer_store_dwordx3 in gfx2hlsl (Part of #1723) (#2059)"
+     "sha": "99ed51f",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/99ed51fd998a3e7a5546288fed414beabd1d4815",
+     "date": "2026-11-25T23:30:04Z",
+     "message": "startup: lower v_pack_b32_f16 with op_sel and neg/abs in gfx2hlsl (#2475)"
     },
     {
-     "sha": "0b31989",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/0b31989c44076ab00d842335ea04fd0d4662067d",
-     "date": "2026-11-25T15:04:27Z",
-     "message": "textures: extract main(argv), atomic output writes, and error guards in bc7_blocks with CLI suite (#2388)"
+     "sha": "0858991",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/0858991042594da908c6f039c8be866855d0eaad",
+     "date": "2026-11-25T23:29:12Z",
+     "message": "startup: count new view records by slot behind an opt-in census (#2613)"
     },
     {
-     "sha": "3d61869",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/3d61869876d3922fd64d77868eeec7c6d048eec5",
-     "date": "2026-11-25T15:02:54Z",
-     "message": "fix: SSE2 MINSD/MAXSD DAZ, XSAVE AVX-only MXCSR, MMX read state (#1646)"
+     "sha": "51fc8e0",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/51fc8e0b13acad07cd05032d9d0cf2abe75f4e1f",
+     "date": "2026-11-25T23:28:44Z",
+     "message": "shader: add offset, short-read, and regular-file guards in sgd5_effects with CLI suite (#2608)"
     },
     {
-     "sha": "061c095",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/061c0958d33f5cbf01d0ee0c2a1eccca2b44781a",
-     "date": "2026-11-25T15:02:09Z",
-     "message": "startup: optional Tracy zones for the stand-ins (X2W_TRACY, off by default) (#2371)"
+     "sha": "66026a3",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/66026a399bee8894411fbed31653d9dcab811a68",
+     "date": "2026-11-25T23:22:08Z",
+     "message": "shader: lower export target null in gfx2hlsl (Part of #1723) (#2026)"
     },
     {
-     "sha": "628fb11",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/628fb11acc6f5b31dfab56281ca9ada4d0b17fdc",
-     "date": "2026-11-25T15:01:12Z",
-     "message": "tooling: handle comments and 64-bit indices in address-window lowering (#1610)"
+     "sha": "24cfd7c",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/24cfd7c0f6b734e71547f086f24a469c3f9c7c40",
+     "date": "2026-11-25T23:18:44Z",
+     "message": "shader: lower 24-bit multiply, xnor, alignbit and alignbyte in gfx2hlsl (Part of #1723) (#2077)"
     },
     {
-     "sha": "0736f67",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/0736f67c504cbed815d4ec0295636818f4d9f144",
-     "date": "2026-11-25T14:56:57Z",
-     "message": "ci: save main sccache right after build; pull requests only read it (#1740)"
+     "sha": "444bf3a",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/444bf3a8d3bcccf03ea59022ddee7f2fe55b955d",
+     "date": "2026-11-25T23:15:31Z",
+     "message": "tests: accept a heartbeat peak commit that rose between samples (#2567)"
     },
     {
-     "sha": "a490015",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/a4900150ea8ecc479ccc4a11fc28e6dd848eb255",
-     "date": "2026-11-25T14:56:06Z",
-     "message": "tests: verify exact front-face winding through slot 86 streams (#2387)"
+     "sha": "8298ec6",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/8298ec668ed13f6659d5f947cfcccfdbdf2264f9",
+     "date": "2026-11-25T23:15:16Z",
+     "message": "tests: run the six integer-format MRT cases in parallel (#2588)"
     },
     {
-     "sha": "5d86af3",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/5d86af39caf360f3f8eb050f424583040f762855",
-     "date": "2026-11-25T14:51:58Z",
-     "message": "startup: implement next copy command-list slot in d3d12_xs_device (Part of #870) (#2070)"
+     "sha": "a696744",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/a696744692b2ecc65b72e100be0be8393373bceb",
+     "date": "2026-11-25T23:11:57Z",
+     "message": "cpu: harden atomic writes, path validation, and subprocess error handling in exe_aot with CLI suite (#2605)"
     },
     {
-     "sha": "14b5d51",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/14b5d5147d5ff63a87e94eed80adbce4ed02cb1c",
-     "date": "2026-11-25T14:51:08Z",
-     "message": "ffx: extract main(argv), atomic output writes, and error guards in ffx_dispatch_profile with CLI suite (#2383)"
+     "sha": "e4e2b46",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/e4e2b46d7b10815d18844a7dbc44a51031b31d91",
+     "date": "2026-11-25T23:10:16Z",
+     "message": "shader: lower compute buffer_store_format_xyzw in gfx2hlsl (#2530)"
     },
     {
-     "sha": "9f13c50",
-     "url": "https://github.com/R0Y00/Xbox2Windows/commit/9f13c507e0bec0e45475f39851685d4a746df5da",
-     "date": "2026-11-25T14:49:16Z",
-     "message": "cpu: lower legacy SSE2 CMPSD, MOVLPD, MOVHPD, and MOVNTPD in cpu_sse_fp_aot (#2385)"
+     "sha": "cece3a3",
+     "url": "https://github.com/R0Y00/Xbox2Windows/commit/cece3a364f103085d68f6a80031a6ef8c4388714",
+     "date": "2026-11-25T23:05:03Z",
+     "message": "mesh: preserve a scalar shift across a wave64 EXEC-zero branch (#2601)"
     }
    ],
    "status": "",
    "boot_prs": [
     {
-     "number": 2395,
-     "title": "d3d12: support unplaced buffer memory SRVs in device slot 70",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2395",
-     "user": "Holastor",
-     "created": "2026-11-25T15:10:06Z",
+     "number": 2615,
+     "title": "tests: reuse the compute pipeline across descriptor-format references",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2615",
+     "user": "RavenCurseBurg",
+     "created": "2026-11-25T23:24:29Z",
      "draft": false
     },
     {
-     "number": 2375,
-     "title": "gpu: wait for both leased XMem ranges in cached mesh dispatches",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2375",
-     "user": "sydney-0o",
-     "created": "2026-11-25T14:15:16Z",
+     "number": 2606,
+     "title": "startup: translate slot 57 mesh requests with a depth-only pixel stage",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2606",
+     "user": "NiiRoZz",
+     "created": "2026-11-25T23:15:44Z",
+     "draft": false
+    },
+    {
+     "number": 2603,
+     "title": "Integrate mesh translation, D3D12 rendering and memory handling",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2603",
+     "user": "denn0x",
+     "created": "2026-11-25T22:47:36Z",
+     "draft": true
+    },
+    {
+     "number": 2596,
+     "title": "startup: compute entry values from the words of a bound buffer descriptor",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2596",
+     "user": "NiiRoZz",
+     "created": "2026-11-25T22:17:41Z",
+     "draft": false
+    },
+    {
+     "number": 2592,
+     "title": "startup: take pixel input masks from the exact pipeline's stream description (#1629)",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2592",
+     "user": "roansystemlabs",
+     "created": "2026-11-25T22:15:09Z",
+     "draft": false
+    },
+    {
+     "number": 2490,
+     "title": "startup: translated compute Dispatch with 2D texture views, static samplers and a per-key census",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2490",
+     "user": "NiiRoZz",
+     "created": "2026-11-25T18:30:44Z",
+     "draft": false
+    },
+    {
+     "number": 2462,
+     "title": "gpu: add D3D12 meshlet amplification and mesh shader pipeline with vertex fallback",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2462",
+     "user": "R0D4X",
+     "created": "2026-11-25T17:22:54Z",
+     "draft": false
+    },
+    {
+     "number": 2448,
+     "title": "startup: bind pixel-stage UAVs from the title's descriptor table",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2448",
+     "user": "roansystemlabs",
+     "created": "2026-11-25T17:01:11Z",
+     "draft": false
+    },
+    {
+     "number": 2444,
+     "title": "shader: lower s_bitcmp0/1_b32 and b64 in bounded mesh lowerers",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2444",
+     "user": "R0D4X",
+     "created": "2026-11-25T16:59:36Z",
+     "draft": false
+    },
+    {
+     "number": 2427,
+     "title": "shader: lower mesh param0..param12 exports and gfx2hlsl pixel linkage",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2427",
+     "user": "R0D4X",
+     "created": "2026-11-25T16:26:50Z",
      "draft": false
     },
     {
@@ -2812,151 +2952,103 @@
     },
     {
      "number": 2245,
-     "title": "startup: stop probing unmapped guest memory from the texture and no-op paths (draft, shared for testing)",
+     "title": "startup: stop probing unmapped guest memory from the texture and no-op paths",
      "url": "https://github.com/R0Y00/Xbox2Windows/pull/2245",
      "user": "Its3rr0rsWRLD",
      "created": "2026-11-25T07:29:10Z",
-     "draft": true
-    },
-    {
-     "number": 2218,
-     "title": "gpu: back slot 133 linear buffers by sharing or a submit-time copy (opt-in)",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2218",
-     "user": "MasterDomino",
-     "created": "2026-11-25T05:42:09Z",
-     "draft": false
-    },
-    {
-     "number": 2165,
-     "title": "compute: lower the d16 descriptor-format buffer loads",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2165",
-     "user": "archielcqp-a11y",
-     "created": "2026-11-25T02:32:06Z",
-     "draft": false
-    },
-    {
-     "number": 2107,
-     "title": "runtime: count XMA context and XApu command activity in the audio stand-ins",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2107",
-     "user": "JohnConnorNPC",
-     "created": "2026-11-25T00:29:29Z",
-     "draft": false
-    },
-    {
-     "number": 2069,
-     "title": "shader: propagate descriptor pointers through s_add_u32/s_addc_u32 in gfx2hlsl (Part of #1723)",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2069",
-     "user": "tedin7",
-     "created": "2026-11-24T23:58:28Z",
-     "draft": false
-    },
-    {
-     "number": 2048,
-     "title": "startup: implement SetPredication command-list slot 59 (Part of #870)",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2048",
-     "user": "tedin7",
-     "created": "2026-11-24T23:37:57Z",
-     "draft": false
-    },
-    {
-     "number": 1869,
-     "title": "startup: implement DirectStorage CancelRequestsWithTag",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/1869",
-     "user": "chunfeng11221",
-     "created": "2026-11-24T19:48:50Z",
      "draft": false
     }
    ],
    "reports": [
     {
-     "kind": "comment",
-     "title": "Comment on #2391",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2391#issuecomment-7166670090",
-     "user": "pigalot",
-     "created": "2026-11-25T15:19:46Z",
+     "kind": "issue",
+     "title": "RX 5700 XT (RDNA 1): ExecuteIndirect Dispatch with max count > 1 runs only the first command (startup_indirect_count_hardware)",
+     "url": "https://github.com/R0Y00/Xbox2Windows/issues/2626",
+     "user": "ColorMeBoom",
+     "created": "2026-11-25T23:30:41Z",
      "image": false,
-     "text": "Thanks, @RavenCurseBurg. Pushed 81d0e386. - **Skip after a failure:** fixed. `run_pixel_words` now exits `1 if failures else 77`, as #2380 did for the sibling fixtures. Checked by injecting a renderer return of 77: after a failed `check(...…"
+     "text": "### Commit or build ae5d482a ### Reproduction [code] ### Expected behavior `startup_indirect_count_hardware` passes, as `startup_indirect_count_warp` does. With the GPU-written count word 2, the first two of the three Dispatch records `(2,1…"
+    },
+    {
+     "kind": "issue",
+     "title": "Help wanted: claim a batch of 200 or 500 shader pipeline requests",
+     "url": "https://github.com/R0Y00/Xbox2Windows/issues/2618",
+     "user": "denn0x",
+     "created": "2026-11-25T23:27:14Z",
+     "image": false,
+     "text": "## Pick a batch of 200 or 500 Help translate and verify the remaining graphics and compute pipelines. Claim one batch from the table below. A 200-request batch is a good first contribution. A 500-request batch suits someone who can run a re…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1",
-     "url": "https://github.com/R0Y00/Xbox2Windows/issues/1#issuecomment-7166649338",
-     "user": "wanchudao",
-     "created": "2026-11-25T15:19:00Z",
-     "image": false,
-     "text": "I’m claiming one focused README update for my [RTX 3070 Ti driver 610.88 report](https://github.com/R0Y00/Xbox2Windows/issues/1#issuecomment-7166634226) (Windows driver `32.0.16.1088`). The original log is from GPU Check v0.1.0 at `def386ab…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #1",
-     "url": "https://github.com/R0Y00/Xbox2Windows/issues/1#issuecomment-7166634226",
-     "user": "wanchudao",
-     "created": "2026-11-25T15:18:28Z",
-     "image": false,
-     "text": "Independent Windows hardware run on an NVIDIA GeForce RTX 3070 Ti (8 GB) with NVIDIA driver 610.88 (Windows display driver version `32.0.16.1088`). I used the SHA-256-verified official [GPU Check v0.1.0](https://github.com/R0Y00/Xbox2Window…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #1115",
-     "url": "https://github.com/R0Y00/Xbox2Windows/issues/1115#issuecomment-7166622243",
-     "user": "RavenCurseBurg",
-     "created": "2026-11-25T15:18:00Z",
-     "image": false,
-     "text": "The paired direct HLSL control also distinguishes the two index sources on Intel UHD Graphics 770 (8086:a780, driver 32.0.101.5973). At source 9e5361b1, the dispatch-thread build passed all three swaps. The group-index build returned `0.25 …"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2234",
-     "url": "https://github.com/R0Y00/Xbox2Windows/issues/2234#issuecomment-7166510209",
+     "title": "Comment on #2475",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2475#issuecomment-7177496910",
      "user": "R0Y00",
-     "created": "2026-11-25T15:13:55Z",
+     "created": "2026-11-25T23:23:34Z",
      "image": false,
-     "text": "#2393 landed at `7092683a` for the `vm_translation_check` range fixture. JVProg's Release run passed 11/11 on WARP and RX 9070 XT, and the WARP batch moved from +124.82 MiB to +2.89 MiB of shared commit per 1,000 runs. The hardware batches …"
+     "text": "I added the independent D3D12 draw requested in review and resolved the adjacent CMake registrations against current main. On `3d5bb508`, `ctest --preset release --no-tests=error -R '^startup_gfx2hlsl_(pack_b32_f16($|_)|cvt_pk_int16_control…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #1999",
-     "url": "https://github.com/R0Y00/Xbox2Windows/issues/1999#issuecomment-7166453460",
-     "user": "R0Y00",
-     "created": "2026-11-25T15:11:43Z",
-     "image": false,
-     "text": "The item B stream winding follow-up landed in #2387 (`a4900150`). My Windows Release run passed 4/4 on WARP and RTX 4060 Laptop with the debug layer enabled. The fixture checked all 32 pixels with both cull directions, both windings, and bo…"
-    },
-    {
-     "kind": "comment",
-     "title": "Comment on #2391",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2391#issuecomment-7166345169",
+     "title": "Comment on #448",
+     "url": "https://github.com/R0Y00/Xbox2Windows/issues/448#issuecomment-7177435480",
      "user": "RavenCurseBurg",
-     "created": "2026-11-25T15:07:39Z",
+     "created": "2026-11-25T23:20:47Z",
      "image": false,
-     "text": "I tested the two destination cases called out in the description using the existing float renderer. The synthetic gfx1013 pixel shader splits each 32-bit select result into two 16-bit halves and exports each half in the mantissa of 1.0. Thi…"
+     "text": "I measured the follow-up to #2568 on the full `compute_store_aot_descriptor_load_format` fixture. Sharing only the device slowed down all three desktop adapters. Sharing the fixed shader's root signature and compute pipeline as well reduced…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2379",
-     "url": "https://github.com/R0Y00/Xbox2Windows/issues/2379#issuecomment-7166312226",
-     "user": "JB2WIN",
-     "created": "2026-11-25T15:06:26Z",
+     "title": "Comment on #2274",
+     "url": "https://github.com/R0Y00/Xbox2Windows/issues/2274#issuecomment-7177415661",
+     "user": "R0Y00",
+     "created": "2026-11-25T23:19:48Z",
      "image": false,
-     "text": "Local prototype result (branch not pushed yet). Same host and command as above, build `f555b535` plus the prototype, `X2W_D3D12_BUDGET=1`. The prototype, behind an opt-in `X2W_D3D12_RELEASE_RETIRED=1`, releases a resource's desktop object a…"
+     "text": "The `buffer_store_format_xyzw` slice landed in #2530 (`e4e2b46d`) after #2478. On the exact PR head I ran `ctest --preset release --no-tests=error -R '^startup_compute_store_format_xyzw' -V`: 21 passed, zero skips, on WARP and RTX 4060 Lapt…"
+    },
+    {
+     "kind": "issue",
+     "title": "startup-runtime: startup stalls ~120 s after #2395 (an unplaced memory SRV wraps a ~2.15 GiB allocation, VirtualQuery over it becomes slow)",
+     "url": "https://github.com/R0Y00/Xbox2Windows/issues/2610",
+     "user": "lukaslw-lab",
+     "created": "2026-11-25T23:18:24Z",
+     "image": false,
+     "text": "Since #2395 (`4a8acf51`), main-executable startup (#870) sits ~120 s before the first DirectStorage request completes. Bisect on Windows 10 22H2, RTX 3080 Ti, release build, warm shader cache, same input script: | Build | DirectStorage requ…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2218",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2218#issuecomment-7166224257",
+     "title": "Comment on #2603",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2603#issuecomment-7177347629",
+     "user": "SimSalabimse",
+     "created": "2026-11-25T23:16:36Z",
+     "image": false,
+     "text": "Host retest on `993603d8` (retire + budget + FakeUser + Render + Translate, HostCpu / MemoryGiB 40). **Vs tip `bee07b90` (same recipe):** tip reached in-scene UI over solid magenta (`present` mean ~170). This draft reaches UI over **black**…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #2578",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2578#issuecomment-7177169319",
+     "user": "alvaroolt",
+     "created": "2026-11-25T23:07:14Z",
+     "image": false,
+     "text": "Hardware results for the merged change. Until now only WARP had been run. Tested `main` at `b41f6fca`, which contains this PR's merge commit `af172024`. The machine runs Windows 11 build 26300 with MSVC 14.52, Windows SDK 10.0.26100 and DXC…"
+    },
+    {
+     "kind": "comment",
+     "title": "Comment on #2470",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2470#issuecomment-7177164883",
      "user": "MasterDomino",
-     "created": "2026-11-25T15:03:03Z",
+     "created": "2026-11-25T23:07:00Z",
      "image": false,
-     "text": "Correction to the title-pair line in my comment above: neither arm of that pair got past the legal and acceptance page. Both ended at 420 s on that page with its boxes unticked. The same scripted presses ran in both arms, but on current `ma…"
+     "text": "Thanks, @chasegrindy, that's a real gap, and it fits what I saw on #1803: the mutant that removes the heap-change clear in slot 32 survived every fixture. Now that #1803 is on `main`, the bug is in `main`. On where it goes, I'd say: - **The…"
     },
     {
      "kind": "comment",
-     "title": "Comment on #2218",
-     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2218#issuecomment-7166139942",
-     "user": "MasterDomino",
-     "created": "2026-11-25T14:59:52Z",
+     "title": "Comment on #2571",
+     "url": "https://github.com/R0Y00/Xbox2Windows/pull/2571#issuecomment-7177076317",
+     "user": "tedin7",
+     "created": "2026-11-25T23:02:25Z",
      "image": false,
-     "text": "@R0Y00, your same-buffer cross-queue case is fixed, and the branch is rebased onto `main` `ff06794b` as tedin7 asked. Head is `9b8c36fe`. **The stale read (`3bfa3a9d`):** - Every refresh now runs on one internal COPY queue per device, which…"
+     "text": "Win2025 WARP receipt for head 0e7481de after updating with main. Verified on Windows Server 2025 (Build 26100, MSVC 14.44.35207 + D3D12 WARP) at commit `0e7481defd3be223c04c9b3a9b15c87b659780d2`: - **Debug (`--preset dev`)**: - Build (`cmak…"
     }
    ],
    "evidence": {},
@@ -3033,7 +3125,7 @@
    ],
    "reachable": true,
    "stars": 43,
-   "forks": 4,
+   "forks": 5,
    "pushed_at": "2026-11-25T09:58:34Z",
    "created_at": "2026-11-21T16:49:38Z",
    "url": "https://github.com/rpatty-dev/PercyScarlett",
@@ -3049,15 +3141,15 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -3065,7 +3157,7 @@
     0
    ],
    "activity_capped": false,
-   "open_prs": 0,
+   "open_prs": 3,
    "contributors": 1,
    "commits": [
     {
@@ -3160,7 +3252,32 @@
     }
    ],
    "status": "| Area | State | Where |\n| :--- | :--- | :--- |\n| Retail Xbox Series X\\|S game | Minecraft (Scarlett build, unmodified exe): boots, main menu, creates/saves/reloads a world, in-game | screenshots above |\n| Loader | Maps the title in-process: relocations, `.pdata`, guest static TLS, import routing, user-path virtualization | `src/pe_loader.rs` |\n| Graphics | D3D12.X command lists replayed onto PC D3D12, console present into a DXGI swap chain | `crates/d3d12_xs/src/{replay,console_list,present}.rs` |\n| Shaders | Minecraft ships DXIL, so its shaders run as-is. Retail RDNA2/GFX10 shaders (VS + PS) are lifted to SM 6.6 HLSL (`hlsl_xbox.rs`), compiled via DXC, and bound into live PC graphics PSOs (`gfx_pso.rs`, `desc_mirror.rs`) | `crates/d3d12_xs/src/{hlsl_xbox,dxbc_xbox,gfx_pso,desc_mirror}.rs` |\n| TheBig6 😉 | v1.0: reaches the opening prison scene, lit and textured, on the Series S profile with an 8 GB card (about 2-3 fps on an RTX 2060 SUPER). Menus, Bink2 video, save data and world streaming work. Shaded areas are still too dark | `runtime/victory`, `docs/PROLOGUE.md` |\n\n---",
-   "boot_prs": [],
+   "boot_prs": [
+    {
+     "number": 15,
+     "title": "shader: fix BCPack, VOP1, DXBC and console texture formats",
+     "url": "https://github.com/rpatty-dev/PercyScarlett/pull/15",
+     "user": "davutsimsekk",
+     "created": "2026-11-25T19:04:08Z",
+     "draft": false
+    },
+    {
+     "number": 14,
+     "title": "runtime: validate config, XMem alignment and device inputs",
+     "url": "https://github.com/rpatty-dev/PercyScarlett/pull/14",
+     "user": "davutsimsekk",
+     "created": "2026-11-25T19:04:05Z",
+     "draft": false
+    },
+    {
+     "number": 13,
+     "title": "HLE: clear DirectStorage outputs and validate call arguments",
+     "url": "https://github.com/rpatty-dev/PercyScarlett/pull/13",
+     "user": "davutsimsekk",
+     "created": "2026-11-25T19:04:02Z",
+     "draft": false
+    }
+   ],
    "reports": [],
    "evidence": {},
    "locked": [
@@ -3355,7 +3472,7 @@
    },
    "media": [],
    "reachable": true,
-   "stars": 10,
+   "stars": 11,
    "forks": 1,
    "pushed_at": "2026-11-24T07:52:34Z",
    "created_at": "2026-11-20T15:07:18Z",

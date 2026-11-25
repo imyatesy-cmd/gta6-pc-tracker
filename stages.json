@@ -192,31 +192,6 @@
       }
     },
     {
-      "repo": "fablinoo/palmwave",
-      "name": "Palmwave",
-      "approach": "A fork of XCL (Xbox Series compatibility layer for Windows).",
-      "stage": 5,
-      "note": "Loads the world and runs for up to an hour with sound. Stage self-reported; summarised from the GTA VI PC Race tracker.",
-      "blocker": "Shows nothing on screen while the world's compute shaders compile.",
-      "updated": "2026-11-24",
-      "milestones": [
-        {
-          "date": "2026-11-24",
-          "text": "Loads the world and runs up to an hour with sound, no picture"
-        }
-      ],
-      "checks": {
-        "exe": 1,
-        "startup": 1,
-        "files": 1,
-        "device": 1,
-        "shaders": 0.5,
-        "audio": 1,
-        "load": 1,
-        "stable": 1
-      }
-    },
-    {
       "repo": "OpenCommunityEdition/OpenScarlett",
       "name": "OpenScarlett CE",
       "approach": "Community edition of OpenScarlett (Xbox Series translation layer).",
@@ -406,6 +381,10 @@
     {
       "date": "2026-11-24",
       "text": "Leonida Continued: an integration PR reaches the first-run menus on Windows, the first Leonida build to show the game's UI."
+    },
+    {
+      "date": "2026-11-25",
+      "text": "Palmwave's repository was removed (404); it is no longer tracked. It had loaded the world with sound but no picture."
     }
   ],
   "links": [
